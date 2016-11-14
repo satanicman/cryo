@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,2BAA2B;AAG1B,wCAAa;EACZ,cAAc,EAAC,CAAC;EAChB,aAAa,EAAC,CAAC;EACf,aAAa,EAAC,IAAI",
+"sources": ["../../../modules/blockviewed/blockviewed.scss"],
+"names": [],
+"file": "blockviewed.css"
+}

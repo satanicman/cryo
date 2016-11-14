@@ -1,0 +1,30 @@
+{
+  "name": "gulp-prestashop",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.5",
+    "gulp-changed": "^0.4.0",
+    "gulp-ftp": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-ruby-sass": "^0.6.0",
+    "gulp.spritesmith": "^6.2.1",
+    "map-stream": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "description": "Prestashop build system for linting and creating your prestashop theme.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "prestashop",
+    "gulp-prestashop",
+    "prestashop-build-system",
+    "prestashop-scss"
+  ],
+  "author": "Dustin Deus",
+  "license": "MIT"
+}
