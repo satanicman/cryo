@@ -226,13 +226,13 @@ class BlockCategoriesOverride extends BlockCategories
 
 			$resultIds = array();
 			$resultParents = array();
-			$result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('
+            $sql = '
 			SELECT c.id_parent, c.id_category, cl.name, cl.description, cl.link_rewrite
 			FROM `'._DB_PREFIX_.'category` c
 			INNER JOIN `'._DB_PREFIX_.'category_lang` cl ON (c.`id_category` = cl.`id_category` AND cl.`id_lang` = '.(int)$this->context->language->id.Shop::addSqlRestrictionOnLang('cl').')
 			INNER JOIN `'._DB_PREFIX_.'category_shop` cs ON (cs.`id_category` = c.`id_category` AND cs.`id_shop` = '.(int)$this->context->shop->id.')
 			WHERE (c.`active` = 1 OR c.`id_category` = '.(int)Configuration::get('PS_HOME_CATEGORY').')
-			AND c.`id_category` != '.(int)Configuration::get('PS_ROOT_CATEGORY').'
+			AND c.`id_category` NOT IN ('.(int)Configuration::get('PS_ROOT_CATEGORY').(isset($params['home']) && $params['home'] ? '' : ', '.(int)Configuration::get('BLOCK_CATEG_INDEX')).')
 			'.((int)$maxdepth != 0 ? ' AND `level_depth` <= '.(int)$maxdepth : '').'
 			'.$range.'
 			AND c.id_category IN (
@@ -240,7 +240,9 @@ class BlockCategoriesOverride extends BlockCategories
 				FROM `'._DB_PREFIX_.'category_group`
 				WHERE `id_group` IN ('.pSQL(implode(', ', Customer::getGroupsStatic((int)$this->context->customer->id))).')
 			)
-			ORDER BY `level_depth` ASC, '.(Configuration::get('BLOCK_CATEG_SORT') ? 'cl.`name`' : 'cs.`position`').' '.(Configuration::get('BLOCK_CATEG_SORT_WAY') ? 'DESC' : 'ASC'));
+			ORDER BY `level_depth` ASC, '.(Configuration::get('BLOCK_CATEG_SORT') ? 'cl.`name`' : 'cs.`position`').' '.(Configuration::get('BLOCK_CATEG_SORT_WAY') ? 'DESC' : 'ASC');
+
+			$result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
 			foreach ($result as &$row)
 			{
 				$resultParents[$row['id_parent']][] = &$row;
