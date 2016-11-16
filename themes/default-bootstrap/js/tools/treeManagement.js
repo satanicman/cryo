@@ -29,14 +29,14 @@ $(document).ready(function(){
 	if(!$('ul.tree.dhtml').hasClass('dynamized'))
 	{
 		//add growers to each ul.tree elements
-		$('ul.tree.dhtml ul').prev().before("<span class='grower OPEN'><span></span></span>");
+		$('ul.tree.dhtml ul').prev().prepend("<span class='grower OPEN'><span></span></span>");
 		
 		//dynamically add the '.last' class on each last item of a branch
 		$('ul.tree.dhtml ul li:last-child, ul.tree.dhtml li:last-child').addClass('last');
 		
 		//collapse every expanded branch
 
-		$('ul.tree.dhtml span.grower.OPEN').addClass('CLOSE').removeClass('OPEN').parent().find('ul:first').hide();
+		$('ul.tree.dhtml span.grower.OPEN').addClass('CLOSE').removeClass('OPEN').parent().parent().find('ul:first').hide();
 		$('ul.tree.dhtml').show();
 		
 		//open the tree for the selected branch
@@ -73,8 +73,8 @@ $(window).load(function() {
 //animate the opening of the branch (span.grower jQueryElement)
 function openBranch(jQueryElement, noAnimation)
 {
-		jQueryElement.addClass('OPEN').removeClass('CLOSE').parent().addClass('OPEN').removeClass('CLOSE');
-		var parent = jQueryElement.parent();
+		jQueryElement.addClass('OPEN').removeClass('CLOSE').parent().parent().addClass('OPEN').removeClass('CLOSE');
+		var parent = jQueryElement.parent().parent();
 		if(noAnimation) {
 			parent.find('ul:first').show();
 		}
@@ -89,8 +89,8 @@ function openBranch(jQueryElement, noAnimation)
 //animate the closing of the branch (span.grower jQueryElement)
 function closeBranch(jQueryElement, noAnimation)
 {
-	jQueryElement.addClass('CLOSE').removeClass('OPEN').parent().addClass('CLOSE').removeClass('OPEN');
-	var parent = jQueryElement.parent();
+	jQueryElement.addClass('CLOSE').removeClass('OPEN').parent().parent().addClass('CLOSE').removeClass('OPEN');
+	var parent = jQueryElement.parent().parent();
 	if(noAnimation)
 		parent.find('ul:first').hide();
 	else

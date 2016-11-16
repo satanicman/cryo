@@ -59,103 +59,186 @@
 }
 
 #categories_block_left {
-    .block_content > ul {
-    }
-    li {
-        position: relative;
-        a {
-            color: $base-text-color;
-            display: block;
-        }
-        .categories_block_thumb {
-            display: block;
-            overflow: hidden;
-            position: relative;
-            width: 41px;
-            img {
-                position: absolute;
-                left: 50%;
-                top: 0;
-            }
-        }
-        span.grower {
-            width: 50px;
-            height: 50px;
-            background-color: $bg-blue;
-            border-radius: 0px 3px 3px 0px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            cursor: pointer;
-            padding: 23px 16px;
-            @include display-flex;
-            @include justify-content(space-around);
-            @include align-items(center);
-            &:before {
-                display: block;
-                content: '';
-                border: 25px solid transparent;
-                border-right: 12px solid $bd-blue;
-                border-left-width: 12px;
-                position: absolute;
-                right: 100%;
-                top: 0;
-                bottom: 0;
-            }
-            span {
-                display: block;
-                position: relative;
-                &:before,
-                &:after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                }
-                &:before {
-                    top: -5px;
-                }
-                &:after {
-                    bottom: -5px;
-                }
-                &,
-                &:before,
-                &:after {
-                    width: 18px;
-                    height: 3px;
-                    background: #fff;
-                    transition: all 0.4s ease;
-                }
-            }
-            &.OPEN {
-                span {
-                    background: transparent;
-                    &:before {
-                        top: 0;
-                        transform: rotate(225deg);
-                    }
-                    &:after {
-                        bottom: 0;
-                        transform: rotate(-225deg);
-                    }
-                }
-            }
-            &.CLOSE {
-            }
-        }
-        & span.grower:hover + a,
-        a:hover,
-        a.selected {
-            background: #f6f6f6;
+    &.home {
+        .block_content > ul {
         }
         li {
+            position: relative;
             a {
-                font-weight: normal;
-                color: #777777;
+                color: $base-text-color;
+                display: block;
+            }
+            .categories_block_thumb {
+                display: block;
+                overflow: hidden;
+                position: relative;
+                width: 41px;
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                }
+            }
+            span.grower {
+                width: 50px;
+                height: 50px;
+                background-color: $bg-blue;
+                border-radius: 0px 3px 3px 0px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                padding: 23px 16px;
+                @include display-flex;
+                @include justify-content(space-around);
+                @include align-items(center);
                 &:before {
-                    content: "\f105";
-                    font-family: $font-icon;
-                    line-height: 29px;
-                    padding-right: 8px;
+                    display: block;
+                    content: '';
+                    border: 25px solid transparent;
+                    border-right: 12px solid $bd-blue;
+                    border-left-width: 12px;
+                    position: absolute;
+                    right: 100%;
+                    top: 0;
+                    bottom: 0;
+                }
+                span {
+                    display: block;
+                    position: relative;
+                    &:before,
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                    }
+                    &:before {
+                        top: -5px;
+                    }
+                    &:after {
+                        bottom: -5px;
+                    }
+                    &,
+                    &:before,
+                    &:after {
+                        width: 18px;
+                        height: 3px;
+                        background: #fff;
+                        transition: all 0.4s ease;
+                    }
+                }
+                &.OPEN {
+                    span {
+                        background: transparent;
+                        &:before {
+                            top: 0;
+                            transform: rotate(225deg);
+                        }
+                        &:after {
+                            bottom: 0;
+                            transform: rotate(-225deg);
+                        }
+                    }
+                }
+                &.CLOSE {
+                }
+            }
+            & span.grower:hover + a,
+            a:hover,
+            a.selected {
+                background: #f6f6f6;
+            }
+            li {
+                a {
+                    font-weight: normal;
+                    color: #777777;
+                    &:before {
+                        content: "\f105";
+                        font-family: $font-icon;
+                        line-height: 29px;
+                        padding-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    &.category {
+        font-family: "Open Sans", sans-serif;
+        border: 1px solid $db-light-grey;
+        border-radius: 7px;
+        .title_block {
+            color: $c-dark-blue;
+            font-size: em(22px);
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 25px 30px;
+            border-bottom: 1px solid $db-light-grey;
+            margin: 0;
+        }
+        .block_content > ul {
+            overflow: hidden;
+        }
+        .category-link-wrap {
+            position: relative;
+            padding: 15px 30px;
+        }
+        ul {
+            margin: 0;
+        }
+        ul ul {
+            border-top: 1px solid $db-light-grey;
+        }
+        li {
+            position: relative;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $db-light-grey;
+            }
+            &.OPEN {
+                background-color: #E0E0E0;
+                ul {
+                    background-color: #C6C6C6;
+                    .category-link-wrap {
+                        padding-left: 60px;
+
+                    }
+                }
+            }
+            a {
+                color: $description-color;
+                font-weight: 400;
+                line-height: 1;
+            }
+            span.grower {
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                margin-top: -13px;
+                cursor: pointer;
+                font-family: $font-icon;
+                font-size: 14px;
+                padding: 10px;
+                &.OPEN,
+                &.CLOSE {
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 6px;
+                        height: 8px;
+                        border: 4px solid transparent;
+                        border-right-width: 0;
+                        border-left: 6px solid $db-light-grey;
+                        @include transition(all .3s);
+                    }
+                }
+                &.OPEN:before {
+                    @include transform(rotate(90deg));
+                }
+            }
+
+            li {
+                a {
+
                 }
             }
         }
@@ -174,7 +257,7 @@
                 > li {
                     padding-bottom: 10px;
                     &.OPEN {
-                        > a {
+                        > .category-link-wrap a {
                             background-color: $bg-light-green;
                             color: $light-text-color;
                         }
@@ -190,7 +273,7 @@
                         min-height: 50px;
                         background-color: $bg-light-grey;
                     }
-                    > a {
+                    > .category-link-wrap a {
                         padding-right: 90px;
                         @include justify-content(space-between);
                         margin-bottom: 10px;

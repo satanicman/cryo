@@ -24,16 +24,12 @@
 *}
 {if $blockCategTree && $blockCategTree.children|@count}
 <!-- Block categories module -->
-<div id="categories_block_left" class="categories_block_{if isset($home) && $home}home{else}left{/if} col-lg-6 col-md-6 col-sm-12">
-	{if isset($home) || $home}
+<div id="categories_block_left" class="categories_block_{if isset($home) && $home}home{else}left{/if} {if isset($home) && $home}home col-lg-6 col-md-6 col-sm-12{else}category{/if}">
+	{if isset($home) && $home}
 		<h3 class="main-title">{l s='Основные группы оборудования' mod='blockcategories'}</h3>
-		{else}
+	{else}
 		<h2 class="title_block">
-			{if isset($currentCategory)}
-				{$currentCategory->name|escape}
-			{else}
-				{l s='Categories' mod='blockcategories'}
-			{/if}
+			{l s='Все категории' mod='blockcategories'}
 		</h2>
 	{/if}
 	<div class="block_content">
