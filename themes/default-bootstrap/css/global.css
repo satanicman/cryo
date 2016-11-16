@@ -7428,6 +7428,13 @@ The `sprites` mixin generates identical output to the CSS template
   height: 12px;
 }
 
+.up-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -90px -106px;
+  width: 47px;
+  height: 29px;
+}
+
 .rss-icon {
   background-image: url(../img/sprite.png);
   background-position: -131px 0px;
@@ -10999,6 +11006,31 @@ div.star.star_hover:after {
 
 .pointer-box {
   cursor: pointer;
+}
+
+#scroller {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: 0;
+}
+#scroller .icon, #scroller [class^="icon-"] {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+#scroller span {
+  font-family: 'helvetica-light', serif;
+  color: #999;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  display: block;
 }
 
 /*# sourceMappingURL=global.css.map */

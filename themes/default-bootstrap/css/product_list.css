@@ -197,6 +197,9 @@ ul.product_list .functional-buttons div.compare a.checked:before {
 /*******************************************************
 Product list(Grid) Styles
 ********************************************************/
+ul.product_list.grid li.ajax_block_product {
+  padding-bottom: 30px;
+}
 ul.product_list.grid li.ajax_block_product .product-container {
   background: #fff;
   box-shadow: 0 0 15px rgba(16, 24, 30, 0.3);
@@ -205,21 +208,21 @@ ul.product_list.grid li.ajax_block_product .product-container {
   text-align: center;
 }
 ul.product_list.grid li.ajax_block_product .product-container .product-image-container {
-  padding: 8px 6px;
-  margin-bottom: 5px;
+  padding: 8px 6px 0;
 }
 ul.product_list.grid li.ajax_block_product .product-container h5 {
-  padding: 0 15px;
   margin: 0;
   min-height: 53px;
   font-family: "Open Sans", serif;
   font-size: 0.9375em;
   font-weight: 400;
+  padding: 15px;
+  background-color: #f9f9f9;
 }
 ul.product_list.grid li.ajax_block_product .product-container .details {
   background-color: #369;
   box-shadow: 0 5px 9px rgba(0, 205, 13, 0.5);
-  margin-top: 10px;
+  display: none;
 }
 ul.product_list.grid li.ajax_block_product .product-container .details a {
   display: block;

@@ -201,6 +201,7 @@ Product list(Grid) Styles
 
 ul.product_list.grid {
 	li.ajax_block_product {
+		padding-bottom: 30px;
 		.product-container {
 			background: $light-background;
 			box-shadow: 0 0 15px rgba(16, 24, 30, 0.3);
@@ -208,22 +209,22 @@ ul.product_list.grid {
 			position: relative;
 			text-align: center;
 			.product-image-container {
-				padding: 8px 6px;
-				margin-bottom: 5px;
+				padding: 8px 6px 0;
 			}
 			h5 {
-				padding: 0 15px;
 				margin: 0;
 				min-height: 53px;
 
 				font-family: "Open Sans", serif;
 				font-size: em(15px);
 				font-weight: 400;
+				padding: 15px;
+				background-color: $bg-ultra-light;
 			}
 			.details {
 				background-color: $bg-dark-blue;
 				box-shadow: 0 5px 9px rgba(0, 205, 13, 0.5);
-				margin-top: 10px;
+				display: none;
 				a {
 					display: block;
 					padding: 20px;
