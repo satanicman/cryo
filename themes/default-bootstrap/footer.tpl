@@ -47,6 +47,10 @@
                 {/if}
 			</div>
 		</div><!-- #page -->
+		<button id="scroller">
+			<i class="up-icon icon"></i>
+			<span>{l s="Вверх"}</span>
+		</button>
 {/if}
 {include file="$tpl_dir./global.tpl"}
 	</body>

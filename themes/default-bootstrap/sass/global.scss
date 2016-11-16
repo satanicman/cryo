@@ -3480,3 +3480,28 @@ div.star.star_hover {
 .pointer-box {
   cursor: pointer;
 }
+
+#scroller{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+	display:none;
+	text-align: center;
+	background: none;
+	border: none;
+	outline: 0;
+	.icon {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	span {
+		font-family: 'helvetica-light', serif;
+		color: #999;
+		font-size: em(18px);
+		font-weight: 400;
+		line-height: 1;
+		text-transform: uppercase;
+		display: block;
+	}
+}

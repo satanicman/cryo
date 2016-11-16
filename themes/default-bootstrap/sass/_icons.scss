@@ -32,6 +32,9 @@
 .brand-next-icon {
 	@include sprite($brand-next-icon);
 }
+.up-icon {
+	@include sprite($up-icon);
+}
 //social
 .rss-icon {
 	@include sprite($rss-icon);

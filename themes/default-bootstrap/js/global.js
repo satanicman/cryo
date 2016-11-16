@@ -28,6 +28,22 @@ function setPadding() {
 	$('#page').css('paddingTop', $('.header-container').outerHeight());
 }
 $(document).ready(function(){
+	// to top
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 0) {
+			$('#scroller').fadeIn();
+		} else {
+			$('#scroller').fadeOut();
+		}
+	});
+	$('#scroller').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 400);
+		return false;
+	});
+	// to top #END
+
 	setPadding();
 	$(window).resize(function() {
 		setPadding();
