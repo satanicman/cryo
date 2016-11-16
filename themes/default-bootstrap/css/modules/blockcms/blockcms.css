@@ -1,0 +1,49 @@
+#block_various_links_top {
+  padding-right: 0;
+}
+#block_various_links_top ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 0;
+}
+#block_various_links_top ul li {
+  padding: 0 15px;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+#block_various_links_top ul li a {
+  font-family: "helvetica-roman", serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+#block_various_links_top ul li a:hover {
+  color: #97d700;
+}
+#block_various_links_top ul li a:hover:before, #block_various_links_top ul li a:hover:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -10px;
+  width: 7px;
+  height: 20px;
+  border: 2px solid #fff;
+}
+#block_various_links_top ul li a:hover:before {
+  left: -16px;
+  border-right-color: transparent;
+}
+#block_various_links_top ul li a:hover:after {
+  right: -16px;
+  border-left-color: transparent;
+}
+
+/*# sourceMappingURL=blockcms.css.map */

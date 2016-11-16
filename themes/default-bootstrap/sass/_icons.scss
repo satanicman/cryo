@@ -1,4 +1,5 @@
 //icons
+@import "sprite";
 
 //migrationfromfont-awesomev3tov4
 [class^="icon-"] {
@@ -7,6 +8,53 @@
 
 //.icon-ban-circle
 //	@extend .icon-ban
+.mobile-icon {
+	@include sprite($mobile-icon);
+}
+.search-icon {
+	@include sprite($search-icon);
+}
+.prev-icon {
+	@include sprite($prew-icon);
+}
+.next-icon {
+	@include sprite($next-icon);
+}
+.product-next-icon {
+	@include sprite($product-next-icon);
+}
+.product-prev-icon {
+	@include sprite($product-prew-icon);
+}
+.brand-prev-icon {
+	@include sprite($brand-prew-icon);
+}
+.brand-next-icon {
+	@include sprite($brand-next-icon);
+}
+//social
+.rss-icon {
+	@include sprite($rss-icon);
+}
+.gp-icon {
+	@include sprite($gp-icon);
+}
+.yt-icon {
+	@include sprite($yt-icon);
+}
+.fs-icon {
+	@include sprite($fs-icon);
+}
+.in-icon {
+	@include sprite($in-icon);
+}
+.tw-icon {
+	@include sprite($tw-icon);
+}
+.fs-icon {
+	@include sprite($fs-icon);
+}
+//social #END
 .icon-bar-chart {
 	@extend .icon-bar-chart-o;
 }

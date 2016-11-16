@@ -22,14 +22,76 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+{capture name='homeTop'}{hook h='homeTop'}{/capture}
+<a href="#" id="news_button">{l s="Новости и статьи"}</a>
+<div class="clearfix"></div>
+{if $smarty.capture.homeTop}
+	<div class="clearfix home-top">
+		{$smarty.capture.homeTop}
+		<div class="col-lg-6 col-md-6 col-sm-12 slider-col">
+			<h3 class="main-title">{l s="Реализованные"}<br/>{l s="проекты"}</h3>
+			<ul class="slider index" id="slider">
+				<li>
+					<div class="min-slider-img">
+						<img src="{$img_dir}mini-slide-1.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="min-slider-img">
+						<img src="{$img_dir}mini-slide-2.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="min-slider-img">
+						<img src="{$img_dir}mini-slide-1.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="min-slider-img">
+						<img src="{$img_dir}mini-slide-2.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="min-slider-img">
+						<img src="{$img_dir}mini-slide-1.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="min-slider-img">
+						<img src="{$img_dir}mini-slide-2.png" alt="">
+					</div>
+				</li>
+			</ul>
+			<div class="min-slider-description">
+				<p>Компания ""КРИО ИНТЕР ТРЕЙДИНГ" завершила монтажные работы по прокладке трубопровода газообразного кислорода для ЭР ЛИКИД Енакиево на территории ПАО "Енакиевского металлургичесекого завода"</p>
+			</div>
+		</div>
+	</div>
+{/if}
 {if isset($HOOK_HOME_TAB_CONTENT) && $HOOK_HOME_TAB_CONTENT|trim}
-    {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
+	</div>
+	</div>
+	</div>
+	<div class="products-tabs-wrap">
+	    <div class="products-tabs-container container">
+	    <h3 class="main-title">{l s="Горячие предложения"}</h3>
+	{if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
         <ul id="home-page-tabs" class="nav nav-tabs clearfix">
 			{$HOOK_HOME_TAB}
 		</ul>
 	{/if}
 	<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
+</div>
+	    </div>
+
+
+				<div id="columns" class="container">
+
+					<div class="row">
+					<div id="center_column" class="center_column col-xs-12 col-sm-12">
 {/if}
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
-	<div class="clearfix">{$HOOK_HOME}</div>
+	<div class="clearfix">
+		{$HOOK_HOME}
+	</div>
 {/if}

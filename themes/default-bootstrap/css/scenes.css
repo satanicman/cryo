@@ -33,7 +33,7 @@
   width: 21px;
   background: #fbfbfb;
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 .thumbs_banner .space-keeper a.prev:before {
   font-family: "FontAwesome";
@@ -48,7 +48,7 @@
   width: 21px;
   background: #fbfbfb;
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 .thumbs_banner .space-keeper a.next:before {
   font-family: "FontAwesome";

@@ -1,43 +1,44 @@
 @import "compass";
 @import "theme_variables";
+@import "sprite";
 #search_block_top {
-	padding-top: 50px;
 	#searchbox {
-		float: left;
-		width: 100%;
 	}
-	.btn.button-search {
-		background: $dark-background;
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
+	.button-search {
+		cursor: pointer;
+		position: relative;
+		z-index: 2;
+		background: none;
 		border: none;
-		color: $light-text-color;
-		width: 50px;
-		text-align: center;
-		padding: 10px 0 11px 0;
+		padding: 5px;
+		height: 36px;
+		@include display-flex;
+		@include align-items(center);
+		@include justify-content(space-around);
+		margin: 0;
+		float: right;
 		span {
 			display: none;
 		}
-		&:before {
-			content: "\f002";
-			display: block;
-			font-family: $font-icon;
-			font-size: 17px;
-			width: 100%;
-			text-align: center;
-		}
-		&:hover {
-			color: #6f6f6f
-		}
 	}
 	#search_query_top {
+		width: 0;
+		opacity: 0;
+		visibility: hidden;
+		@include transition(all .3s);
 		display: inline;
-		padding: 13px 60px 13px 13px;
-		height: 45px;
+		height: 36px;
 		background: $base-box-bg;
-		margin-right: 1px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+        &.show {
+			width: 200px;
+			opacity: 1;
+			visibility: visible;
+			padding: 5px 40px 5px 5px;
+		}
 	}
 }
 

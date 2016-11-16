@@ -116,12 +116,12 @@ class Blockcontactinfos extends Module
 						'name' => 'BLOCKCONTACTINFOS_ADDRESS',
 					),
 					array(
-						'type' => 'text',
+						'type' => 'textarea',
 						'label' => $this->l('Phone number'),
 						'name' => 'BLOCKCONTACTINFOS_PHONE',
 					),
 					array(
-						'type' => 'text',
+						'type' => 'textarea',
 						'label' => $this->l('Email'),
 						'name' => 'BLOCKCONTACTINFOS_EMAIL',
 					),

@@ -26,7 +26,12 @@
 <li {if isset($last) && $last == 'true'}class="last"{/if}>
 	<a 
 	href="{$node.link|escape:'html':'UTF-8'}"{if isset($currentCategoryId) && $node.id == $currentCategoryId} class="selected"{/if} title="{$node.desc|strip_tags|trim|escape:'html':'UTF-8'}">
-		{$node.name|escape:'html':'UTF-8'}
+		<span class="categories_block_name">{$node.name|escape:'html':'UTF-8'}</span>
+		{if isset($home) && $home && isset($node.thumb) && $node.thumb}
+			<span class="categories_block_thumb">
+				<img src="{$node.thumb}" alt="{$node.name}">
+			</span>
+		{/if}
 	</a>
 	{if $node.children|@count > 0}
 		<ul>

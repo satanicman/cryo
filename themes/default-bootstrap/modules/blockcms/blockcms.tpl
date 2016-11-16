@@ -64,11 +64,26 @@
 		</section>
 	{/foreach}
 	<!-- /Block CMS module -->
+{elseif $block == 2}
+	<section class="col-xs-12 col-md-7" id="block_various_links_top">
+		<ul>
+			{foreach from=$cmslinks item=cmslink}
+				{if $cmslink.meta_title != ''}
+					<li class="item">
+						<a href="{$cmslink.link|escape:'html':'UTF-8'}" title="{$cmslink.meta_title|escape:'html':'UTF-8'}">
+							{$cmslink.meta_title|escape:'html':'UTF-8'}
+						</a>
+					</li>
+				{/if}
+			{/foreach}
+		</ul>
+	</section>
+	<div class="col-md-1 clearfox"></div>
 {else}
 	<!-- Block CMS module footer -->
-	<section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
-		<h4>{l s='Information' mod='blockcms'}</h4>
-		<ul class="toggle-footer">
+	<section class="col-xs-12 col-sm-4" id="block_various_links_footer">
+		<h4 class="footer-title">{l s='Полезные ссылки' mod='blockcms'}</h4>
+		<ul class="clearfix">
 			{if isset($show_price_drop) && $show_price_drop && !$PS_CATALOG_MODE}
 				<li class="item">
 					<a href="{$link->getPageLink('prices-drop')|escape:'html':'UTF-8'}" title="{l s='Specials' mod='blockcms'}">

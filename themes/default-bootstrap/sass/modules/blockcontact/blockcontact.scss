@@ -1,25 +1,35 @@
 @import "compass";
 @import "theme_variables";
 .shop-phone {
-	float: left;
-	padding: 5px 0 10px;
-	line-height:18px;
+	padding: 0;
+	@include display-flex;
+	@include align-items(center);
 	@media (max-width: $screen-xs-max) {
 		display: none;
 	}
-	i {
-		font-size: 21px;
-		line-height: 21px;
-		color: $light-text-color;
-		padding-right: 7px;
-	}
-	strong {
-		color: $light-text-color;
+	.mobile-icon {
+		margin-right: 15px;
 	}
 	&.is_logged {
 		@media (max-width: $screen-sm-max) {
 			display: none;
 		}
+	}
+	&-info {
+		color: $light-text-color;
+		font-family: HelveticaNeueCyr;
+		p {
+			margin: 0;
+			font-family: 'helvetica-roman', serif;
+            &:not(.shop-phone-number) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+	&-number {
+		font-family: "helvetica-medium", serif;
+		font-size: em(20px);
+		font-weight: 500;
 	}
 }
 #contact-link {

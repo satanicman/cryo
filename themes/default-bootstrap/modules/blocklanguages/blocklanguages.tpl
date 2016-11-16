@@ -24,7 +24,7 @@
 *}
 <!-- Block languages module -->
 {if count($languages) > 1}
-	<div id="languages-block-top" class="languages-block">
+	<div id="languages-block-top" class="languages-block col-md-1">
 		{foreach from=$languages key=k item=language name="languages"}
 			{if $language.iso_code == $lang_iso}
 				<div class="current">

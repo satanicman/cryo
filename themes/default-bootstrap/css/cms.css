@@ -98,10 +98,10 @@
   padding-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: #000;
 }
 #cms #center_column #admin-action-cms p .button {
-  font: 700 17px/21px Arial, Helvetica, sans-serif;
+  font: 700 17px/21px "helvetica-roman", Helvetica, sans-serif;
   padding: 0;
   border: 1px solid;
   padding: 10px 14px;
@@ -126,7 +126,7 @@
   background: #0084bf;
 }
 #cms #center_column #admin-action-cms p .button.lnk_view {
-  color: #333;
+  color: #000;
   text-shadow: 1px 1px white;
   border-color: #cacaca #b7b7b7 #9a9a9a #b7b7b7;
   background: #f7f7f7;

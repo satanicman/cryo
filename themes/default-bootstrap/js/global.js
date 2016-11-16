@@ -24,8 +24,14 @@
 */
 //global variables
 var responsiveflag = false;
-
+function setPadding() {
+	$('#page').css('paddingTop', $('.header-container').outerHeight());
+}
 $(document).ready(function(){
+	setPadding();
+	$(window).resize(function() {
+		setPadding();
+	});
 	highdpiInit();
 	responsiveResize();
 	$(window).resize(responsiveResize);

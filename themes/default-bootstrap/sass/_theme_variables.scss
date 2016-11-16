@@ -1,11 +1,13 @@
 @import 'bootstrap_lib/_variables';
 
 //------- FONTS
-$font-family:				  		Arial, Helvetica, sans-serif;
+$font-family:				  		'helvetica-roman', Helvetica, sans-serif;
 $font:						  		normal 13px/18px $font-family;
-$font-custom:                 		'Open Sans', sans-serif;
+$font-custom:                 		'helvetica-roman', sans-serif;
 $font-icon:                   		"FontAwesome";
 $fa-css-prefix:       				icon !default;
+$f-base:							16px;
+$ff-base:							'helvetica-roman';
 
 
 //-------- BORDERS
@@ -14,6 +16,8 @@ $main_border:						1px solid $base-border-color;
 $dark-border-color:					#333;
 $light-border-color:				#fff;
 $homepage-footer-border:            #d9d9d9;
+$bd-blue:							#369;
+$bd-light:							#f4f4f4;
 
 //--------- BACKGROUNDS
 $base-box-bg:                       #fbfbfb;
@@ -21,17 +25,25 @@ $table-background:                  $base-box-bg;
 $dark-background:                   #333;
 $light-background:                  #fff;
 $homepage-footer-bg:                #f2f2f2;
+$bg-blue: 							$bd-blue;
+$bg-light-grey:						#f7f7f7;
+$bg-light-green:					#92cf07;
+$bg-light:							#f4f4f4;
+$bg-dark-blue:						#369;
+$bg-light-blue:						#55c6ea;
+$bg-footer:							#111 linear-gradient(to top, #bdc3c7 0%, #ecf0f1 100%);
 
 //--------- COLORS
 $base-body-color:                   #777;
-$base-text-color:                   #333;
+$base-text-color:                   #000;
 $base-heading-color:				#555454;
 $base-title-color:					$base-text-color;
 $light-text-color:                  #fff;
 $link-color:						$link-color;
 $link-hover-color:                  $link-hover-color;
 $description-color:					#666;
-
+$c-green:							#97d700;
+$c-dark-grey:						#333;
 
 //--------- Indents
 $base-page-indent:                 	$grid-gutter-width;
@@ -98,4 +110,27 @@ $tr-even-bg:										#fdfdfd;
 	border: 1px solid $base-border-color;
 	border-bottom: none;
 	background: $base-box-bg;
+}
+
+@mixin fontFace($name, $font-name: 0){
+	@font-face {
+		@if $font-name != 0 {
+			font-family: $font-name;
+		} @else {
+			font-family: $name;
+		}
+		src: url("../fonts/" + $name + "/" + $name + ".eot");
+		src: url("../fonts/" + $name + "/" + $name + ".eot?#iefix")format("embedded-opentype"),
+		url("../fonts/" + $name + "/" + $name + ".woff") format("woff"),
+		url("../fonts/" + $name + "/" + $name + ".ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+}
+
+@function em($target, $context: $f-base) {
+	@if $target == 0 {
+		@return 0
+	}
+	@return $target / $context + 0em;
 }

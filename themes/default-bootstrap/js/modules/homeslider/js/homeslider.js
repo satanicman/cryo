@@ -45,18 +45,29 @@ $(document).ready(function(){
 	else
 		$('#homepage-slider').addClass('col-xs-12');
 
-	if (!!$.prototype.bxSlider)
-		$('#homeslider').bxSlider({
-			useCSS: false,
-			maxSlides: 1,
-			slideWidth: homeslider_width,
-			infiniteLoop: homeslider_loop,
-			hideControlOnEnd: true,
-			pager: false,
-			autoHover: true,
-			auto: homeslider_loop,
-			speed: parseInt(homeslider_speed),
-			pause: homeslider_pause,
-			controls: true
+	if (!!$.prototype.slick)
+		$('#homeslider').slick({
+			arrows: true,
+            dots: false,
+            slidesToShow: 1,
+			autoplay: homeslider_loop,
+			autoplaySpeed: parseInt(homeslider_speed),
+			pauseOnFocus: true,
+			zIndex: 2,
+			nextArrow: '<button type="button" class="slick-next"><i class="next-icon icon"></i>Next</button>',
+			prevArrow: '<button type="button" class="slick-prev"><i class="prev-icon icon"></i>Previous</button>',
 		});
+		// $('#homeslider').bxSlider({
+		// 	useCSS: false,
+		// 	maxSlides: 1,
+		// 	slideWidth: homeslider_width,
+		// 	infiniteLoop: homeslider_loop,
+		// 	hideControlOnEnd: true,
+		// 	pager: false,
+		// 	autoHover: true,
+		// 	auto: homeslider_loop,
+		// 	speed: parseInt(homeslider_speed),
+		// 	pause: homeslider_pause,
+		// 	controls: true
+		// });
 });

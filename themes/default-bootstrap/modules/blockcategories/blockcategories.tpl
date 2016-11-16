@@ -24,21 +24,25 @@
 *}
 {if $blockCategTree && $blockCategTree.children|@count}
 <!-- Block categories module -->
-<div id="categories_block_left" class="block">
-	<h2 class="title_block">
-		{if isset($currentCategory)}
-			{$currentCategory->name|escape}
+<div id="categories_block_left" class="categories_block_{if isset($home) && $home}home{else}left{/if} col-lg-6 col-md-6 col-sm-12">
+	{if isset($home) || $home}
+		<h3 class="main-title">{l s='Основные группы оборудования' mod='blockcategories'}</h3>
 		{else}
-			{l s='Categories' mod='blockcategories'}
-		{/if}
-	</h2>
+		<h2 class="title_block">
+			{if isset($currentCategory)}
+				{$currentCategory->name|escape}
+			{else}
+				{l s='Categories' mod='blockcategories'}
+			{/if}
+		</h2>
+	{/if}
 	<div class="block_content">
 		<ul class="tree {if $isDhtml}dhtml{/if}">
 			{foreach from=$blockCategTree.children item=child name=blockCategTree}
 				{if $smarty.foreach.blockCategTree.last}
-					{include file="$branche_tpl_path" node=$child last='true'}
+					{include file="$branche_tpl_path" node=$child last='true' home=$home}
 				{else}
-					{include file="$branche_tpl_path" node=$child}
+					{include file="$branche_tpl_path" node=$child home=$home}
 				{/if}
 			{/foreach}
 		</ul>

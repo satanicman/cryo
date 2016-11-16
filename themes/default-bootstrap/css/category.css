@@ -17,7 +17,7 @@
   }
 }
 .content_scene_cat span.category-name {
-  font: 600 42px/51px "Open Sans", sans-serif;
+  font: 600 42px/51px "helvetica-roman", sans-serif;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -58,7 +58,7 @@
 }
 #subcategories p.subcategory-heading {
   font-weight: bold;
-  color: #333;
+  color: #000;
   margin: 0 0 15px 0;
 }
 #subcategories ul {
@@ -84,7 +84,7 @@
   vertical-align: top;
 }
 #subcategories ul li .subcategory-name {
-  font: 600 18px/22px "Open Sans", sans-serif;
+  font: 600 18px/22px "helvetica-roman", sans-serif;
   color: #555454;
   text-transform: uppercase;
 }

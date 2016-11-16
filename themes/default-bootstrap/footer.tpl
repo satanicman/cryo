@@ -30,14 +30,22 @@
 					</div><!-- .row -->
 				</div><!-- #columns -->
 			</div><!-- .columns-container -->
-			{if isset($HOOK_FOOTER)}
-				<!-- Footer -->
-				<div class="footer-container">
-					<footer id="footer"  class="container">
-						<div class="row">{$HOOK_FOOTER}</div>
-					</footer>
-				</div><!-- #footer -->
-			{/if}
+            <div class="footer-container-main">
+				{if $page_name =='index'}
+                    {capture name='homeManufacturer'}{hook h='homeManufacturer'}{/capture}
+                    {if $smarty.capture.homeManufacturer}
+                        {$smarty.capture.homeManufacturer}
+                    {/if}
+                {/if}
+                {if isset($HOOK_FOOTER)}
+                    <!-- Footer -->
+                    <div class="footer-container">
+                        <footer id="footer"  class="container">
+                            <div class="row">{$HOOK_FOOTER}</div>
+                        </footer>
+                    </div><!-- #footer -->
+                {/if}
+			</div>
 		</div><!-- #page -->
 {/if}
 {include file="$tpl_dir./global.tpl"}

@@ -12,7 +12,7 @@
 #product_comments_block_extra .comments_note span,
 #product_comments_block_extra .star_content {
   float: left;
-  color: #333;
+  color: #000;
 }
 #product_comments_block_extra .star_content {
   margin-top: 1px;
@@ -90,7 +90,7 @@
   content: "\f040";
 }
 .comments_advices a:hover {
-  color: #333;
+  color: #000;
 }
 .comments_advices a.reviews {
   border-right: 1px solid #d6d4d4;
@@ -117,7 +117,7 @@
 
 #new_comment_form {
   overflow: hidden;
-  color: #333;
+  color: #000;
   text-align: left;
 }
 #new_comment_form h2 {
@@ -263,7 +263,7 @@
   #product_comments_block_tab div.comment .comment_details ul li:before {
     font-family: "FontAwesome";
     content: "\f0da";
-    color: #333;
+    color: #000;
     margin-right: 8px;
   }
 }
@@ -285,7 +285,7 @@
 }
 #product_comments_block_tab .comment_author_infos strong {
   display: block;
-  color: #333;
+  color: #000;
 }
 #product_comments_block_tab .comment_author_infos em {
   color: #adadad;

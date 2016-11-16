@@ -29,12 +29,13 @@ $(document).ready(function(){
 	if(!$('ul.tree.dhtml').hasClass('dynamized'))
 	{
 		//add growers to each ul.tree elements
-		$('ul.tree.dhtml ul').prev().before("<span class='grower OPEN'> </span>");
+		$('ul.tree.dhtml ul').prev().before("<span class='grower OPEN'><span></span></span>");
 		
 		//dynamically add the '.last' class on each last item of a branch
 		$('ul.tree.dhtml ul li:last-child, ul.tree.dhtml li:last-child').addClass('last');
 		
 		//collapse every expanded branch
+
 		$('ul.tree.dhtml span.grower.OPEN').addClass('CLOSE').removeClass('OPEN').parent().find('ul:first').hide();
 		$('ul.tree.dhtml').show();
 		
@@ -55,24 +56,49 @@ $(document).ready(function(){
 		$('ul.tree.dhtml').removeClass('dhtml');
 	}
 });
-
+$(window).load(function() {
+    $('.categories_block_thumb img').each(function() {
+        var that = $(this),
+            image = new Image();
+        image.src = that.attr("src");
+        that.parent().css({
+            // 'width': image.width,
+            'height': (parseInt(image.height) / 2) + 'px'
+        });
+        that.css({
+        	"marginLeft": "-" + (parseInt(image.width) / 2) + 'px'
+		});
+    });
+});
 //animate the opening of the branch (span.grower jQueryElement)
 function openBranch(jQueryElement, noAnimation)
 {
-		jQueryElement.addClass('OPEN').removeClass('CLOSE');
-		if(noAnimation)
-			jQueryElement.parent().find('ul:first').show();
-		else
-			jQueryElement.parent().find('ul:first').slideDown();
+		jQueryElement.addClass('OPEN').removeClass('CLOSE').parent().addClass('OPEN').removeClass('CLOSE');
+		var parent = jQueryElement.parent();
+		if(noAnimation) {
+			parent.find('ul:first').show();
+		}
+		else {
+			parent.find('ul:first').slideDown();
+		}
+		parent.find('.categories_block_thumb img').css({
+			top: 'auto',
+			bottom: 0
+		});
 }
 //animate the closing of the branch (span.grower jQueryElement)
 function closeBranch(jQueryElement, noAnimation)
 {
-	jQueryElement.addClass('CLOSE').removeClass('OPEN');
+	jQueryElement.addClass('CLOSE').removeClass('OPEN').parent().addClass('CLOSE').removeClass('OPEN');
+	var parent = jQueryElement.parent();
 	if(noAnimation)
-		jQueryElement.parent().find('ul:first').hide();
+		parent.find('ul:first').hide();
 	else
-		jQueryElement.parent().find('ul:first').slideUp();
+		parent.find('ul:first').slideUp();
+	parent.find('.categories_block_thumb img').css({
+		top: 0,
+		bottom: 'auto'
+	});
 }
 
 //animate the closing or opening of the branch (ul jQueryElement)

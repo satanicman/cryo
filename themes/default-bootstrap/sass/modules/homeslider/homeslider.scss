@@ -6,7 +6,7 @@
 #homepage-slider {
 	padding-left: 0;
 	padding-right: 0;
-	margin-bottom: 14px;
+	margin-bottom: 0;
 	max-width: 100%;
 	max-height: 100%;
 	overflow: hidden;
@@ -21,9 +21,40 @@
 	#homeslider {
 		margin: 0 auto;
 		padding: 0;
+		.slick {
+			&-prev,
+			&-next {
+				width: 85px;
+				height: 85px;
+				background-color: black;
+				z-index: 3;
+				&:before {
+					display: none;
+				}
+				.icon {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-left: -4.5px;
+					margin-top: -7px;
+				}
+			}
+			&-prev {
+				left: 0;
+				&:before {}
+			}
+			&-next {
+				right: 0;
+				&:before {}
+			}
+		}
 	}
 	.homeslider-container {
 		position: relative;
+		> a {
+			@include filter(blur(5px));
+			display: block;
+		}
 	}
 	.homeslider-image {
 		position: absolute;
@@ -34,41 +65,27 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		padding: 50px 50px;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		text-align: center;
+		padding: 15% 90px 50px;
 		cursor: pointer;
-		h2 {
-			font-size: 2.7em;
-			color: white;
-			margin: 0;
-			padding: 0;
-		}
-		p {
-			width: 50%;
-			font-size: 1.15em;
-			line-height: 1.3em;
-			padding: 0.5em 0;
-			color: white;
-		}
-		button {
-			font-size: 1.2em;
-			text-transform: uppercase;
-		}
-		@media (max-width: $screen-lg){
-			padding: 20px;
-			font-size: 0.8em;
-		}
-		@media (max-width: $screen-sm){
-			padding: 30px;
-			font-size: 0.7em;
-			p {
-				font-size: 1.5em;
+		.home-slider {
+			&-wrap {
+				text-shadow: 0 5px 10px black;
+				color: $light-text-color;
+				font-family: "Open Sans", serif;
 			}
-		}
-		@media (max-width: $screen-xs){
-			padding: 30px;
-			font-size: 0.5em;
-			p {
-				font-size: 1.7em;
+			&-title {
+				font-size: em(100px);
+				font-weight: 400;
+				line-height: 1;
+			}
+			&-text {
+				font-size: em(30px);
+				font-style: italic;
+				line-height: 1;
 			}
 		}
 	}

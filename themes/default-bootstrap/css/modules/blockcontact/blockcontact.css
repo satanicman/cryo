@@ -1,26 +1,38 @@
 .shop-phone {
-  float: left;
-  padding: 5px 0 10px;
-  line-height: 18px;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .shop-phone {
     display: none;
   }
 }
-.shop-phone i {
-  font-size: 21px;
-  line-height: 21px;
-  color: #fff;
-  padding-right: 7px;
-}
-.shop-phone strong {
-  color: #fff;
+.shop-phone .mobile-icon {
+  margin-right: 15px;
 }
 @media (max-width: 991px) {
   .shop-phone.is_logged {
     display: none;
   }
+}
+.shop-phone-info {
+  color: #fff;
+  font-family: HelveticaNeueCyr;
+}
+.shop-phone-info p {
+  margin: 0;
+  font-family: 'helvetica-roman', serif;
+}
+.shop-phone-info p:not(.shop-phone-number) {
+  margin-bottom: 5px;
+}
+.shop-phone-number {
+  font-family: "helvetica-medium", serif;
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 #contact-link {
@@ -72,8 +84,8 @@
   margin-bottom: 4px;
 }
 #contact_block p.tel {
-  font: 400 17px/21px Arial, Helvetica, sans-serif;
-  color: #333;
+  font: 400 17px/21px "helvetica-roman", Helvetica, sans-serif;
+  color: #000;
   margin-bottom: 6px;
 }
 #contact_block p.tel i {

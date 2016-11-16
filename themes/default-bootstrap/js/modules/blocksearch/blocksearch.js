@@ -26,6 +26,10 @@
 var instantSearchQueries = [];
 $(document).ready(function()
 {
+	$('#search_query_top').click(function () {
+		$(this).parent().find('#search_query_top').toggleClass('show');
+	});
+
 	if (typeof blocksearch_type == 'undefined')
 		return;
 

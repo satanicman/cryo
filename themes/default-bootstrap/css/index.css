@@ -1,0 +1,200 @@
+#news_button {
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  background: url("../img/news-btn.png") 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border: none;
+  width: 370px;
+  height: 85px;
+  float: right;
+  padding: 28px 0 56px;
+  text-align: center;
+}
+
+.home-top {
+  padding-top: 20px;
+  padding-bottom: 75px;
+}
+.home-top .categories_block_home,
+.home-top .main-title {
+  margin-bottom: 20px;
+}
+.home-top .slider.index {
+  margin: 0;
+}
+.home-top .slider.index .slick-dots {
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+}
+.home-top .slider.index .slick-dots li {
+  width: 17px;
+  height: 17px;
+}
+.home-top .slider.index .slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: none;
+}
+.home-top .slider.index .slick-dots li button {
+  width: 17px;
+  height: 17px;
+}
+.home-top .slider.index .slick-dots li button:before {
+  opacity: 1;
+  content: '';
+  width: 17px;
+  height: 17px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #f4f4f4;
+  background: #f4f4f4;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.home-top .slider-col {
+  padding-left: 24px;
+}
+.home-top .slider-col .main-title {
+  text-align: right;
+}
+.home-top .slider-col .slick-slide img {
+  width: 100%;
+}
+
+.min-slider-description {
+  color: #333;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.min-slider-description p {
+  margin: 0;
+}
+
+.products-tabs-wrap {
+  background: url(../img/main-products-bg.png) 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.products-tabs-container {
+  padding-top: 130px;
+  padding-bottom: 115px;
+}
+.products-tabs-container .main-title {
+  margin-bottom: 15px;
+}
+.products-tabs-container #home-page-tabs {
+  padding-left: 80px;
+  background: url(../img/product-tabs-bg.png) 0 100% no-repeat;
+  padding-bottom: 13px;
+}
+.products-tabs-container #home-page-tabs li {
+  padding: 35px 0;
+  margin: 0;
+  border: none;
+}
+.products-tabs-container #home-page-tabs li.active a {
+  background: none;
+  color: #97d700;
+}
+.products-tabs-container #home-page-tabs li a {
+  padding: 0 22px;
+  display: inline-block;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.products-tabs-container #home-page-tabs li a:hover {
+  border: none;
+  margin: 0;
+  background: none;
+}
+
+.slider.products .slick-next,
+.slider.products .slick-prev {
+  width: 38px;
+  height: 56px;
+}
+.slider.products .slick-next:before,
+.slider.products .slick-prev:before {
+  display: none;
+}
+.slider.products .slick-next {
+  right: -48px;
+}
+.slider.products .slick-prev {
+  left: -48px;
+}
+
+#cmsinfo_block {
+  background: none;
+  min-height: 0;
+  height: auto;
+  padding: 75px 0 0;
+  border: none;
+}
+#cmsinfo_block > div .img {
+  padding-right: 0;
+}
+#cmsinfo_block > div .img img {
+  max-width: 100%;
+  width: 100%;
+}
+#cmsinfo_block > div .text {
+  padding-left: 85px;
+  color: #333;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 24px;
+}
+#cmsinfo_block > div .text * {
+  padding: 0;
+  margin: 0;
+}
+#cmsinfo_block > div .text li {
+  text-decoration: underline;
+}
+#cmsinfo_block > div .text .indet-header {
+  font-family: 'helvetica-light', serif;
+  font-size: 1.8em;
+  font-weight: 300;
+  margin: 0 0 35px;
+}
+#cmsinfo_block > div .text #showMore {
+  display: inline-block;
+  margin-top: 80px;
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  color: #333;
+}
+#cmsinfo_block > div .text #showMore:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background-color: #55c6ea;
+  left: 0;
+  bottom: -7px;
+}
+#cmsinfo_block > div .text #showMore:hover {
+  color: #333;
+}
+
+/*# sourceMappingURL=index.css.map */
