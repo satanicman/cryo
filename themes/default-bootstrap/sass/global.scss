@@ -1677,85 +1677,51 @@ div.star a:hover {
 
 // BREADCRUMB
 .breadcrumb {
-	display: inline-block;
-	padding: 0 11px;
-	border: 1px solid $base-border-color;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 24px;
-	min-height: 6px;
-	@include border-radius(3px);
+	display: block;
 	overflow: hidden;
-	margin-bottom: 16px;
+	margin: 0;
 	position: relative;
 	z-index: 1;
+	background: none;
+	font-family: "Open Sans", serif;
+	font-weight: 400;
+	.home {
+		.icon {
+			vertical-align: middle;
+		}
+	}
+	&-wrap {
+		background-color: $bg-ultra-light;
+		margin-bottom: 20px;
+	}
+	&-container {}
 	.navigation-pipe {
-		width: 18px;
+		padding: 0 6px;
 		display: inline-block;
-		text-indent: -5000px;
+	}
+    .navigation_page {
+		color: #666;
+	}
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+    a, .navigation-pipe {
+		color: #369;
+		line-height: 22px;
+		display: inline-block;
+		vertical-align: middle;
 	}
 	a {
 		display: inline-block;
-		background: $light-background;
-		padding: 0 15px 0 22px;
-		margin-left: -26px;
+		padding: 0;
 		position: relative;
 		z-index: 2;
-		color: $base-text-color;
 		&.home {
-			font-size: 17px;
-			color: $text-color;
-			width: 38px;
 			text-align: center;
 			padding: 0;
-			margin: 0 0 0 -10px;
-			@include border-top-left-radius(3px);
-			@include border-bottom-left-radius(3px);
 			z-index: 99;
-			line-height: 22px;
 			display: inline-block;
-			height: 25px;
-			i {
-				vertical-align: -1px;
-			}
-			&:before {
-				border: none;
-			}
-		}
-		&:after {
-			display: inline-block;
-			content: ".";
-			position: absolute;
-			right: -10px;
-			top: 3px;
-			width: 18px;
-			height: 18px;
-			background: $light-background;
-			border-right: 1px solid $base-border-color;
-			border-top: 1px solid $base-border-color;
-			border-radius: 2px;
-			text-indent: -5000px;
-			z-index: -1;
-			@include rotate(45deg);
-		}
-		&:before {
-			display: inline-block;
-			content: ".";
-			position: absolute;
-			left: -10px;
-			top: 3px;
-			width: 18px;
-			height: 18px;
-			background: transparent;
-			border-right: 1px solid $base-border-color;
-			border-top: 1px solid $base-border-color;
-			border-radius: 2px;
-			text-indent: -5000px;
-			z-index: -1;
-			@include rotate(45deg);
-		}
-		&:hover {
-			color: #777777;
 		}
 	}
 }

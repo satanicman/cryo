@@ -117,11 +117,13 @@
 					<div id="top_column" class="center_column">{$smarty.capture.displayTopColumn}</div>
 				{/if}
 			</div>
+            {if $page_name !='index' && $page_name !='pagenotfound'}
+				<div class="breadcrumb-wrap">
+					<div class="breadcrumb-container container">{include file="$tpl_dir./breadcrumb.tpl"}</div>
+				</div>
+            {/if}
 			<div class="columns-container">
 				<div id="columns" class="container">
-					{if $page_name !='index' && $page_name !='pagenotfound'}
-						{include file="$tpl_dir./breadcrumb.tpl"}
-					{/if}
 					<div class="row">
 						{if isset($left_column_size) && !empty($left_column_size)}
 						<div id="left_column" class="column col-xs-12 col-sm-{$left_column_size|intval}">{$HOOK_LEFT_COLUMN}</div>

@@ -35,6 +35,9 @@
 .up-icon {
 	@include sprite($up-icon);
 }
+.home-icon {
+	@include sprite($home-icon);
+}
 //social
 .rss-icon {
 	@include sprite($rss-icon);
