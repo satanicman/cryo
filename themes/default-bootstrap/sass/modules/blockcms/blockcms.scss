@@ -2,7 +2,10 @@
 @import "theme_variables";
 
 #block_various_links_top {
-    padding-right: 0;
+    @media (min-width: 1920px) {
+        width: 66.66667%;
+        padding-right: 8.33333%;
+    }
     ul {
         @include display-flex;
         @include align-items(center);
@@ -13,13 +16,16 @@
             text-align: center;
             a {
                 font-family: "helvetica-roman", serif;
-                font-size: 16px;
+                font-size: 13px;
                 line-height: 1;
                 font-weight: 400;
                 text-transform: uppercase;
                 color: $light-text-color;
                 display: inline-block;
                 position: relative;
+                @media (min-width: 1920px) {
+                    font-size: 16px;
+                }
                 &:hover {
                     color: $c-green;
                     &:before,

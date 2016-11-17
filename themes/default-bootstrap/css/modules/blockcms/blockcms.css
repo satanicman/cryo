@@ -1,5 +1,8 @@
-#block_various_links_top {
-  padding-right: 0;
+@media (min-width: 1920px) {
+  #block_various_links_top {
+    width: 66.66667%;
+    padding-right: 8.33333%;
+  }
 }
 #block_various_links_top ul {
   display: -webkit-flex;
@@ -16,13 +19,18 @@
 }
 #block_various_links_top ul li a {
   font-family: "helvetica-roman", serif;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   display: inline-block;
   position: relative;
+}
+@media (min-width: 1920px) {
+  #block_various_links_top ul li a {
+    font-size: 16px;
+  }
 }
 #block_various_links_top ul li a:hover {
   color: #97d700;

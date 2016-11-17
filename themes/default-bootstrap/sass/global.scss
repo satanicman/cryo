@@ -59,11 +59,7 @@ textarea {
 		display: none;
 		left: 105px;
 		top: 15px;
-	}
-}
-@media (min-width: 1920px) {
-	#header {
-		> #header_logo {
+		@media (min-width: 1920px) {
 			display: block;
 		}
 	}
@@ -115,16 +111,8 @@ header {
 			position: relative;
 		}
 		#header_logo {
-			padding-top: 15px;
-			@extend .col-sm-4;
-			@media (max-width: $screen-md) {
-				padding-top: 40px;
-			}
-			@media (max-width: $screen-xs-max) {
-				padding-top: 15px;
-				img {
-					margin: 0 auto;
-				}
+			@media (min-width: 1920px) {
+				display: none;
 			}
 		}
 	}

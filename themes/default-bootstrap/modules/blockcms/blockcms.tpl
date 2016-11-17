@@ -65,7 +65,7 @@
 	{/foreach}
 	<!-- /Block CMS module -->
 {elseif $block == 2}
-	<section class="col-xs-12 col-md-7" id="block_various_links_top">
+	<section class="col-xs-12 col-md-6" id="block_various_links_top">
 		<ul>
 			{foreach from=$cmslinks item=cmslink}
 				{if $cmslink.meta_title != ''}
@@ -78,7 +78,6 @@
 			{/foreach}
 		</ul>
 	</section>
-	<div class="col-md-1 clearfox"></div>
 {else}
 	<!-- Block CMS module footer -->
 	<section class="col-xs-12 col-sm-4" id="block_various_links_footer">
