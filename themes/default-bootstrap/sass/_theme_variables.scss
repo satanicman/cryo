@@ -35,6 +35,7 @@ $bg-dark-blue:						#369;
 $bg-light-blue:						#55c6ea;
 $bg-footer:							#111 linear-gradient(to top, #bdc3c7 0%, #ecf0f1 100%);
 $bg-ultra-light: 					#f9f9f9;
+$bg-slider: 						#dddddd;
 
 //--------- COLORS
 $base-body-color:                   #777;
@@ -102,18 +103,17 @@ $tr-even-bg:										#fdfdfd;
 
 //sub heading (h2,h3) define
 @mixin sub-heading {
-	color: $base-heading-color;
 	text-transform: uppercase;
-	font-family: $font-custom;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 20px;
-	padding: 14px 20px 17px;
-	margin: 0 0 20px;
+	padding: 27px 20px;
+	margin: 0;
 	position: relative;
-	border: 1px solid $base-border-color;
-	border-bottom: none;
-	background: $base-box-bg;
+
+	color: $c-dark-grey;
+	font-family: "Open Sans", serif;
+	font-size: em(24px);
+	text-align: center;
+	font-weight: 700;
+	line-height: 1;
 }
 
 @mixin fontFace($name, $font-name: 0){

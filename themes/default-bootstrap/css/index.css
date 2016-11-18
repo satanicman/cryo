@@ -123,12 +123,6 @@
   background: none;
 }
 
-.slider.products .details {
-  display: block !important;
-}
-.slider.products h5 {
-  background: none !important;
-}
 .slider.products .slick-next,
 .slider.products .slick-prev {
   width: 38px;

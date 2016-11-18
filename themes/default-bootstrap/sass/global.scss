@@ -1128,7 +1128,7 @@ table.table_block td {
 }
 
 h3.page-product-heading {
-	@include sub-heading;
+	@include sub-heading; 
 }
 
 // BLOCK .footer_links (cms pages)
@@ -2983,7 +2983,7 @@ fieldset.customerprivacy label {
 
 //addon referralprogram
 .tab-content {
-	margin-top: 20px;
+	margin-top: 35px;
 }
 
 //addons comments products
@@ -3445,6 +3445,7 @@ div.star.star_hover {
 	background: none;
 	border: none;
 	outline: 0;
+	z-index: 100;
 	.icon {
 		display: inline-block;
 		margin-bottom: 5px;

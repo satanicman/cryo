@@ -19,6 +19,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: $border-radius-base;
+  font-family: "Open Sans", serif;
   white-space: nowrap;
   @include user-select(none);
 

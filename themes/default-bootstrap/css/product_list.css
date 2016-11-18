@@ -444,4 +444,11 @@ Product list(Index page) Styles
   border: 1px solid #d6d4d4;
 }
 
+.slider .details {
+  display: block !important;
+}
+.slider h5 {
+  background: none !important;
+}
+
 /*# sourceMappingURL=product_list.css.map */

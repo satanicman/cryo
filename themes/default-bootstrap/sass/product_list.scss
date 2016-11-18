@@ -458,3 +458,11 @@ Product list(Index page) Styles
 		border: 1px solid $base-border-color;
 	}
 }
+.slider {
+	.details {
+		display: block !important;
+	}
+	h5 {
+        background: none !important;
+    }
+}
