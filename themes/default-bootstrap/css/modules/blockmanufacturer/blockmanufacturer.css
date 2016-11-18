@@ -19,7 +19,12 @@
   padding: 0;
   text-align: center;
 }
+.blockmanufacturer .slick-list {
+  padding: 0;
+}
 .blockmanufacturer .slick-next, .blockmanufacturer .slick-prev {
+  top: 50%;
+  margin-top: -16px;
   width: 32px;
   height: 32px;
   background-color: #fff;

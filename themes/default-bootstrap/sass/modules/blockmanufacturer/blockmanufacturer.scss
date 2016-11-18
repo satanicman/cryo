@@ -26,8 +26,17 @@
         text-align: center;
     }
     .slick {
+        &-list {
+            padding: 0;
+        }
         &-next,
         &-prev {
+            top: 50%;
+            margin-top: -16px;
+            width: 32px;
+            height: 32px;
+            background-color: $light-background;
+            @include border-radius(50%);
             &:before {
                 display: none;
             }
@@ -38,11 +47,6 @@
                 margin-left: -4px;
                 margin-top: -6px;
             }
-            width: 32px;
-            height: 32px;
-            background-color: $light-background;
-            @include border-radius(50%);
-
         }
         &-next {
             right: -35px;
