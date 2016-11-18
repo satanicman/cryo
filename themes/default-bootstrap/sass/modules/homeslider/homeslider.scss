@@ -24,6 +24,7 @@
 		.slick {
 			&-prev,
 			&-next {
+				top: 50%;
 				width: 85px;
 				height: 85px;
 				background-color: black;
@@ -46,6 +47,9 @@
 			&-next {
 				right: 0;
 				&:before {}
+			}
+			&-list {
+				padding: 0;
 			}
 		}
 	}
