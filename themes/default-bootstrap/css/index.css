@@ -26,6 +26,9 @@
 .home-top .slider.index {
   margin: 0;
 }
+.home-top .slider.index .slick-list {
+  padding: 0;
+}
 .home-top .slider.index .slick-dots {
   position: absolute;
   bottom: 0;

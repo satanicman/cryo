@@ -26,6 +26,9 @@
         .slider {
             &.index {
                 margin: 0;
+                .slick-list {
+                    padding: 0;
+                }
                 .slick-dots {
                     position: absolute;
                     bottom: 0;
