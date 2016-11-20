@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {capture name='homeTop'}{hook h='homeTop'}{/capture}
-<a href="#" id="news_button">{l s="Новости и статьи"}</a>
+<a href="{smartblog::GetSmartBlogLink()}" id="news_button">{l s="Новости и статьи"}</a>
 <div class="clearfix"></div>
 {if $smarty.capture.homeTop}
 	<div class="clearfix home-top">
