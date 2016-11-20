@@ -1,8 +1,6 @@
 /**************************************************************
 					CMS Pages Styles
 ***************************************************************/
-#cms #center_column {
-  font-size: 1.125em; }
 #cms #center_column .block-cms {
   padding-bottom: 20px; }
 #cms #center_column h1 {
@@ -13,11 +11,7 @@
   margin: 0;
   padding: 0 0 17px 0; }
 #cms #center_column p {
-  line-height: 24px;
-  text-indent: 10px;
-  margin-bottom: 30px; }
-#cms #center_column strong {
-  font-family: "helvetica-black", serif; }
+  line-height: 18px; }
 #cms #center_column .list-1 li {
   padding: 4px 0 6px 0;
   font-weight: bold;
