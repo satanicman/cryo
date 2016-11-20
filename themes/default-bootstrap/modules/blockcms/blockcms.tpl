@@ -67,13 +67,26 @@
 {elseif $block == 2}
 	<section class="col-xs-12 col-md-6" id="block_various_links_top">
 		<ul>
+			<li class="item">
+                <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
+                    {l s="Главная" mod="blockcms"}
+                </a>
+            </li>
 			{foreach from=$cmslinks item=cmslink}
 				{if $cmslink.meta_title != ''}
-					<li class="item">
-						<a href="{$cmslink.link|escape:'html':'UTF-8'}" title="{$cmslink.meta_title|escape:'html':'UTF-8'}">
-							{$cmslink.meta_title|escape:'html':'UTF-8'}
-						</a>
-					</li>
+                    {if $cmslink.cms_id == 10}
+                        <li class="item">
+                            <a href="{smartblog::GetSmartBlogLink()}" title="{l s="Проекты" mod="blockcms"}">
+								{l s="Проекты" mod="blockcms"}
+                            </a>
+                        </li>
+                    {else}
+                        <li class="item">
+                            <a href="{$cmslink.link|escape:'html':'UTF-8'}" title="{$cmslink.meta_title|escape:'html':'UTF-8'}">
+                                {$cmslink.meta_title|escape:'html':'UTF-8'}
+                            </a>
+                        </li>
+					{/if}
 				{/if}
 			{/foreach}
 		</ul>
