@@ -1,7 +1,10 @@
 <div itemtype="#" itemscope="" class="sdsarticleCat clearfix">
     <div id="smartblogpost-{$post.id_post}" class="smartblogff">
         <div class="articleContent">
-            <a itemprop="url" title="{$post.meta_title}" class="imageFeaturedLink">
+            {assign var="options" value=null}
+            {$options.id_post = $post.id_post}
+            {$options.slug = $post.link_rewrite}
+            <a href="{smartblog::GetSmartBlogLink('smartblog_post',$options)}" itemprop="url" title="{$post.meta_title}" class="imageFeaturedLink">
                 {assign var="activeimgincat" value='0'}
                 {$activeimgincat = $smartshownoimg}
                 {if ($post.post_img != "no" && $activeimgincat == 0) || $activeimgincat == 1}
