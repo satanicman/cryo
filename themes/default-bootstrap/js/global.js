@@ -28,6 +28,13 @@ function setPadding() {
 	$('#page').css('paddingTop', $('.header-container').outerHeight());
 }
 $(document).ready(function(){
+	$('#manufacturers_block_left > ul').slick({
+		arrows: true,
+		dots: false,
+		slidesToShow: 5,
+		nextArrow: '<button type="button" class="slick-next"><i class="brand-next-icon icon"></i>Next</button>',
+		prevArrow: '<button type="button" class="slick-prev"><i class="brand-prev-icon icon"></i>Previous</button>'
+	});
 	// to top
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 0) {

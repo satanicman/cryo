@@ -24,39 +24,43 @@
 *}
 
 <!-- Block manufacturers module -->
-<div class="blockmanufacturer-container container">
-    <div id="manufacturers_block_left" class="blockmanufacturer">
-        <h6 class="blockmanufacturer-title">{l s="Наши клиенты" mod='blockmanufacturer'}</h6>
-        {if $manufacturers}
-            {if $text_list}
-                <ul>
-                    {foreach from=$manufacturers item=manufacturer name=manufacturer_list}
-                        {if $smarty.foreach.manufacturer_list.iteration <= $text_list_nb}
-                            <li>
-                                <a
-                                        href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}" title="{l s='More about %s' mod='blockmanufacturer' sprintf=[$manufacturer.name]}">
-                                    <img src="{$img_manu_dir}{$manufacturer.image}.jpg" alt="{$manufacturer.name|escape:'html':'UTF-8'}">
-                                </a>
-                            </li>
-                        {/if}
-                    {/foreach}
-                </ul>
+<div class="blockmanufacturer-wrap">
+    <div class="blockmanufacturer-container container">
+        <div id="manufacturers_block_left" class="blockmanufacturer">
+            <h6 class="blockmanufacturer-title">{l s="Наши клиенты" mod='blockmanufacturer'}</h6>
+            {if $manufacturers}
+                {if $text_list}
+                    <ul>
+                        {foreach from=$manufacturers item=manufacturer name=manufacturer_list}
+                            {if $smarty.foreach.manufacturer_list.iteration <= $text_list_nb}
+                                <li>
+                                    <a
+                                            href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}"
+                                            title="{l s='More about %s' mod='blockmanufacturer' sprintf=[$manufacturer.name]}">
+                                        <img src="{$img_manu_dir}{$manufacturer.image}.jpg"
+                                             alt="{$manufacturer.name|escape:'html':'UTF-8'}">
+                                    </a>
+                                </li>
+                            {/if}
+                        {/foreach}
+                    </ul>
+                {/if}
+                {if $form_list}
+                    <form action="{$smarty.server.SCRIPT_NAME|escape:'html':'UTF-8'}" method="get">
+                        <div class="form-group selector1">
+                            <select class="form-control" name="manufacturer_list">
+                                <option value="0">{l s='All manufacturers' mod='blockmanufacturer'}</option>
+                                {foreach from=$manufacturers item=manufacturer}
+                                    <option value="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}">{$manufacturer.name|escape:'html':'UTF-8'}</option>
+                                {/foreach}
+                            </select>
+                        </div>
+                    </form>
+                {/if}
+            {else}
+                <p>{l s='No manufacturer' mod='blockmanufacturer'}</p>
             {/if}
-            {if $form_list}
-                <form action="{$smarty.server.SCRIPT_NAME|escape:'html':'UTF-8'}" method="get">
-                    <div class="form-group selector1">
-                        <select class="form-control" name="manufacturer_list">
-                            <option value="0">{l s='All manufacturers' mod='blockmanufacturer'}</option>
-                            {foreach from=$manufacturers item=manufacturer}
-                                <option value="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}">{$manufacturer.name|escape:'html':'UTF-8'}</option>
-                            {/foreach}
-                        </select>
-                    </div>
-                </form>
-            {/if}
-        {else}
-            <p>{l s='No manufacturer' mod='blockmanufacturer'}</p>
-        {/if}
+        </div>
     </div>
 </div>
 <!-- /Block manufacturers module -->

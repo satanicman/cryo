@@ -9,13 +9,6 @@ $(document).ready(function(){
 		nextArrow: '<button type="button" class="slick-next"><i class="product-next-icon icon"></i>Next</button>',
 		prevArrow: '<button type="button" class="slick-prev"><i class="product-prev-icon icon"></i>Previous</button>'
 	});
-	$('#manufacturers_block_left > ul').slick({
-		arrows: true,
-		dots: false,
-		slidesToShow: 5,
-		nextArrow: '<button type="button" class="slick-next"><i class="brand-next-icon icon"></i>Next</button>',
-		prevArrow: '<button type="button" class="slick-prev"><i class="brand-prev-icon icon"></i>Previous</button>'
-	});
 	$('.slider.index').slick({
 		arrows: false,
 		dots: true,

@@ -31,7 +31,7 @@
 				</div><!-- #columns -->
 			</div><!-- .columns-container -->
             <div class="footer-container-main">
-				{if $page_name =='index'}
+				{if $page_name == 'index' || $page_name == 'cms'}
                     {capture name='homeManufacturer'}{hook h='homeManufacturer'}{/capture}
                     {if $smarty.capture.homeManufacturer}
                         {$smarty.capture.homeManufacturer}
