@@ -1,22 +1,18 @@
 @media (min-width: 1920px) {
   #block_various_links_top {
     width: 66.66667%;
-    padding-right: 8.33333%;
-  }
-}
+    padding-right: 8.33333%; } }
 #block_various_links_top ul {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  margin: 0;
-}
+  margin: 0; }
 #block_various_links_top ul li {
   padding: 0 15px;
   -webkit-flex-grow: 1;
   flex-grow: 1;
-  text-align: center;
-}
+  text-align: center; }
 #block_various_links_top ul li a {
   font-family: "helvetica-roman", serif;
   font-size: 13px;
@@ -25,16 +21,12 @@
   text-transform: uppercase;
   color: #fff;
   display: inline-block;
-  position: relative;
-}
+  position: relative; }
 @media (min-width: 1920px) {
   #block_various_links_top ul li a {
-    font-size: 16px;
-  }
-}
+    font-size: 16px; } }
 #block_various_links_top ul li a:hover {
-  color: #97d700;
-}
+  color: #97d700; }
 #block_various_links_top ul li a:hover:before, #block_various_links_top ul li a:hover:after {
   display: inline-block;
   position: absolute;
@@ -43,15 +35,12 @@
   margin-top: -10px;
   width: 7px;
   height: 20px;
-  border: 2px solid #fff;
-}
+  border: 2px solid #fff; }
 #block_various_links_top ul li a:hover:before {
   left: -16px;
-  border-right-color: transparent;
-}
+  border-right-color: transparent; }
 #block_various_links_top ul li a:hover:after {
   right: -16px;
-  border-left-color: transparent;
-}
+  border-left-color: transparent; }
 
 /*# sourceMappingURL=blockcms.css.map */

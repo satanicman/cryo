@@ -1,27 +1,21 @@
 .blockmanufacturer ul {
-  margin: 0;
-}
+  margin: 0; }
 .blockmanufacturer a {
   display: block;
-  padding: 0 5px;
-}
+  padding: 0 5px; }
 .blockmanufacturer img {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 .blockmanufacturer-container {
-  padding: 35px 0 20px;
-}
+  padding: 35px 0 20px; }
 .blockmanufacturer-title {
   color: #333;
   font-size: 3em;
   font-weight: 400;
   margin: 0 0 35px;
   padding: 0;
-  text-align: center;
-}
+  text-align: center; }
 .blockmanufacturer .slick-list {
-  padding: 0;
-}
+  padding: 0; }
 .blockmanufacturer .slick-next, .blockmanufacturer .slick-prev {
   top: 50%;
   margin-top: -16px;
@@ -30,23 +24,18 @@
   background-color: #fff;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 .blockmanufacturer .slick-next:before, .blockmanufacturer .slick-prev:before {
-  display: none;
-}
+  display: none; }
 .blockmanufacturer .slick-next .icon, .blockmanufacturer .slick-prev .icon {
   position: absolute;
   left: 50%;
   top: 50%;
   margin-left: -4px;
-  margin-top: -6px;
-}
+  margin-top: -6px; }
 .blockmanufacturer .slick-next {
-  right: -35px;
-}
+  right: -35px; }
 .blockmanufacturer .slick-prev {
-  left: -35px;
-}
+  left: -35px; }
 
 /*# sourceMappingURL=blockmanufacturer.css.map */

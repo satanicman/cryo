@@ -3,47 +3,34 @@
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  align-items: center;
-}
+  align-items: center; }
 @media (max-width: 767px) {
   .shop-phone {
-    display: none;
-  }
-}
+    display: none; } }
 .shop-phone .mobile-icon {
-  margin-right: 15px;
-}
+  margin-right: 15px; }
 @media (max-width: 991px) {
   .shop-phone.is_logged {
-    display: none;
-  }
-}
+    display: none; } }
 .shop-phone-info {
   color: #fff;
-  font-family: HelveticaNeueCyr;
-}
+  font-family: HelveticaNeueCyr; }
 .shop-phone-info p {
   margin: 0;
-  font-family: 'helvetica-roman', serif;
-}
+  font-family: 'helvetica-roman', serif; }
 .shop-phone-info p:not(.shop-phone-number) {
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 .shop-phone-number {
   font-family: "helvetica-medium", serif;
   font-size: 1.25em;
-  font-weight: 500;
-}
+  font-weight: 500; }
 
 #contact-link {
   float: right;
-  border-left: 1px solid #515151;
-}
+  border-left: 1px solid #515151; }
 @media (max-width: 479px) {
   #contact-link {
-    text-align: center;
-  }
-}
+    text-align: center; } }
 #contact-link a {
   display: block;
   color: #fff;
@@ -51,47 +38,34 @@
   padding: 8px 10px 11px 10px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  line-height: 18px;
-}
+  line-height: 18px; }
 @media (max-width: 479px) {
   #contact-link a {
     font-size: 11px;
     padding-left: 5px;
-    padding-right: 5px;
-  }
-}
+    padding-right: 5px; } }
 #contact-link a:hover, #contact-link a.active {
-  background: #2b2b2b;
-}
+  background: #2b2b2b; }
 @media (max-width: 767px) {
   #contact-link.is_logged {
-    display: none;
-  }
-}
+    display: none; } }
 
 @media (max-width: 767px) {
   #contact_block {
-    margin-bottom: 20px;
-  }
-}
+    margin-bottom: 20px; } }
 #contact_block .label {
-  display: none;
-}
+  display: none; }
 #contact_block .block_content {
-  color: #888888;
-}
+  color: #888888; }
 #contact_block p {
-  margin-bottom: 4px;
-}
+  margin-bottom: 4px; }
 #contact_block p.tel {
   font: 400 17px/21px "helvetica-roman", Helvetica, sans-serif;
   color: #000;
-  margin-bottom: 6px;
-}
+  margin-bottom: 6px; }
 #contact_block p.tel i {
   font-size: 25px;
   vertical-align: -2px;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 /*# sourceMappingURL=blockcontact.css.map */

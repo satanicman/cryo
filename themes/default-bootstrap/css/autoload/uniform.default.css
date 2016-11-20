@@ -12,43 +12,32 @@ http://uniformjs.com/
 div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
   background-image: url("../../img/jquery/uniform/sprite.png");
   background-repeat: no-repeat;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 div.selector, div.checker, div.button, div.radio, div.uploader {
   vertical-align: middle;
-  /* Keeping this as :focus to remove browser styles */
-}
+  /* Keeping this as :focus to remove browser styles */ }
 div.selector:focus, div.checker:focus, div.button:focus, div.radio:focus, div.uploader:focus {
-  outline: 0;
-}
+  outline: 0; }
 div.selector, div.selector *, div.radio, div.radio *, div.checker, div.checker *, div.uploader, div.uploader *, div.button, div.button * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .highContrastDetect {
   background: url("../../../img/jquery/uniform/bg-input.png") repeat-x 0 0;
   width: 0px;
-  height: 0px;
-}
+  height: 0px; }
 
 /* Input & Textarea */
-input.uniform-input,
-select.uniform-multiselect,
-textarea.uniform {
+input.uniform-input, select.uniform-multiselect, textarea.uniform {
   padding: 3px;
   background: white;
-  outline: 0;
-}
+  outline: 0; }
 
 /* Remove default webkit and possible mozilla .search styles.
  * Keeping this as :active to remove browser styles */
-div.checker input,
-input[type="search"],
-input[type="search"]:active {
+div.checker input, input[type="search"], input[type="search"]:active {
   -moz-appearance: none;
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /* Select */
 div.selector {
@@ -57,8 +46,7 @@ div.selector {
   height: 27px;
   padding: 0 0 0 10px;
   position: relative;
-  overflow: hidden;
-}
+  overflow: hidden; }
 div.selector span {
   text-overflow: ellipsis;
   display: block;
@@ -70,14 +58,11 @@ div.selector span {
   padding-right: 30px;
   cursor: pointer;
   width: 100%;
-  display: block;
-}
+  display: block; }
 div.selector.fixedWidth {
-  width: 190px;
-}
+  width: 190px; }
 div.selector.fixedWidth span {
-  width: 150px;
-}
+  width: 150px; }
 div.selector select {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -88,109 +73,79 @@ div.selector select {
   height: 27px;
   top: 0px;
   left: 0px;
-  width: 100%;
-}
+  width: 100%; }
 div.selector.active span {
-  background-position: right -27px;
-}
+  background-position: right -27px; }
 div.selector.hover span, div.selector.focus span {
-  background-position: right -27px;
-}
+  background-position: right -27px; }
 div.selector.hover.active span, div.selector.focus.active span {
-  background-position: right -27px;
-}
+  background-position: right -27px; }
 div.selector.disabled span, div.selector.disabled.active span {
-  background-position: right 0;
-}
+  background-position: right 0; }
 
 /* Select1 */
 div.selector1 > div {
-  background-position: 0 -135px;
-}
+  background-position: 0 -135px; }
 div.selector1 > div span {
-  background-position: right -81px;
-}
+  background-position: right -81px; }
 div.selector1 > div.active span {
-  background-position: right -108px;
-}
+  background-position: right -108px; }
 div.selector1 > div.hover span, div.selector1 > div.focus span {
-  background-position: right -108px;
-}
+  background-position: right -108px; }
 div.selector1 > div.hover.active span, div.selector1 > div.focus.active span {
-  background-position: right -108px;
-}
+  background-position: right -108px; }
 div.selector1 > div.disabled, div.selector1 > div.disabled.active {
-  background-position: 0 -135px;
-}
+  background-position: 0 -135px; }
 div.selector1 > div.disabled span, div.selector1 > div.disabled.active span {
-  background-position: right -81px;
-}
+  background-position: right -81px; }
 
 /* Select2 */
 div.selector2 > div {
-  background-position: 0 -216px;
-}
+  background-position: 0 -216px; }
 div.selector2 > div span {
-  background-position: right -162px;
-}
+  background-position: right -162px; }
 div.selector2 > div.active span {
-  background-position: right -189px;
-}
+  background-position: right -189px; }
 div.selector2 > div.hover span, div.selector2 > div.focus span {
-  background-position: right -189px;
-}
+  background-position: right -189px; }
 div.selector2 > div.hover.active span, div.selector2 > div.focus.active span {
-  background-position: right -189px;
-}
+  background-position: right -189px; }
 div.selector2 > div.disabled, div.selector2 > div.disabled.active {
-  background-position: 0 -216px;
-}
+  background-position: 0 -216px; }
 div.selector2 > div.disabled span, div.selector2 > div.disabled.active span {
-  background-position: right -162px;
-}
+  background-position: right -162px; }
 
 /* Select3 */
 div.selector3 > div {
-  background-position: 0 -351px;
-}
+  background-position: 0 -351px; }
 div.selector3 > div span {
-  background-position: right -297px;
-}
+  background-position: right -297px; }
 div.selector3 > div.active span {
-  background-position: right -324px;
-}
+  background-position: right -324px; }
 div.selector3 > div.hover span, div.selector3 > div.focus span {
-  background-position: right -324px;
-}
+  background-position: right -324px; }
 div.selector3 > div.hover.active span, div.selector3 > div.focus.active span {
-  background-position: right -324px;
-}
+  background-position: right -324px; }
 div.selector3 > div.disabled, div.selector3 > div.disabled.active {
-  background-position: 0 -351px;
-}
+  background-position: 0 -351px; }
 div.selector3 > div.disabled span, div.selector3 > div.disabled.active span {
-  background-position: right -297px;
-}
+  background-position: right -297px; }
 
 /* Checkbox */
 div.checker {
-  position: relative;
-}
+  position: relative; }
 div.checker, div.checker span, div.checker input {
   width: 15px;
-  height: 15px;
-}
+  height: 15px; }
 div.checker span {
   display: -moz-inline-box;
   display: inline-block;
   *display: inline;
   zoom: 1;
   text-align: center;
-  background-position: 0 -257px;
-}
+  background-position: 0 -257px; }
 div.checker span.checked {
-  background-position: -15px -257px;
-}
+  background-position: -15px -257px; }
 div.checker input {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -200,53 +155,40 @@ div.checker input {
   display: -moz-inline-box;
   display: inline-block;
   *display: inline;
-  zoom: 1;
-}
+  zoom: 1; }
 div.checker.active span {
-  background-position: -15px -257px;
-}
+  background-position: -15px -257px; }
 div.checker.active span.checked {
-  background-position: -15px -257px;
-}
+  background-position: -15px -257px; }
 div.checker.hover span, div.checker.focus span {
-  background-position: -30px -257px;
-}
+  background-position: -30px -257px; }
 div.checker.hover span.checked, div.checker.focus span.checked {
-  background-position: -15px -257px;
-}
+  background-position: -15px -257px; }
 div.checker.hover.active span, div.checker.focus.active span {
-  background-position: -15px -257px;
-}
+  background-position: -15px -257px; }
 div.checker.hover.active span.checked, div.checker.focus.active span.checked {
-  background-position: -15px -257px;
-}
+  background-position: -15px -257px; }
 div.checker.disabled, div.checker.disabled.active {
-  background-position: 0 -257px;
-}
+  background-position: 0 -257px; }
 div.checker.disabled span.checked, div.checker.disabled.active span.checked {
-  background-position: 0 -257px;
-}
+  background-position: 0 -257px; }
 
 /* Radio */
 div.radio {
   position: relative;
-  display: inline;
-}
+  display: inline; }
 div.radio, div.radio span, div.radio input {
   width: 13px;
-  height: 13px;
-}
+  height: 13px; }
 div.radio span {
   display: -moz-inline-box;
   display: inline-block;
   *display: inline;
   zoom: 1;
   text-align: center;
-  background-position: 0 -243px;
-}
+  background-position: 0 -243px; }
 div.radio span.checked {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio input {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -257,32 +199,23 @@ div.radio input {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  text-align: center;
-}
+  text-align: center; }
 div.radio.active span {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio.active span.checked {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio.hover span, div.radio.focus span {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio.hover span.checked, div.radio.focus span.checked {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio.hover.active span, div.radio.focus.active span {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio.hover.active span.checked, div.radio.focus.active span.checked {
-  background-position: -13px -243px;
-}
+  background-position: -13px -243px; }
 div.radio.disabled span, div.radio.disabled.active span {
-  background-position: 0 -243px;
-}
+  background-position: 0 -243px; }
 div.radio.disabled span.checked, div.radio.disabled.active span.checked {
-  background-position: 0 -243px;
-}
+  background-position: 0 -243px; }
 
 /* Uploader */
 div.uploader {
@@ -291,8 +224,7 @@ div.uploader {
   width: 100%;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
-}
+  overflow: hidden; }
 div.uploader span.action {
   background-position: 0 -378px;
   height: 27px;
@@ -302,8 +234,7 @@ div.uploader span.action {
   float: left;
   display: inline;
   overflow: hidden;
-  cursor: pointer;
-}
+  cursor: pointer; }
 div.uploader span.filename {
   text-overflow: ellipsis;
   display: block;
@@ -315,8 +246,7 @@ div.uploader span.filename {
   margin: 0px 0 0px 0px;
   line-height: 27px;
   width: 172px;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 div.uploader input {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -329,8 +259,7 @@ div.uploader input {
   float: right;
   cursor: default;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 /* Buttons */
 div.button {
@@ -338,8 +267,7 @@ div.button {
   height: 30px;
   cursor: pointer;
   position: relative;
-  /* Keep buttons barely visible so they can get focus */
-}
+  /* Keep buttons barely visible so they can get focus */ }
 div.button a, div.button button, div.button input {
   opacity: 0.01;
   filter: alpha(opacity=1);
@@ -349,8 +277,7 @@ div.button a, div.button button, div.button input {
   left: 0;
   right: 0;
   bottom: 0;
-  position: absolute;
-}
+  position: absolute; }
 div.button span {
   display: -moz-inline-box;
   display: inline-block;
@@ -361,53 +288,38 @@ div.button span {
   background-position: right -514px;
   height: 30px;
   margin-left: 13px;
-  padding: 0;
-}
+  padding: 0; }
 div.button.active {
-  background-position: 0 -664px;
-}
+  background-position: 0 -664px; }
 div.button.active span {
   background-position: right -544px;
-  cursor: default;
-}
+  cursor: default; }
 div.button.hover, div.button.focus {
-  background-position: 0 -694px;
-}
+  background-position: 0 -694px; }
 div.button.hover span, div.button.focus span {
-  background-position: right -574px;
-}
+  background-position: right -574px; }
 div.button.disabled, div.button.disabled.active {
-  background-position: 0 -724px;
-}
+  background-position: 0 -724px; }
 div.button.disabled span, div.button.disabled.active span {
   background-position: right -604px;
-  cursor: default;
-}
+  cursor: default; }
 
 /* INPUT & TEXTAREA */
 /* ************************************************************************************************
 		uniform
 ************************************************************************************************ */
-input.uniform-input,
-select.uniform-multiselect,
-textarea.uniform {
+input.uniform-input, select.uniform-multiselect, textarea.uniform {
   font-size: 13px;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: 18px;
   color: #777;
-  border: solid 1px #d6d4d4;
-}
-input.uniform-input.hover, input.uniform-input.focus,
-select.uniform-multiselect.hover,
-select.uniform-multiselect.focus,
-textarea.uniform.hover,
-textarea.uniform.focus {
+  border: solid 1px #d6d4d4; }
+input.uniform-input.hover, input.uniform-input.focus, select.uniform-multiselect.hover, select.uniform-multiselect.focus, textarea.uniform.hover, textarea.uniform.focus {
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-  border-color: #cbcaca;
-}
+  border-color: #cbcaca; }
 
 /* PRESENTATION */
 /* Buttons */
@@ -416,94 +328,73 @@ div.button span {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 div.button.hover span, div.button.focus span {
-  color: #555;
-}
+  color: #555; }
 div.button.disabled span, div.button.disabled.active span {
-  color: #bbb;
-}
+  color: #bbb; }
 
 /* Select */
 #compare_shipping .form-group label {
-  display: block;
-}
+  display: block; }
 
 div.selector {
-  font-size: 12px;
-}
+  font-size: 12px; }
 div.selector span {
   color: #666;
-  text-shadow: 0 1px 0 #fff;
-}
+  text-shadow: 0 1px 0 #fff; }
 div.selector select {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 div.selector.disabled span, div.selector.disabled.active span {
-  color: #bbb;
-}
+  color: #bbb; }
 
 .checker span input {
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
 .radio-inline, .checkbox-inline {
-  cursor: default;
-}
+  cursor: default; }
 
 /* Checker */
 div.checker {
   cursor: pointer;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 div.checker span {
   position: relative;
-  top: -2px;
-}
+  top: -2px; }
 
 #layered_form div.checker {
-  display: inline;
-}
+  display: inline; }
 
 /* Radio */
 div.radio {
-  margin-right: 3px;
-}
+  margin-right: 3px; }
 div.radio span {
   position: relative;
-  top: -2px;
-}
+  top: -2px; }
 
 /* Uploader */
 div.uploader span.action {
   text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
   font-size: 13px;
   font-weight: bold;
-  color: #fff;
-}
+  color: #fff; }
 div.uploader span.filename {
   color: #777;
   border: solid 1px #d6d4d4;
   font-size: 13px;
   background: #fbfbfb;
-  margin-right: 2px;
-}
+  margin-right: 2px; }
 div.uploader.disabled span.action, div.uploader.disabled.active span.action {
-  color: #aaa;
-}
+  color: #aaa; }
 div.uploader.disabled span.filename, div.uploader.disabled.active span.filename {
   border-color: #ddd;
-  color: #aaa;
-}
+  color: #aaa; }
 
 input.uniform-input, input.uniform-input:focus {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 /*# sourceMappingURL=uniform.default.css.map */

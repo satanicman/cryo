@@ -58,11 +58,9 @@ The `sprites` mixin generates identical output to the CSS template
   -webkit-justify-content: space-around;
   justify-content: space-around;
   margin: 0;
-  float: right;
-}
+  float: right; }
 #search_block_top .button-search span {
-  display: none;
-}
+  display: none; }
 #search_block_top #search_query_top {
   width: 0;
   opacity: 0;
@@ -77,53 +75,42 @@ The `sprites` mixin generates identical output to the CSS template
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
-}
+  bottom: 0; }
 #search_block_top #search_query_top.show {
   width: 200px;
   opacity: 1;
   visibility: visible;
-  padding: 5px 40px 5px 5px;
-}
+  padding: 5px 40px 5px 5px; }
 
 .ac_results {
   background: #fff;
   border: 1px solid #d6d4d4;
   width: 271px;
-  margin-top: -1px;
-}
+  margin-top: -1px; }
 .ac_results li {
   padding: 0 10px;
   font-weight: normal;
   color: #686666;
   font-size: 13px;
-  line-height: 22px;
-}
+  line-height: 22px; }
 .ac_results li.ac_odd {
-  background: #fff;
-}
+  background: #fff; }
 .ac_results li:hover, .ac_results li.ac_over {
-  background: #fbfbfb;
-}
+  background: #fbfbfb; }
 
 form#searchbox {
-  position: relative;
-}
+  position: relative; }
 form#searchbox label {
-  color: #000;
-}
+  color: #000; }
 form#searchbox input#search_query_block {
   margin-right: 10px;
   max-width: 222px;
   margin-bottom: 10px;
   display: inline-block;
-  float: left;
-}
+  float: left; }
 form#searchbox .button.button-small {
-  float: left;
-}
+  float: left; }
 form#searchbox .button.button-small i {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 /*# sourceMappingURL=blocksearch.css.map */
