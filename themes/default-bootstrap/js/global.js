@@ -25,8 +25,12 @@
 //global variables
 var responsiveflag = false;
 function setPadding() {
-	$('#page').css('paddingTop', $('.header-container').outerHeight());
-}
+    var h = $('.header-container').outerHeight();
+	$('#page').css('paddingTop', h);
+};
+$(window).load(function() {
+	setPadding();
+});
 $(document).ready(function(){
 	$('#manufacturers_block_left > ul').slick({
 		arrows: true,

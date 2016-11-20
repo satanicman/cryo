@@ -7,6 +7,7 @@
 
 #cms {
 	#center_column {
+		font-size: em(18px);
 		.block-cms {
 			padding-bottom: 20px;
 		}
@@ -20,7 +21,12 @@
 			padding: 0 0 17px 0;
 		}
 		p {
-			line-height: 18px;
+			line-height: 24px;
+			text-indent: 10px;
+			margin-bottom: 30px;
+		}
+		strong {
+			font-family: "helvetica-black", serif;
 		}
 		.list-1 {
 			li {
