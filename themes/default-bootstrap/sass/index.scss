@@ -94,6 +94,7 @@
     &-wrap {
         background: url(../img/main-products-bg.png) 50% no-repeat;
         @include background-size(cover);
+        color: $light-text-color;
     }
     &-container {
         padding-top: 130px;
