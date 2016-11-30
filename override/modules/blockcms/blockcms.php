@@ -825,9 +825,11 @@ class BlockCmsOverride extends BlockCms
 
 		if (!$this->isCached('blockcms.tpl', $this->getCacheId(BlockCMSModel::FOOTER)))
 		{
+		    $category = new Category(13, $this->context->language->id, $this->context->shop->id);
 			$display_poweredby = Configuration::get('FOOTER_POWEREDBY');
 			$this->smarty->assign(
 				array(
+				    'category' => $category,
 					'block' => 2,
 					'contact_url' => 'contact',
 					'cmslinks' => BlockCMSModelOver::getCMSTitlesFooter(),

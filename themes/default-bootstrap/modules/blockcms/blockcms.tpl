@@ -74,7 +74,13 @@
             </li>
 			{foreach from=$cmslinks item=cmslink}
 				{if $cmslink.meta_title != ''}
-                    {if $cmslink.cms_id == 10}
+                    {if $cmslink.cms_id == 8}
+                        <li class="item">
+                            <a href="{$link->getCategoryLink($category)}" title="{l s="Продукция" mod="blockcms"}">
+								{l s="Продукция" mod="blockcms"}
+                            </a>
+                        </li>
+                    {elseif $cmslink.cms_id == 10}
                         <li class="item">
                             <a href="{smartblog::GetSmartBlogLink()}" title="{l s="Проекты" mod="blockcms"}">
 								{l s="Проекты" mod="blockcms"}
