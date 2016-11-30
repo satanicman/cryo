@@ -74,8 +74,7 @@
   background-size: cover;
   color: #fff; }
 .products-tabs-container {
-  padding-top: 130px;
-  padding-bottom: 115px; }
+  padding: 130px 50px 115px; }
 .products-tabs-container .main-title {
   margin-bottom: 15px; }
 .products-tabs-container #home-page-tabs {
