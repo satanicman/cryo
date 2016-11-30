@@ -26,8 +26,10 @@
   top: 50%;
   width: 85px;
   height: 85px;
-  background-color: black;
+  background-color: rgba(17, 17, 17, 0.7);
   z-index: 3; }
+#homepage-slider #homeslider .slick-prev:hover, #homepage-slider #homeslider .slick-next:hover {
+  background-color: #000; }
 #homepage-slider #homeslider .slick-prev:before, #homepage-slider #homeslider .slick-next:before {
   display: none; }
 #homepage-slider #homeslider .slick-prev .icon, #homepage-slider #homeslider .slick-next .icon {
@@ -67,7 +69,7 @@
   color: #fff;
   font-family: "Open Sans", serif; }
 #homepage-slider .homeslider-description .home-slider-title {
-  font-size: 6.25em;
+  font-size: 4.375em;
   font-weight: 400;
   line-height: 1; }
 #homepage-slider .homeslider-description .home-slider-text {

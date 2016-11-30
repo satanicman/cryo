@@ -234,7 +234,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "helvetica-roman", Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1;
   color: #777777;
@@ -347,7 +347,7 @@ cite {
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "helvetica-roman", Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.1; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -6674,7 +6674,9 @@ div.star_hover a, div.star a:hover {
   background: none repeat scroll 0 0 lightyellow; }
 
 #page .rte {
-  background: transparent none repeat scroll 0 0; }
+  color: #333;
+  background: transparent none repeat scroll 0 0;
+  text-align: justify; }
 #page .rte em {
   font-style: italic !important; }
 

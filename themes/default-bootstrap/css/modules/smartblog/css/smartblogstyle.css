@@ -511,21 +511,8 @@ div.relProduct .price-new {
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
-  padding: 14px 70px 14px 57px;
+  padding: 14px 65px 14px 65px;
   margin-top: -24px; }
-.more:after {
-  display: inline-block;
-  vertical-align: middle;
-  content: "\f005";
-  font-family: 'FontAwesome', serif;
-  font-size: 20px;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  margin-top: -12px;
-  text-align: center;
-  right: 42px; }
 
 fieldset.account_creation {
   background: none repeat scroll 0 0 #F8F8F8;

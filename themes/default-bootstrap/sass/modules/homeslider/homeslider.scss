@@ -27,8 +27,11 @@
 				top: 50%;
 				width: 85px;
 				height: 85px;
-				background-color: black;
+				background-color: rgba(#111, .7);
 				z-index: 3;
+				&:hover {
+					background-color: #000;
+				}
 				&:before {
 					display: none;
 				}
@@ -82,7 +85,7 @@
 				font-family: "Open Sans", serif;
 			}
 			&-title {
-				font-size: em(100px);
+				font-size: em(70px);
 				font-weight: 400;
 				line-height: 1;
 			}

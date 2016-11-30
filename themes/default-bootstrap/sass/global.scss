@@ -1623,8 +1623,9 @@ div.star a:hover {
 }
 
 #page .rte {
+	color: $c-dark-grey;
 	background: transparent none repeat scroll 0 0;
-
+	text-align: justify;
 	em {
 		font-style: italic !important;
 	}
