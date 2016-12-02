@@ -1,11 +1,26 @@
 $(document).ready(function(){
 	$('#home-page-tabs li:first, #index .tab-content ul:first').addClass('active');
+
+	// $(document).on('init', '.slider.products', function (slick) {
+	// 	var matrixRegex = /matrix\((-?\d*\.?\d+),\s*(-?\d*\.?\d+),\s*(-?\d*\.?\d+),\s*(-?\d*\.?\d+),\s*(-?\d*\.?\d+),\s*(-?\d*\.?\d+)\)/,
+	// 		slide = $('.slider.products .slick-slide'),
+	// 		last = $('.slider.products .slick-active + .slick-slide:not(.slick-active)').first(),
+	// 		first = $('.slider.products .slick-slide:not(.slick-active)'),
+	// 		transform = last.css('transform'),
+	// 		slideWidth = parseInt(slide.attr('style').replace(/\D*/, '')),
+	// 		scale;
+	// 	if(typeof transform != 'undefined') {
+	// 		scale = transform.match(matrixRegex)[4];
+	// 		first.css('transform', 'scale(' + scale + ') translateX(' + Math.round(slideWidth*scale/2 + parseInt(slide.css('padding-right').replace(/\D*/, ''))) + 'px)');
+	// 		last.css('transform', 'scale(' + scale + ') translateX(-' + Math.round(slideWidth*scale/2 + parseInt(slide.css('padding-right').replace(/\D*/, ''))) + 'px)');
+	// 	}
+	// });
 	$('.slider.products').slick({
 		arrows: true,
 		dots: false,
 		slidesToShow: 3,
 		centerMode: true,
-		centerPadding: '60px',
+		centerPadding: '120px',
 		nextArrow: '<button type="button" class="slick-next"><i class="product-next-icon icon"></i>Next</button>',
 		prevArrow: '<button type="button" class="slick-prev"><i class="product-prev-icon icon"></i>Previous</button>'
 	});
