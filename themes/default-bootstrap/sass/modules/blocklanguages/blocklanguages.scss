@@ -13,6 +13,11 @@
 		cursor: pointer;
 		@include display-flex;
 		@include align-items(center);
+		&:before {
+			display: inline-block;
+			content: '';
+			margin-right: 10px;
+		}
 		&:after {
 			content: '';
 			display: block;

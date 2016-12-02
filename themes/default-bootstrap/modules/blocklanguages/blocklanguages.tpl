@@ -25,10 +25,11 @@
 <!-- Block languages module -->
 {if count($languages) > 1}
 	<div id="languages-block-top" class="languages-block col-md-1">
+		<pre class="hidden">{$languages|var_dump}</pre>
 		{foreach from=$languages key=k item=language name="languages"}
 			{if $language.iso_code == $lang_iso}
 				<div class="current">
-					<span>{$language.name|regex_replace:"/\s\(.*\)$/":""}</span>
+					<span>{$language.iso_code|upper}</span>
 				</div>
 			{/if}
 		{/foreach}
@@ -43,7 +44,7 @@
 						<a href="{$link->getLanguageLink($language.id_lang)|escape:'html':'UTF-8'}" title="{$language.name|escape:'html':'UTF-8'}" rel="alternate" hreflang="{$language.iso_code|escape:'html':'UTF-8'}">
 					{/if}
 				{/if}
-						<span>{$language.name|regex_replace:"/\s\(.*\)$/":""}</span>
+						<span>{$language.iso_code|upper}</span>
 				{if $language.iso_code != $lang_iso}
 					</a>
 				{/if}

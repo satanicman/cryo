@@ -11,6 +11,9 @@
 .mobile-icon {
     @include sprite($mobile-icon);
 }
+.languages-block .current:before {
+    @include sprite($internet-icon);
+}
 
 .search-icon {
     @include sprite($search-icon);

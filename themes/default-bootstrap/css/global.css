@@ -5283,6 +5283,12 @@ The `sprites` mixin generates identical output to the CSS template
   width: 21px;
   height: 34px; }
 
+.languages-block .current:before {
+  background-image: url(../img/sprite.png);
+  background-position: -90px -61px;
+  width: 34px;
+  height: 34px; }
+
 .search-icon {
   background-image: url(../img/sprite.png);
   background-position: -176px -70px;

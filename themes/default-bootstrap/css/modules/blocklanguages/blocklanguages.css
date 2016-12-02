@@ -12,6 +12,10 @@
   display: flex;
   -webkit-align-items: center;
   align-items: center; }
+#languages-block-top div.current:before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px; }
 #languages-block-top div.current:after {
   content: '';
   display: block;
