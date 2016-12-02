@@ -72,8 +72,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  background-size: cover;
-  color: #fff; }
+  background-size: cover; }
 .products-tabs-container {
   padding: 130px 50px 115px; }
 .products-tabs-container .main-title {

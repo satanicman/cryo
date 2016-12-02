@@ -2378,7 +2378,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   color: #fff; }
 
 .breadcrumb {
-  padding: 17px 0;
+  padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
   background-color: #f6f6f6;
@@ -6721,22 +6721,12 @@ div.star_hover a, div.star a:hover {
   z-index: 1;
   background: none;
   font-family: "Open Sans", serif;
-  font-weight: 400;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0; }
-.breadcrumb > * {
-  margin-top: -3px; }
-.breadcrumb .home {
-  position: relative; }
+  font-weight: 400; }
 .breadcrumb .home .icon, .breadcrumb .home [class^="icon-"] {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -11px; }
+  vertical-align: middle; }
 .breadcrumb-wrap {
   background-color: #f9f9f9;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 .breadcrumb .navigation-pipe {
   padding: 0 6px;
   display: inline-block; }
@@ -6757,7 +6747,7 @@ div.star_hover a, div.star a:hover {
   z-index: 2; }
 .breadcrumb a.home {
   text-align: center;
-  padding: 0 0 0 25px;
+  padding: 0;
   z-index: 99;
   display: inline-block; }
 
