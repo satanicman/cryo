@@ -149,9 +149,9 @@
   -webkit-box-shadow: 0 0 15px rgba(16, 24, 30, 0.3);
   box-shadow: 0 0 15px rgba(16, 24, 30, 0.3); }
 .slider.products.product_list .slick-slide .product-container .details {
-  -moz-box-shadow: 0 5px 9px rgba(0, 205, 13, 0.5);
-  -webkit-box-shadow: 0 5px 9px rgba(0, 205, 13, 0.5);
-  box-shadow: 0 5px 9px rgba(0, 205, 13, 0.5); }
+  -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5); }
 
 #cmsinfo_block {
   background: none;

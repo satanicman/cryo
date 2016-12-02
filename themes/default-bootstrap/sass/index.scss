@@ -197,7 +197,7 @@
                 .product-container {
                     @include box-shadow(0 0 15px rgba(16, 24, 30, 0.3));
                     .details {
-                        @include box-shadow(0 5px 9px rgba(0, 205, 13, 0.5));
+                        @include box-shadow(0 5px 9px rgba(0, 0, 0, 0.5));
                     }
                 }
             }

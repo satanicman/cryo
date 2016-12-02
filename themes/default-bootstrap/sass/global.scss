@@ -1656,7 +1656,7 @@ div.star a:hover {
 }
 
 .header-container {
-	background: $light-background;
+	//background: $light-background;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -3467,5 +3467,20 @@ div.star.star_hover {
 		line-height: 1;
 		text-transform: uppercase;
 		display: block;
+	}
+}
+
+
+.all-rights {
+	&-wrap {
+		background-color: $bg-dark-blue;
+		padding: 20px 0;
+	}
+	&-container {
+		text-align: center;
+		color: $light-text-color;
+		font-size: em(20px);
+		font-weight: 400;
+		line-height: 20px;
 	}
 }

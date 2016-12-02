@@ -6707,7 +6707,6 @@ div.star_hover a, div.star a:hover {
   color: #000; }
 
 .header-container {
-  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -7929,5 +7928,15 @@ div.star.star_hover:after {
   line-height: 1;
   text-transform: uppercase;
   display: block; }
+
+.all-rights-wrap {
+  background-color: #369;
+  padding: 20px 0; }
+.all-rights-container {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 20px; }
 
 /*# sourceMappingURL=global.css.map */

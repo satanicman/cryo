@@ -46,6 +46,11 @@
                     </div><!-- #footer -->
                 {/if}
 			</div>
+			<div class="all-rights-wrap">
+				<div class="all-rights-container container">
+					© 2016 Cryo Inter Trading<br/>Все права защищены
+				</div>
+			</div>
 		</div><!-- #page -->
 		<button id="scroller">
 			<i class="up-icon icon"></i>
