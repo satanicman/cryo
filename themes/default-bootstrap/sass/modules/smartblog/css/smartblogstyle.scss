@@ -698,13 +698,15 @@ fieldset.account_creation {
 }
 
 .sdstitle_block {
-    color: $c-dark-grey;
-    font-family: "helvetica-black", serif;
-    font-size: em(24px);
-    line-height: 1;
-    text-transform: none;
     margin: 0;
     padding: 30px 0 20px;
+    a {
+        color: $c-dark-grey;
+        //font-family: "helvetica-black", serif;
+        font-size: em(24px);
+        line-height: 1;
+        text-transform: none;
+    }
 }
 
 .block.smartblog {
@@ -969,9 +971,9 @@ form#searchbox {
 }
 
 p.sdstitle_block a {
-    line-height: 1;
-    font-size: 1em;
-    font-weight: 900;
+    //line-height: 1;
+    //font-size: 1em;
+    //font-weight: 900;
 }
 
 #right_column {

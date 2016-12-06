@@ -550,13 +550,13 @@ fieldset.account_creation {
   width: 100%; }
 
 .sdstitle_block {
-  color: #333;
-  font-family: "helvetica-black", serif;
-  font-size: 1.5em;
-  line-height: 1;
-  text-transform: none;
   margin: 0;
   padding: 30px 0 20px; }
+.sdstitle_block a {
+  color: #333;
+  font-size: 1.5em;
+  line-height: 1;
+  text-transform: none; }
 
 .block.smartblog {
   -moz-border-radius: 6px;
@@ -761,11 +761,6 @@ form#searchbox .button.button-small i {
 .smartblogff {
   border-radius: 7px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
-
-p.sdstitle_block a {
-  line-height: 1;
-  font-size: 1em;
-  font-weight: 900; }
 
 #right_column {
   padding-left: 50px; }

@@ -5279,7 +5279,7 @@ The `sprites` mixin generates identical output to the CSS template
 */
 .mobile-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px -31px;
+  background-position: -176px -86px;
   width: 21px;
   height: 34px; }
 
@@ -5291,43 +5291,43 @@ The `sprites` mixin generates identical output to the CSS template
 
 .search-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px -70px;
+  background-position: -33px -151px;
   width: 24px;
   height: 25px; }
 
 .prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -49px -169px;
-  width: 9px;
-  height: 14px; }
+  background-position: -176px -43px;
+  width: 22px;
+  height: 38px; }
 
 .next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -35px -169px;
-  width: 9px;
-  height: 14px; }
+  background-position: -176px 0px;
+  width: 22px;
+  height: 38px; }
 
 .product-next-icon {
-  background-image: url(../img/sprite.png);
-  background-position: -43px 0px;
-  width: 38px;
-  height: 56px; }
-
-.product-prev-icon {
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 38px;
   height: 56px; }
 
+.product-prev-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -43px 0px;
+  width: 38px;
+  height: 56px; }
+
 .brand-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -131px -90px;
+  background-position: -203px -87px;
   width: 8px;
   height: 11px; }
 
 .brand-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -39px -151px;
+  background-position: -203px -70px;
   width: 8px;
   height: 12px; }
 
@@ -5339,7 +5339,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .home-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px -100px;
+  background-position: -176px -125px;
   width: 22px;
   height: 21px; }
 
@@ -5351,43 +5351,43 @@ The `sprites` mixin generates identical output to the CSS template
 
 .download-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px 0px;
+  background-position: 0px -151px;
   width: 28px;
   height: 26px; }
 
 .slick-next:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -169px;
+  background-position: -203px 0px;
   width: 13px;
   height: 31px; }
 
 .slick-prev:before {
   background-image: url(../img/sprite.png);
-  background-position: -18px -169px;
+  background-position: -203px -36px;
   width: 12px;
   height: 29px; }
 
 .nav-tabs > li.active > a:before, .nav-tabs > li.active > a:hover:before, .nav-tabs > li.active > a:focus:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -151px;
+  background-position: -62px -151px;
   width: 34px;
   height: 13px; }
 
 .rss-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -61px;
+  background-position: -131px -45px;
   width: 40px;
   height: 40px; }
 
 .gp-icon {
   background-image: url(../img/sprite.png);
-  background-position: -131px 0px;
+  background-position: -45px -106px;
   width: 40px;
   height: 40px; }
 
 .yt-icon {
   background-image: url(../img/sprite.png);
-  background-position: -86px 0px;
+  background-position: -131px 0px;
   width: 40px;
   height: 40px; }
 
@@ -5405,7 +5405,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .tw-icon {
   background-image: url(../img/sprite.png);
-  background-position: -131px -45px;
+  background-position: 0px -61px;
   width: 40px;
   height: 40px; }
 
