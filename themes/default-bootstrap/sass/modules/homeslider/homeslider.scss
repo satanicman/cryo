@@ -21,34 +21,44 @@
 	#homeslider {
 		margin: 0 auto;
 		padding: 0;
+        &:hover {
+			.slick {
+                &-prev,
+                &-next {
+					opacity: 1;
+				}
+			}
+		}
 		.slick {
 			&-prev,
 			&-next {
 				top: 50%;
-				width: 85px;
-				height: 85px;
-				background-color: rgba(#111, .7);
+				width: 50px;
+				height: 80px;
+				@include transition(all .3s);
+				@include border-radius(3px);
 				z-index: 3;
-				&:hover {
-					background-color: #000;
-				}
+				opacity: 0;
 				&:before {
 					display: none;
+				}
+				&:hover {
+                    background-color: rgba(0,0,0,.5);
 				}
 				.icon {
 					position: absolute;
 					left: 50%;
 					top: 50%;
-					margin-left: -4.5px;
-					margin-top: -7px;
+					margin-left: -11px;
+					margin-top: -19px;
 				}
 			}
 			&-prev {
-				left: 0;
+				left: 40px;
 				&:before {}
 			}
 			&-next {
-				right: 0;
+				right: 40px;
 				&:before {}
 			}
 			&-list {
