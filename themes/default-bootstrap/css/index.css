@@ -72,7 +72,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  color: #fff; }
 .products-tabs-container {
   padding: 130px 50px 115px; }
 .products-tabs-container .main-title {
@@ -124,7 +125,7 @@
   right: -48px; }
 .slider.products .slick-prev {
   left: -48px; }
-.slider.products .slick-active + .slick-slide:not(.slick-active) {
+.slider.products.product_list .slick-active + .slick-slide:not(.slick-active) {
   -moz-transform: scale(0.9) translateX(-149px);
   -ms-transform: scale(0.9) translateX(-149px);
   -webkit-transform: scale(0.9) translateX(-149px);

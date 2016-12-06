@@ -176,15 +176,15 @@
             left: -48px;
         }
         $translat: 149px;
-        .slick-active {
-            + .slick-slide {
-                &:not(.slick-active) {
-                    //opacity: $slide-op;
-                    @include transform(scale(.9) translateX(-$translat));
+        &.product_list {
+            .slick-active {
+                + .slick-slide {
+                    &:not(.slick-active) {
+                        //opacity: $slide-op;
+                        @include transform(scale(.9) translateX(-$translat));
+                    }
                 }
             }
-        }
-        &.product_list {
             .slick-slide {
                 @include transition(all .3s);
                 position: relative;
