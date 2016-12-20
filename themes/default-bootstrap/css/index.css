@@ -79,8 +79,9 @@
 .products-tabs-container .main-title {
   margin-bottom: 15px; }
 .products-tabs-container #home-page-tabs {
-  padding-left: 80px;
-  background: url(../img/product-tabs-bg.png) 0 100% no-repeat;
+  position: relative;
+  padding-left: 71px;
+  background: none;
   padding-bottom: 13px;
   text-align: left; }
 .products-tabs-container #home-page-tabs li {
@@ -88,10 +89,20 @@
   float: left;
   padding: 35px 0;
   margin: 0;
-  border: none; }
+  border: none;
+  position: static; }
+.products-tabs-container #home-page-tabs li:nth-of-type(2) a {
+  padding: 0 13px; }
 .products-tabs-container #home-page-tabs li.active a {
   background: none;
-  color: #97d700; }
+  color: #97d700;
+  position: static; }
+.products-tabs-container #home-page-tabs li.active a:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 .products-tabs-container #home-page-tabs li a {
   padding: 0 22px;
   display: inline-block;

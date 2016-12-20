@@ -103,8 +103,10 @@
             margin-bottom: 15px;
         }
         #home-page-tabs {
-            padding-left: 80px;
-            background: url(../img/product-tabs-bg.png) 0 100% no-repeat;
+            position: relative;
+            padding-left: 71px;
+            //background: url(../img/product-tabs-bg.png) 0 100% no-repeat;
+            background: none;
             padding-bottom: 13px;
             text-align: left;
             li {
@@ -113,10 +115,24 @@
                 padding: 35px 0;
                 margin: 0;
                 border: none;
+                position: static;
+                &:nth-of-type(2) {
+                    a {
+                        padding: 0 13px;
+                    }
+                }
                 &.active {
                     a {
                         background: none;
                         color: $c-green;
+                        position: static;
+                        &:after {
+                            display: block;
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
                     }
                 }
                 a {

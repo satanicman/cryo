@@ -11,6 +11,7 @@
 .mobile-icon {
     @include sprite($mobile-icon);
 }
+
 .languages-block .current:before {
     @include sprite($internet-icon);
 }
@@ -18,15 +19,19 @@
 .search-icon {
     @include sprite($search-icon);
 }
+
 .fancybox-outer .fancybox-prev span {
     @include sprite($black-prev-icon);
 }
+
 .fancybox-outer .fancybox-next span {
     @include sprite($black-next-icon);
 }
+
 .prev-icon {
     @include sprite($prew-icon);
 }
+
 .next-icon {
     @include sprite($next-icon);
 }
@@ -116,6 +121,24 @@
 
 .fb-icon {
     @include sprite($fb-icon);
+}
+
+.products-tabs-container #home-page-tabs li.active {
+    &:nth-of-type(1) {
+        a:after {
+            @include sprite($bd_1);
+        }
+    }
+    &:nth-of-type(2) {
+        a:after {
+            @include sprite($bd_2);
+        }
+    }
+    &:nth-of-type(3) {
+        a:after {
+            @include sprite($bd_3);
+        }
+    }
 }
 
 //social #END

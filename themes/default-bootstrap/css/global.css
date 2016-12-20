@@ -5279,153 +5279,169 @@ The `sprites` mixin generates identical output to the CSS template
 */
 .mobile-icon {
   background-image: url(../img/sprite.png);
-  background-position: -203px 0px;
+  background-position: -104px -154px;
   width: 21px;
   height: 34px; }
 
 .languages-block .current:before {
   background-image: url(../img/sprite.png);
-  background-position: -90px -61px;
+  background-position: 0px -115px;
   width: 34px;
   height: 34px; }
 
 .search-icon {
   background-image: url(../img/sprite.png);
-  background-position: -58px -151px;
+  background-position: -453px -54px;
   width: 24px;
   height: 25px; }
 
 .fancybox-outer .fancybox-prev span {
   background-image: url(../img/sprite.png);
-  background-position: 0px -151px;
+  background-position: -79px -154px;
   width: 20px;
   height: 36px; }
 
 .fancybox-outer .fancybox-next span {
   background-image: url(../img/sprite.png);
-  background-position: -176px -86px;
+  background-position: -54px -154px;
   width: 20px;
   height: 36px; }
 
 .prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px -43px;
+  background-position: -27px -154px;
   width: 22px;
   height: 38px; }
 
 .next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px 0px;
+  background-position: 0px -154px;
   width: 22px;
   height: 38px; }
 
 .product-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -43px -54px;
   width: 38px;
   height: 56px; }
 
 .product-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -43px 0px;
+  background-position: 0px -54px;
   width: 38px;
   height: 56px; }
 
 .brand-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -216px -127px;
+  background-position: -86px -99px;
   width: 8px;
   height: 11px; }
 
 .brand-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -203px -127px;
+  background-position: -194px -115px;
   width: 8px;
   height: 12px; }
 
 .up-icon {
   background-image: url(../img/sprite.png);
-  background-position: -90px -106px;
+  background-position: -401px -54px;
   width: 47px;
   height: 29px; }
 
 .home-icon {
   background-image: url(../img/sprite.png);
-  background-position: -87px -151px;
+  background-position: -105px -115px;
   width: 22px;
   height: 21px; }
 
 .file-icon {
   background-image: url(../img/sprite.png);
-  background-position: -142px -106px;
+  background-position: -39px -115px;
   width: 28px;
   height: 29px; }
 
 .download-icon {
   background-image: url(../img/sprite.png);
-  background-position: -25px -151px;
+  background-position: -72px -115px;
   width: 28px;
   height: 26px; }
 
 .slick-next:before {
   background-image: url(../img/sprite.png);
-  background-position: -203px -39px;
+  background-position: -130px -154px;
   width: 13px;
   height: 31px; }
 
 .slick-prev:before {
   background-image: url(../img/sprite.png);
-  background-position: -203px -75px;
+  background-position: -148px -154px;
   width: 12px;
   height: 29px; }
 
 .nav-tabs > li.active > a:before, .nav-tabs > li.active > a:hover:before, .nav-tabs > li.active > a:focus:before {
   background-image: url(../img/sprite.png);
-  background-position: -114px -151px;
+  background-position: -132px -115px;
   width: 34px;
   height: 13px; }
 
 .rss-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -61px;
+  background-position: -176px -54px;
   width: 40px;
   height: 40px; }
 
 .gp-icon {
   background-image: url(../img/sprite.png);
-  background-position: -86px 0px;
+  background-position: -356px -54px;
   width: 40px;
   height: 40px; }
 
 .yt-icon {
   background-image: url(../img/sprite.png);
-  background-position: -131px 0px;
+  background-position: -86px -54px;
   width: 40px;
   height: 40px; }
 
 .fs-icon {
   background-image: url(../img/sprite.png);
-  background-position: -131px -45px;
+  background-position: -311px -54px;
   width: 40px;
   height: 40px; }
 
 .in-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -106px;
+  background-position: -266px -54px;
   width: 40px;
   height: 40px; }
 
 .tw-icon {
   background-image: url(../img/sprite.png);
-  background-position: -45px -106px;
+  background-position: -131px -54px;
   width: 40px;
   height: 40px; }
 
 .fb-icon {
   background-image: url(../img/sprite.png);
-  background-position: -45px -61px;
+  background-position: -221px -54px;
   width: 40px;
   height: 40px; }
+
+.products-tabs-container #home-page-tabs li.active:nth-of-type(1) a:after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 479px;
+  height: 13px; }
+.products-tabs-container #home-page-tabs li.active:nth-of-type(2) a:after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -36px;
+  width: 479px;
+  height: 13px; }
+.products-tabs-container #home-page-tabs li.active:nth-of-type(3) a:after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -18px;
+  width: 479px;
+  height: 13px; }
 
 a:hover {
   text-decoration: none; }
