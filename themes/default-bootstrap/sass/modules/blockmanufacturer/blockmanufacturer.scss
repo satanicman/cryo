@@ -42,8 +42,8 @@
             margin-top: -16px;
             width: 32px;
             height: 32px;
-            background-color: $light-background;
-            @include border-radius(50%);
+            //background-color: $light-background;
+            //@include border-radius(50%);
             &:before {
                 display: none;
             }

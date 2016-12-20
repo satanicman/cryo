@@ -23,11 +23,7 @@
   top: 50%;
   margin-top: -16px;
   width: 32px;
-  height: 32px;
-  background-color: #fff;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%; }
+  height: 32px; }
 .blockmanufacturer .slick-next:before, .blockmanufacturer .slick-prev:before {
   display: none; }
 .blockmanufacturer .slick-next .icon, .blockmanufacturer .slick-prev .icon {
