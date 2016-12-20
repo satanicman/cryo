@@ -710,8 +710,10 @@ fieldset.account_creation {
 }
 
 .block.smartblog {
+    $sbBdColor: #e1e8ee;
     @include border-radius(6px);
-    @include box-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+    //@include box-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+    border: 1px solid $sbBdColor;
     .sdstitle_block {
         color: #666;
         font-family: 'helvetica-medium', serif;
@@ -720,7 +722,7 @@ fieldset.account_creation {
         line-height: 1;
         padding-top: 20px;
         padding-bottom: 20px;
-        border-bottom: 1px solid #e1e8ee;
+        border-bottom: 1px solid $sbBdColor;
     }
     > * {
         padding-left: 30px;
