@@ -29,7 +29,7 @@
 		{if isset($facebook_url) && $facebook_url != ''}
 			<li class="facebook">
 				<a class="_blank" href="{$facebook_url|escape:html:'UTF-8'}">
-					<i class="icon fs-icon"></i>
+					<i class="icon fb-icon"></i>
 					<span>{l s='Facebook' mod='blocksocial'}</span>
 				</a>
 			</li>

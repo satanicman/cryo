@@ -5279,7 +5279,7 @@ The `sprites` mixin generates identical output to the CSS template
 */
 .mobile-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px -86px;
+  background-position: -203px 0px;
   width: 21px;
   height: 34px; }
 
@@ -5291,9 +5291,21 @@ The `sprites` mixin generates identical output to the CSS template
 
 .search-icon {
   background-image: url(../img/sprite.png);
-  background-position: -33px -151px;
+  background-position: -58px -151px;
   width: 24px;
   height: 25px; }
+
+.fancybox-outer .fancybox-prev span {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -151px;
+  width: 20px;
+  height: 36px; }
+
+.fancybox-outer .fancybox-next span {
+  background-image: url(../img/sprite.png);
+  background-position: -176px -86px;
+  width: 20px;
+  height: 36px; }
 
 .prev-icon {
   background-image: url(../img/sprite.png);
@@ -5321,13 +5333,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .brand-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -203px -87px;
+  background-position: -216px -127px;
   width: 8px;
   height: 11px; }
 
 .brand-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -203px -70px;
+  background-position: -203px -127px;
   width: 8px;
   height: 12px; }
 
@@ -5339,7 +5351,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .home-icon {
   background-image: url(../img/sprite.png);
-  background-position: -176px -125px;
+  background-position: -87px -151px;
   width: 22px;
   height: 21px; }
 
@@ -5351,37 +5363,37 @@ The `sprites` mixin generates identical output to the CSS template
 
 .download-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -151px;
+  background-position: -25px -151px;
   width: 28px;
   height: 26px; }
 
 .slick-next:before {
   background-image: url(../img/sprite.png);
-  background-position: -203px 0px;
+  background-position: -203px -39px;
   width: 13px;
   height: 31px; }
 
 .slick-prev:before {
   background-image: url(../img/sprite.png);
-  background-position: -203px -36px;
+  background-position: -203px -75px;
   width: 12px;
   height: 29px; }
 
 .nav-tabs > li.active > a:before, .nav-tabs > li.active > a:hover:before, .nav-tabs > li.active > a:focus:before {
   background-image: url(../img/sprite.png);
-  background-position: -62px -151px;
+  background-position: -114px -151px;
   width: 34px;
   height: 13px; }
 
 .rss-icon {
   background-image: url(../img/sprite.png);
-  background-position: -131px -45px;
+  background-position: 0px -61px;
   width: 40px;
   height: 40px; }
 
 .gp-icon {
   background-image: url(../img/sprite.png);
-  background-position: -45px -106px;
+  background-position: -86px 0px;
   width: 40px;
   height: 40px; }
 
@@ -5393,7 +5405,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .fs-icon {
   background-image: url(../img/sprite.png);
-  background-position: -45px -61px;
+  background-position: -131px -45px;
   width: 40px;
   height: 40px; }
 
@@ -5405,11 +5417,11 @@ The `sprites` mixin generates identical output to the CSS template
 
 .tw-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -61px;
+  background-position: -45px -106px;
   width: 40px;
   height: 40px; }
 
-.fs-icon {
+.fb-icon {
   background-image: url(../img/sprite.png);
   background-position: -45px -61px;
   width: 40px;
@@ -7937,5 +7949,19 @@ div.star.star_hover:after {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 20px; }
+
+.fancybox-outer .fancybox-nav span {
+  margin-top: -19px; }
+.fancybox-outer .fancybox-nav span:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -20px;
+  display: none; }
 
 /*# sourceMappingURL=global.css.map */

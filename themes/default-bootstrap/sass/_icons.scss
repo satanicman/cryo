@@ -18,11 +18,15 @@
 .search-icon {
     @include sprite($search-icon);
 }
-
+.fancybox-outer .fancybox-prev span {
+    @include sprite($black-prev-icon);
+}
+.fancybox-outer .fancybox-next span {
+    @include sprite($black-next-icon);
+}
 .prev-icon {
     @include sprite($prew-icon);
 }
-
 .next-icon {
     @include sprite($next-icon);
 }
@@ -110,8 +114,8 @@
     @include sprite($tw-icon);
 }
 
-.fs-icon {
-    @include sprite($fs-icon);
+.fb-icon {
+    @include sprite($fb-icon);
 }
 
 //social #END
