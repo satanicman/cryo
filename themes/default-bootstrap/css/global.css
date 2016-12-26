@@ -7979,5 +7979,10 @@ div.star.star_hover:after {
   margin-top: -30px;
   margin-left: -20px;
   display: none; }
+.fancybox-overlay {
+  background: none !important; }
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
 
 /*# sourceMappingURL=global.css.map */

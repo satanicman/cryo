@@ -3485,24 +3485,32 @@ div.star.star_hover {
 	}
 }
 //fancybox
-.fancybox-outer .fancybox {
-	&-nav span {
-		margin-top: -19px;
-		&:before {
-			content: '';
-			//display: block;
-			background-color: rgba(0, 0, 0, 0.5);
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			width: 40px;
-			height: 60px;
-			margin-top: -30px;
-			margin-left: -20px;
-			display: none;
+.fancybox {
+	&-outer .fancybox {
+		&-nav span {
+			margin-top: -19px;
+			&:before {
+				content: '';
+				//display: block;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 40px;
+				height: 60px;
+				margin-top: -30px;
+				margin-left: -20px;
+				display: none;
+			}
 		}
+		&-next span {}
+		&-prev span {}
 	}
-	&-next span {}
-	&-prev span {}
+	&-overlay {
+		background: none !important;
+	}
+	&-opened .fancybox-skin {
+		@include box-shadow(none !important);
+	}
 }
 //fancybox #END

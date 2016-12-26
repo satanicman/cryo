@@ -97,11 +97,13 @@ a.fancybox-nav {
 
 #thumbs_list {
   overflow: hidden; }
+#thumbs_list .slick-list {
+  padding: 0; }
 #thumbs_list ul#thumbs_list_frame {
   list-style-type: none;
-  padding-left: 0;
   overflow: hidden;
-  margin: 0; }
+  margin: 0;
+  padding: 0 20px; }
 #thumbs_list li {
   padding: 0 7px;
   float: left;
@@ -1012,5 +1014,10 @@ Quick View Styles
   height: 84px;
   top: 50%;
   margin-top: -42px; }
+
+#feedbackform--btn {
+  -moz-box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5);
+  -webkit-box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5);
+  box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5); }
 
 /*# sourceMappingURL=product.css.map */

@@ -69,11 +69,14 @@ a.fancybox-nav {
 
 #thumbs_list {
 	overflow: hidden;
+	.slick-list {
+		padding: 0;
+	}
 	ul#thumbs_list_frame {
 		list-style-type: none;
-		padding-left: 0;
 		overflow: hidden;
 		margin: 0;
+		padding: 0 20px;
 	}
 	li {
 		padding: 0 7px;
@@ -1176,4 +1179,7 @@ Quick View Styles
 	}
 	.slick-prev {}
 	.slick-next {}
+}
+#feedbackform--btn {
+	@include box-shadow(0 7px 10px rgba(51, 102, 153, 0.5));
 }
