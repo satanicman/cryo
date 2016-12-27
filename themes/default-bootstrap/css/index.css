@@ -170,10 +170,20 @@
   width: 100%; }
 #cmsinfo_block > div .text {
   padding-left: 85px;
-  color: #333;
-  font-size: 1.25em;
+  color: #000;
   font-weight: 400;
   line-height: 24px; }
+#cmsinfo_block > div .text .services-table {
+  max-width: 100%;
+  font-size: 1.375em; }
+#cmsinfo_block > div .text td {
+  padding: 8px; }
+#cmsinfo_block > div .text td:first-of-type {
+  padding-left: 0; }
+#cmsinfo_block > div .text td:last-of-type {
+  padding-right: 0; }
+#cmsinfo_block > div .text .icon {
+  display: block; }
 #cmsinfo_block > div .text * {
   padding: 0;
   margin: 0; }
@@ -182,13 +192,12 @@
   color: inherit; }
 #cmsinfo_block > div .text .indet-header {
   font-family: 'helvetica-light', serif;
-  font-size: 1.8em;
+  font-size: 2.25em;
   font-weight: 300;
-  margin: 0 0 35px; }
+  margin: 0 0 3px; }
 #cmsinfo_block > div .text #showMore {
   display: inline-block;
-  margin-top: 80px;
-  font-size: 0.8em;
+  padding-bottom: 7px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
@@ -202,7 +211,7 @@
   position: absolute;
   background-color: #55c6ea;
   left: 0;
-  bottom: -7px; }
+  bottom: 0; }
 #cmsinfo_block > div .text #showMore:hover {
   color: #333; }
 

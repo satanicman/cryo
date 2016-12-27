@@ -8,6 +8,26 @@
 
 //.icon-ban-circle
 //	@extend .icon-ban
+//services
+.services1-icon {
+    @include sprite($services1-icon);
+}
+.services2-icon {
+    @include sprite($services2-icon);
+}
+.services3-icon {
+    @include sprite($services3-icon);
+}
+.services4-icon {
+    @include sprite($services4-icon);
+}
+.services5-icon {
+    @include sprite($services5-icon);
+}
+.services6-icon {
+    @include sprite($services6-icon);
+}
+//services #END
 .mobile-icon {
     @include sprite($mobile-icon);
 }
