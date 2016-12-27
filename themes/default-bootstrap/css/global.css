@@ -5279,187 +5279,187 @@ The `sprites` mixin generates identical output to the CSS template
 */
 .services1-icon {
   background-image: url(../img/sprite.png);
-  background-position: -272px -54px;
-  width: 63px;
-  height: 63px; }
+  background-position: 0px -114px;
+  width: 51px;
+  height: 56px; }
 
 .services2-icon {
   background-image: url(../img/sprite.png);
-  background-position: -204px -54px;
-  width: 63px;
-  height: 63px; }
+  background-position: -116px -54px;
+  width: 59px;
+  height: 45px; }
 
 .services3-icon {
   background-image: url(../img/sprite.png);
-  background-position: -340px -54px;
-  width: 63px;
-  height: 63px; }
+  background-position: -60px -54px;
+  width: 51px;
+  height: 53px; }
 
 .services4-icon {
   background-image: url(../img/sprite.png);
-  background-position: -68px -54px;
-  width: 63px;
-  height: 63px; }
+  background-position: -56px -114px;
+  width: 48px;
+  height: 48px; }
 
 .services5-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -54px;
-  width: 63px;
-  height: 63px; }
+  background-position: -86px -175px;
+  width: 35px;
+  height: 41px; }
 
 .services6-icon {
   background-image: url(../img/sprite.png);
-  background-position: -136px -54px;
-  width: 63px;
-  height: 63px; }
+  background-position: 0px -54px;
+  width: 55px;
+  height: 55px; }
 
 .mobile-icon {
   background-image: url(../img/sprite.png);
-  background-position: -39px -183px;
+  background-position: -165px -175px;
   width: 21px;
   height: 34px; }
 
 .languages-block .current:before {
   background-image: url(../img/sprite.png);
-  background-position: 0px -183px;
+  background-position: -126px -175px;
   width: 34px;
   height: 34px; }
 
 .search-icon {
   background-image: url(../img/sprite.png);
-  background-position: -65px -183px;
+  background-position: -272px -114px;
   width: 24px;
   height: 25px; }
 
 .fancybox-outer .fancybox-prev span {
   background-image: url(../img/sprite.png);
-  background-position: -27px -222px;
+  background-position: -52px -236px;
   width: 20px;
   height: 36px; }
 
 .fancybox-outer .fancybox-next span {
   background-image: url(../img/sprite.png);
-  background-position: -52px -222px;
+  background-position: -27px -236px;
   width: 20px;
   height: 36px; }
 
 .prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -451px -54px;
+  background-position: 0px -236px;
   width: 22px;
   height: 38px; }
 
 .next-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -222px;
+  background-position: -450px -54px;
   width: 22px;
   height: 38px; }
 
 .product-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -122px;
+  background-position: -43px -175px;
   width: 38px;
   height: 56px; }
 
 .product-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -408px -54px;
+  background-position: 0px -175px;
   width: 38px;
   height: 56px; }
 
 .brand-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -43px -167px;
+  background-position: -403px -114px;
   width: 8px;
   height: 11px; }
 
 .brand-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -160px -183px;
+  background-position: -390px -114px;
   width: 8px;
   height: 12px; }
 
 .up-icon {
   background-image: url(../img/sprite.png);
-  background-position: -358px -122px;
+  background-position: -154px -114px;
   width: 47px;
   height: 29px; }
 
 .home-icon {
   background-image: url(../img/sprite.png);
-  background-position: -94px -183px;
+  background-position: -301px -114px;
   width: 22px;
   height: 21px; }
 
 .file-icon {
   background-image: url(../img/sprite.png);
-  background-position: -410px -122px;
+  background-position: -206px -114px;
   width: 28px;
   height: 29px; }
 
 .download-icon {
   background-image: url(../img/sprite.png);
-  background-position: -443px -122px;
+  background-position: -239px -114px;
   width: 28px;
   height: 26px; }
 
 .slick-next:before {
   background-image: url(../img/sprite.png);
-  background-position: -77px -222px;
+  background-position: -191px -175px;
   width: 13px;
   height: 31px; }
 
 .slick-prev:before {
   background-image: url(../img/sprite.png);
-  background-position: -95px -222px;
+  background-position: -209px -175px;
   width: 12px;
   height: 29px; }
 
 .nav-tabs > li.active > a:before, .nav-tabs > li.active > a:hover:before, .nav-tabs > li.active > a:focus:before {
   background-image: url(../img/sprite.png);
-  background-position: -121px -183px;
+  background-position: -328px -114px;
   width: 34px;
   height: 13px; }
 
 .rss-icon {
   background-image: url(../img/sprite.png);
-  background-position: -178px -122px;
+  background-position: -270px -54px;
   width: 40px;
   height: 40px; }
 
 .gp-icon {
   background-image: url(../img/sprite.png);
-  background-position: -43px -122px;
+  background-position: -225px -54px;
   width: 40px;
   height: 40px; }
 
 .yt-icon {
   background-image: url(../img/sprite.png);
-  background-position: -268px -122px;
+  background-position: -109px -114px;
   width: 40px;
   height: 40px; }
 
 .fs-icon {
   background-image: url(../img/sprite.png);
-  background-position: -313px -122px;
+  background-position: -180px -54px;
   width: 40px;
   height: 40px; }
 
 .in-icon {
   background-image: url(../img/sprite.png);
-  background-position: -133px -122px;
+  background-position: -315px -54px;
   width: 40px;
   height: 40px; }
 
 .tw-icon {
   background-image: url(../img/sprite.png);
-  background-position: -88px -122px;
+  background-position: -360px -54px;
   width: 40px;
   height: 40px; }
 
 .fb-icon {
   background-image: url(../img/sprite.png);
-  background-position: -223px -122px;
+  background-position: -405px -54px;
   width: 40px;
   height: 40px; }
 
@@ -5470,12 +5470,12 @@ The `sprites` mixin generates identical output to the CSS template
   height: 13px; }
 .products-tabs-container #home-page-tabs li.active:nth-of-type(2) a:after {
   background-image: url(../img/sprite.png);
-  background-position: 0px -18px;
+  background-position: 0px -36px;
   width: 479px;
   height: 13px; }
 .products-tabs-container #home-page-tabs li.active:nth-of-type(3) a:after {
   background-image: url(../img/sprite.png);
-  background-position: 0px -36px;
+  background-position: 0px -18px;
   width: 479px;
   height: 13px; }
 
