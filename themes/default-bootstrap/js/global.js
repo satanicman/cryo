@@ -32,7 +32,7 @@ $(window).load(function() {
 	setPadding();
 });
 $(document).ready(function(){
-	$('#manufacturers_block_left > ul').slick({
+	$('#suppliers_block_left > ul, #manufacturers_block_left > ul').slick({
 		arrows: true,
 		dots: false,
 		slidesToShow: 5,

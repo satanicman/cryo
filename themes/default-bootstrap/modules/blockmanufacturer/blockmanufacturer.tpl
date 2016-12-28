@@ -27,7 +27,7 @@
 <div class="blockmanufacturer-wrap">
     <div class="blockmanufacturer-container container">
         <div id="manufacturers_block_left" class="blockmanufacturer">
-            <h6 class="blockmanufacturer-title">{if $page_name !='index'}{l s="Партнеры" mod='blockmanufacturer'}{else}{l s="Наши партнеры" mod='blockmanufacturer'}{/if}</h6>
+            <h6 class="blockmanufacturer-title">{l s="Наши клиенты" mod='blockmanufacturer'}</h6>
             {if $manufacturers}
                 {if $text_list}
                     <ul>

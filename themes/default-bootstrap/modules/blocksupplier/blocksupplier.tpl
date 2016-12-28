@@ -24,29 +24,23 @@
 *}
 
 <!-- Block suppliers module -->
-<div id="suppliers_block_left" class="block blocksupplier">
-	<p class="title_block">
-		{if $display_link_supplier}
-			<a href="{$link->getPageLink('supplier')|escape:'html':'UTF-8'}" title="{l s='Suppliers' mod='blocksupplier'}">
-		{/if}
-			{l s='Suppliers' mod='blocksupplier'}
-		{if $display_link_supplier}
-			</a>
-		{/if}
-	</p>
-	<div class="block_content list-block">
-		{if $suppliers}
+<div class="suppliers-wrap">
+    <div class="suppliers-container container">
+        <div id="suppliers_block_left" class="suppliers">
+            <h6 class="suppliers-title">{l s="Партнеры" mod='suppliers'}</h6>
+			{if $suppliers}
 			{if $text_list}
 			<ul>
 			{foreach from=$suppliers item=supplier name=supplier_list}
 				{if $smarty.foreach.supplier_list.iteration <= $text_list_nb}
 				<li class="{if $smarty.foreach.supplier_list.last}last_item{elseif $smarty.foreach.supplier_list.first}first_item{else}item{/if}">
                 {if $display_link_supplier}
-					<a 
-					href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}" 
+					<a
+					href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}"
 					title="{l s='More about' mod='blocksupplier'} {$supplier.name}">
 				{/if}
-                {$supplier.name|escape:'html':'UTF-8'}
+                <img src="{$img_sup_dir}{$supplier.image}.jpg"
+                                             alt="{$manufacturer.name|escape:'html':'UTF-8'}">
                 {if $display_link_supplier}
 					</a>
                 {/if}
@@ -70,6 +64,7 @@
 		{else}
 			<p>{l s='No supplier' mod='blocksupplier'}</p>
 		{/if}
+		</div>
 	</div>
 </div>
 <!-- /Block suppliers module -->
