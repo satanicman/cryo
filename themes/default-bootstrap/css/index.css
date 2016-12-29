@@ -167,13 +167,19 @@
   padding-left: 0;
   padding-right: 0; }
 #cmsinfo_block > div .img {
-  padding: 0; }
+  padding-left: 0; }
+#cmsinfo_block > div .img > * {
+  display: block;
+  border: 2px solid #369; }
 #cmsinfo_block > div .img img {
   max-width: 100%;
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 1px; }
 #cmsinfo_block > div .text {
-  padding-left: 50px;
+  padding-right: 0;
   color: #000;
   font-weight: 400; }
 #cmsinfo_block > div .text .services-list {
@@ -185,8 +191,8 @@
   -webkit-border-radius: 3px;
   border-radius: 3px 0 0 3px;
   position: relative;
-  width: 66px;
-  height: 66px;
+  width: 50px;
+  height: 50px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -200,7 +206,7 @@
   display: block;
   position: absolute;
   right: -34px;
-  border: 33px solid transparent;
+  border: 25px solid transparent;
   border-right-width: 17px;
   border-left-width: 17px;
   border-left-color: #369;
@@ -214,7 +220,7 @@
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   cursor: pointer;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -237,8 +243,6 @@
   height: 100%;
   background-color: #CCC;
   z-index: 0; }
-#cmsinfo_block > div .text .services-item:hover:before {
-  width: 100%; }
 #cmsinfo_block > div .text .services-text {
   z-index: 1;
   padding: 0 32px;
@@ -252,11 +256,9 @@
 #cmsinfo_block > div .text a:not(#showMore) {
   text-decoration: underline;
   color: inherit; }
-#cmsinfo_block > div .text .indet-header {
-  font-family: 'helvetica-light', serif;
-  font-size: 2.25em;
-  font-weight: 300;
-  margin: 0 0 3px; }
+#cmsinfo_block > div .text .main-title {
+  margin-bottom: 20px;
+  color: #777; }
 #cmsinfo_block > div .text #showMore {
   display: inline-block;
   padding-top: 5px;
