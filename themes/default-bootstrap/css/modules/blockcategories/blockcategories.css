@@ -51,7 +51,9 @@
   display: block;
   overflow: hidden;
   position: relative;
-  width: 41px; }
+  width: 41px;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0; }
 #categories_block_left.home li .categories_block_thumb img {
   position: absolute;
   left: 50%;

@@ -73,6 +73,7 @@
                 overflow: hidden;
                 position: relative;
                 width: 41px;
+                @include flex-shrink(0);
                 img {
                     position: absolute;
                     left: 50%;
