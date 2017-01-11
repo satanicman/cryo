@@ -281,7 +281,6 @@
                     @include align-items(center);
                     @include border-radius(3px);
                     margin-bottom: 16px;
-                    cursor: pointer;
                     @include transition(all .3s);
                     position: relative;
                     background: $bg-light-grey;
