@@ -201,10 +201,10 @@ class BlockCategoriesOverride extends BlockCategories
 			elseif (Configuration::get('BLOCK_CATEG_ROOT_CATEGORY') == 3 && !$category->is_root_category && !$category->getSubCategories($category->id, true))
 				$category = new Category($category->id_parent, $this->context->language->id);
 		}
-		elseif(isset($params['home']) && $params['home'])
-			$category = new Category((int)Configuration::get('BLOCK_CATEG_INDEX'), $this->context->language->id);
+//		elseif(isset($params['home']) && $params['home'])
+//			$category = new Category((int)Configuration::get('BLOCK_CATEG_INDEX'), $this->context->language->id);
 		else
-			$category = new Category((int)Configuration::get('PS_HOME_CATEGORY'), $this->context->language->id);
+			$category = new Category((int)Configuration::get('BLOCK_CATEG_INDEX'), $this->context->language->id);
 
 		$cacheId = $this->getCacheId($category ? $category->id : null);
 
