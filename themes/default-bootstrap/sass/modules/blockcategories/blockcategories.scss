@@ -165,7 +165,7 @@
     }
     &.category {
         font-family: "Open Sans", sans-serif;
-        border: 1px solid $db-light-grey;
+        border: 1px solid $bd-light-grey;
         border-radius: 7px;
         .title_block {
             color: $c-dark-blue;
@@ -173,7 +173,7 @@
             font-weight: 400;
             text-transform: uppercase;
             padding: 25px 30px;
-            border-bottom: 1px solid $db-light-grey;
+            border-bottom: 1px solid $bd-light-grey;
             margin: 0;
         }
         .block_content > ul {
@@ -187,12 +187,12 @@
             margin: 0;
         }
         ul ul {
-            border-top: 1px solid $db-light-grey;
+            border-top: 1px solid $bd-light-grey;
         }
         li {
             position: relative;
             &:not(:last-of-type) {
-                border-bottom: 1px solid $db-light-grey;
+                border-bottom: 1px solid $bd-light-grey;
             }
             &.OPEN {
                 background-color: #E0E0E0;
@@ -228,7 +228,7 @@
                         height: 8px;
                         border: 4px solid transparent;
                         border-right-width: 0;
-                        border-left: 6px solid $db-light-grey;
+                        border-left: 6px solid $bd-dark-grey;
                         @include transition(all .3s);
                     }
                 }
