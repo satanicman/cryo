@@ -152,9 +152,9 @@ ul.product_list .functional-buttons div.compare a.checked:before {
 /*******************************************************
 Product list(Grid) Styles
 ********************************************************/
-ul.product_list.grid li.ajax_block_product {
+#subcategories li, #subcategories li.ajax_block_product, ul.product_list.grid li, ul.product_list.grid li.ajax_block_product {
   padding-bottom: 30px; }
-ul.product_list.grid li.ajax_block_product .product-container {
+#subcategories li .subcategory-container, #subcategories li .product-container, #subcategories li.ajax_block_product .subcategory-container, #subcategories li.ajax_block_product .product-container, ul.product_list.grid li .subcategory-container, ul.product_list.grid li .product-container, ul.product_list.grid li.ajax_block_product .subcategory-container, ul.product_list.grid li.ajax_block_product .product-container {
   background: #fff;
   padding: 0;
   position: relative;
@@ -162,9 +162,9 @@ ul.product_list.grid li.ajax_block_product .product-container {
   -moz-box-shadow: 0 0 15px rgba(16, 24, 30, 0.3);
   -webkit-box-shadow: 0 0 15px rgba(16, 24, 30, 0.3);
   box-shadow: 0 0 15px rgba(16, 24, 30, 0.3); }
-ul.product_list.grid li.ajax_block_product .product-container .product-image-container {
+#subcategories li .subcategory-container .subcategory-image, #subcategories li .subcategory-container .product-image-container, #subcategories li .product-container .subcategory-image, #subcategories li .product-container .product-image-container, #subcategories li.ajax_block_product .subcategory-container .subcategory-image, #subcategories li.ajax_block_product .subcategory-container .product-image-container, #subcategories li.ajax_block_product .product-container .subcategory-image, #subcategories li.ajax_block_product .product-container .product-image-container, ul.product_list.grid li .subcategory-container .subcategory-image, ul.product_list.grid li .subcategory-container .product-image-container, ul.product_list.grid li .product-container .subcategory-image, ul.product_list.grid li .product-container .product-image-container, ul.product_list.grid li.ajax_block_product .subcategory-container .subcategory-image, ul.product_list.grid li.ajax_block_product .subcategory-container .product-image-container, ul.product_list.grid li.ajax_block_product .product-container .subcategory-image, ul.product_list.grid li.ajax_block_product .product-container .product-image-container {
   padding: 8px 6px 0; }
-ul.product_list.grid li.ajax_block_product .product-container h5 {
+#subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
   margin: 0;
   min-height: 101px;
   font-family: "Open Sans", serif;
@@ -172,13 +172,13 @@ ul.product_list.grid li.ajax_block_product .product-container h5 {
   font-weight: 400;
   padding: 15px;
   background-color: #f9f9f9; }
-ul.product_list.grid li.ajax_block_product .product-container .details {
+#subcategories li .subcategory-container .details, #subcategories li .product-container .details, #subcategories li.ajax_block_product .subcategory-container .details, #subcategories li.ajax_block_product .product-container .details, ul.product_list.grid li .subcategory-container .details, ul.product_list.grid li .product-container .details, ul.product_list.grid li.ajax_block_product .subcategory-container .details, ul.product_list.grid li.ajax_block_product .product-container .details {
   background-color: #369;
   -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
   display: none; }
-ul.product_list.grid li.ajax_block_product .product-container .details a {
+#subcategories li .subcategory-container .details a, #subcategories li .product-container .details a, #subcategories li.ajax_block_product .subcategory-container .details a, #subcategories li.ajax_block_product .product-container .details a, ul.product_list.grid li .subcategory-container .details a, ul.product_list.grid li .product-container .details a, ul.product_list.grid li.ajax_block_product .subcategory-container .details a, ul.product_list.grid li.ajax_block_product .product-container .details a {
   display: block;
   padding: 20px;
   color: #fff;
@@ -186,7 +186,7 @@ ul.product_list.grid li.ajax_block_product .product-container .details a {
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase; }
-ul.product_list.grid li.hovered h5 {
+#subcategories li.hovered h5, ul.product_list.grid li.hovered h5 {
   min-height: 30px; }
 
 @media (min-width: 1200px) {

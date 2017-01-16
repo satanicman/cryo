@@ -198,16 +198,19 @@ ul.product_list {
 /*******************************************************
 Product list(Grid) Styles
 ********************************************************/
-
+#subcategories,
 ul.product_list.grid {
+	li,
 	li.ajax_block_product {
 		padding-bottom: 30px;
+		.subcategory-container,
 		.product-container {
 			background: $light-background;
 			padding: 0;
 			position: relative;
 			text-align: center;
 			@include box-shadow(0 0 15px rgba(16, 24, 30, 0.3));
+            .subcategory-image,
 			.product-image-container {
 				padding: 8px 6px 0;
 			}

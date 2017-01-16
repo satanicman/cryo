@@ -1,6 +1,9 @@
-/* ************************************************************************************************
-								Categories Page Styles
-************************************************************************************************ */
+.product_list.grid {
+  margin: 0 -15px; }
+
+	/* ************************************************************************************************
+                                    Categories Page Styles
+    ************************************************************************************************ */
 .content_scene_cat {
   border-top: 5px solid #333;
   color: #d7d7d7;
@@ -39,39 +42,10 @@
 									Sub Categories Styles
 ************************************************************************************************ */
 #subcategories {
-  border-top: 1px solid #d6d4d4;
-  padding: 15px 0 0px 0; }
-#subcategories p.subcategory-heading {
-  font-weight: bold;
-  color: #000;
-  margin: 0 0 15px 0; }
-#subcategories ul {
-  margin: 0 0 0 -20px; }
-#subcategories ul li {
-  float: left;
-  width: 145px;
-  margin: 0 0 13px 33px;
-  text-align: center;
-  height: 202px; }
-#subcategories ul li .subcategory-image {
-  padding: 0 0 8px 0; }
-#subcategories ul li .subcategory-image a {
-  display: block;
-  padding: 9px;
-  border: 1px solid #d6d4d4; }
-#subcategories ul li .subcategory-image a img {
-  max-width: 100%;
-  vertical-align: top; }
-#subcategories ul li .subcategory-name {
-  font: 600 18px/22px "helvetica-roman", sans-serif;
-  color: #555454;
-  text-transform: uppercase; }
-#subcategories ul li .subcategory-name:hover {
-  color: #515151; }
-#subcategories ul li .cat_desc {
-  display: none; }
-#subcategories ul li:hover .subcategory-image a {
-  border: 5px solid #333;
-  padding: 5px; }
+  border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+  margin-bottom: 40px; }
+#subcategories .main-title {
+  margin-bottom: 40px;
+  text-align: center; }
 
 /*# sourceMappingURL=category.css.map */
