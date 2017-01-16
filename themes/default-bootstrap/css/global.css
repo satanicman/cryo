@@ -5590,6 +5590,8 @@ p.info-title {
   font-weight: 100;
   margin: 0;
   padding: 0; }
+.main-title_sub {
+  font-size: 2.25em; }
 
 p.info-account {
   margin: -4px 0 24px 0; }
@@ -6833,8 +6835,7 @@ div.star_hover a, div.star a:hover {
   width: 20px; }
 
 .footer-container {
-  padding-top: 65px; }
-.footer-container-main {
+  padding-top: 65px;
   background: #111 linear-gradient(to top, #bdc3c7 0%, #ecf0f1 100%); }
 .footer-container .container {
   padding-bottom: 100px; }

@@ -1,10 +1,6 @@
 /**************************************************************
 					CMS Pages Styles
 ***************************************************************/
-#cms .footer-container {
-  background: #111 linear-gradient(to top, #bdc3c7 0%, #ecf0f1 100%); }
-#cms .footer-container-main {
-  background: none; }
 #cms .blockmanufacturer-container {
   padding-bottom: 65px; }
 #cms .slick-arrow:hover {

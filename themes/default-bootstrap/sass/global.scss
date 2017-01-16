@@ -149,6 +149,9 @@ p.info-title {
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
+	&_sub {
+		font-size: em(36px);
+	}
 }
 
 p.info-account {
@@ -1738,10 +1741,8 @@ div.star a:hover {
 // FOOTER
 .footer-container {
 	padding-top: 65px;
-    &-main {
-        background: $bg-footer;
-        //box-shadow: 0 4px 10px rgba(148, 148, 148, 0.5);
-	}
+    background: $bg-footer;
+    //box-shadow: 0 4px 10px rgba(148, 148, 148, 0.5);
 	.container {
 		padding-bottom: 100px;
 	}
