@@ -27,6 +27,7 @@ $(document).ready(function(){
 	$('.slider.index').slick({
 		arrows: false,
 		dots: true,
+        autoplay: true,
 		slidesToShow: 1,
 		// responsive: [
 		// 	{

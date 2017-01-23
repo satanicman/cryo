@@ -31,7 +31,8 @@
                 }
                 .slick-dots {
                     position: absolute;
-                    bottom: 0;
+                    bottom: auto;
+                    top: 355px;
                     padding: 25px;
                     li {
                         &.slick-active {

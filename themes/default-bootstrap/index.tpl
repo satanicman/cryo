@@ -30,41 +30,7 @@
 		{$smarty.capture.homeTop}
 		<div class="col-lg-6 col-md-6 col-sm-12 slider-col">
 			<h3 class="main-title">{l s="Реализованные"}<br/>{l s="проекты"}</h3>
-			<ul class="slider index" id="slider">
-				<li>
-					<div class="min-slider-img">
-						<img src="{$img_dir}mini-slide-1.png" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="min-slider-img">
-						<img src="{$img_dir}mini-slide-2.png" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="min-slider-img">
-						<img src="{$img_dir}mini-slide-1.png" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="min-slider-img">
-						<img src="{$img_dir}mini-slide-2.png" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="min-slider-img">
-						<img src="{$img_dir}mini-slide-1.png" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="min-slider-img">
-						<img src="{$img_dir}mini-slide-2.png" alt="">
-					</div>
-				</li>
-			</ul>
-			<div class="min-slider-description">
-				<p>Компания "КРИО ИНТЕР ТРЕЙДИНГ" завершила монтажные работы по прокладке трубопровода газообразного кислорода для "ЭР ЛИКИД Енакиево" на территории ПАО "Енакиевского металлургического завода"</p>
-			</div>
+            {hook h="displaySlidersPro" slider="sample"}
 		</div>
 	</div>
 {/if}
