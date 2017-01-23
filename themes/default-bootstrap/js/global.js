@@ -33,6 +33,7 @@ $(window).load(function() {
 });
 $(document).ready(function(){
 	$('#suppliers_block_left > ul, #manufacturers_block_left > ul').slick({
+		autoplay: true,
 		arrows: true,
 		dots: false,
 		slidesToShow: 5,

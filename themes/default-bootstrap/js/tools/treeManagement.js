@@ -73,6 +73,11 @@ $(window).load(function() {
 //animate the opening of the branch (span.grower jQueryElement)
 function openBranch(jQueryElement, noAnimation)
 {
+	if(jQueryElement.parent().parent().parent().hasClass('dynamized')) {
+        $('.grower.OPEN').each(function () {
+            closeBranch($(this));
+        });
+    }
 		jQueryElement.addClass('OPEN').removeClass('CLOSE').parent().parent().addClass('OPEN').removeClass('CLOSE');
 		var parent = jQueryElement.parent().parent();
 		if(noAnimation) {
