@@ -23,7 +23,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<section id="social_block" class="col-lg-3">
+<section id="social_block" class="col-sm-6 col-md-4 col-lg-3">
 	<h4 class="footer-title">{l s='Мы в социальных сетях' mod='blocksocial'}</h4>
 	<ul class="clearfix">
 		{if isset($facebook_url) && $facebook_url != ''}
@@ -98,4 +98,3 @@
         {/if}
 	</ul>
 </section>
-<div class="col-lg-1 clearfix"></div>

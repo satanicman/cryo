@@ -122,6 +122,9 @@
   font-family: "Open Sans", sans-serif;
   border: 1px solid #ccc;
   border-radius: 7px; }
+@media (max-width: 991px) {
+  #categories_block_left.category {
+    margin-bottom: 30px; } }
 #categories_block_left.category .title_block {
   color: #369;
   font-size: 1.375em;

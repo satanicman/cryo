@@ -25,7 +25,7 @@
 *}
 
 <!-- MODULE Block contact infos -->
-<section id="block_contact_infos" class="col-xs-12 col-sm-4">
+<section id="block_contact_infos" class="col-xs-12 col-md-4">
 	<div>
         <h4 class="footer-title">{l s='Store Information' mod='blockcontactinfos'}</h4>
         <ul>

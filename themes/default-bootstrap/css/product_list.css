@@ -35,7 +35,7 @@ ul.product_list .product-image-container .quick-view-wrapper-mobile {
   display: none; }
 ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {
   display: none; }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {
     display: block;
     position: relative;
@@ -63,10 +63,10 @@ ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-
     -webkit-transform: rotate(315deg);
     -ms-transform: rotate(315deg);
     transform: rotate(315deg); } }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-mobile:hover {
     background-color: rgba(167, 167, 167, 0.57); } }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   ul.product_list .product-image-container .quick-view-wrapper-mobile {
     display: block;
     background-color: transparent;
@@ -92,10 +92,10 @@ ul.product_list .product-image-container .quick-view {
   -moz-box-shadow: rgba(0, 0, 0, 0.16) 0 2px 8px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0 2px 8px;
   box-shadow: rgba(0, 0, 0, 0.16) 0 2px 8px; }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   ul.product_list .product-image-container .quick-view {
     display: none; } }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   ul.product_list .product-image-container .quick-view {
     display: none; } }
 @media (max-width: 767px) {
@@ -125,7 +125,7 @@ ul.product_list .functional-buttons div.wishlist a:before {
   padding: 0 3px; }
 ul.product_list .functional-buttons div.wishlist a.checked:before {
   content: "\f004"; }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   ul.product_list .functional-buttons div.wishlist {
     border-right: 0; }
   ul.product_list .functional-buttons div.wishlist a:before {
@@ -140,7 +140,7 @@ ul.product_list .functional-buttons div.compare a:before {
   display: inline-block;
   font-family: "FontAwesome";
   margin-right: 3px; }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   ul.product_list .functional-buttons div.compare a:before {
     display: none; } }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -165,16 +165,19 @@ Product list(Grid) Styles
 #subcategories li .subcategory-container .subcategory-image, #subcategories li .subcategory-container .product-image-container, #subcategories li .product-container .subcategory-image, #subcategories li .product-container .product-image-container, #subcategories li.ajax_block_product .subcategory-container .subcategory-image, #subcategories li.ajax_block_product .subcategory-container .product-image-container, #subcategories li.ajax_block_product .product-container .subcategory-image, #subcategories li.ajax_block_product .product-container .product-image-container, ul.product_list.grid li .subcategory-container .subcategory-image, ul.product_list.grid li .subcategory-container .product-image-container, ul.product_list.grid li .product-container .subcategory-image, ul.product_list.grid li .product-container .product-image-container, ul.product_list.grid li.ajax_block_product .subcategory-container .subcategory-image, ul.product_list.grid li.ajax_block_product .subcategory-container .product-image-container, ul.product_list.grid li.ajax_block_product .product-container .subcategory-image, ul.product_list.grid li.ajax_block_product .product-container .product-image-container {
   padding: 8px 6px 0; }
 #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
-  margin: 0;
-  min-height: 101px;
+  margin: 15px 0;
+  height: 70px;
+  overflow: hidden;
   font-family: "Open Sans", serif;
   font-size: 0.9375em;
   font-weight: 400;
-  padding: 15px;
+  padding: 0 15px;
   background-color: #f9f9f9;
-  display: table;
-  table-layout: fixed;
   width: 100%; }
+@media (min-width: 1260px) {
+  #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
+    display: table;
+    table-layout: fixed; } }
 #subcategories li .subcategory-container h5 > *, #subcategories li .product-container h5 > *, #subcategories li.ajax_block_product .subcategory-container h5 > *, #subcategories li.ajax_block_product .product-container h5 > *, ul.product_list.grid li .subcategory-container h5 > *, ul.product_list.grid li .product-container h5 > *, ul.product_list.grid li.ajax_block_product .subcategory-container h5 > *, ul.product_list.grid li.ajax_block_product .product-container h5 > * {
   display: table-cell;
   vertical-align: middle; }
@@ -195,7 +198,7 @@ Product list(Grid) Styles
 #subcategories li.hovered h5, ul.product_list.grid li.hovered h5 {
   min-height: 30px; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   #blockpack ul > li.last-line {
     border: none;
     padding-bottom: 0;
@@ -303,7 +306,7 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
   padding-top: 10px; }
 ul.product_list.list > li .right-block .right-block-content .functional-buttons .compare a:before {
   margin-right: 10px; }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   ul.product_list.list > li:hover .product-image-container .quick-view {
     display: block; } }
 @media (max-width: 479px) {
@@ -316,13 +319,13 @@ Product list(Index page) Styles
 #index ul.product_list.tab-pane > li {
   padding-bottom: 10px;
   margin-bottom: 10px; }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   #index ul.product_list.tab-pane > li {
     padding-bottom: 85px;
     margin-bottom: 0; } }
 #index ul.product_list.tab-pane > li .availability {
   display: none; }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   #index ul.product_list.tab-pane > li.last-line {
     border: none;
     padding-bottom: 0;

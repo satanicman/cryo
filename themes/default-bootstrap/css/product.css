@@ -62,7 +62,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .box-security .product-heading-h5 {
   margin: 3px 0 -8px; }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   .box-security .product-heading-h5 {
     margin-bottom: 8px; } }
 
@@ -92,7 +92,6 @@ a.fancybox-nav {
   margin-top: 10px; }
 @media (max-width: 767px) {
   .pb-left-column #views_block {
-    width: 280px;
     margin: 10px auto 0px auto; } }
 
 #thumbs_list {
@@ -134,7 +133,7 @@ a.fancybox-nav {
 
 .show-right-column.hide-left-column #thumbs_list, .hide-right-column.show-left-column #thumbs_list {
   width: 294px; }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   .show-right-column.hide-left-column #thumbs_list, .hide-right-column.show-left-column #thumbs_list {
     width: 194px; } }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -148,7 +147,7 @@ span.view_scroll_spacer {
   float: left;
   width: 39px;
   padding-left: 12px; }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   span.view_scroll_spacer {
     width: 45px;
     padding-left: 18px; } }
@@ -164,7 +163,7 @@ span.view_scroll_spacer {
 .show-right-column.hide-left-column span.view_scroll_spacer, .hide-right-column.show-left-column span.view_scroll_spacer {
   width: 27px;
   padding-left: 2px; }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   .show-right-column.hide-left-column span.view_scroll_spacer, .hide-right-column.show-left-column span.view_scroll_spacer {
     width: 44px;
     padding-left: 16px; } }
@@ -539,7 +538,7 @@ span.view_scroll_spacer {
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   .box-info-product .exclusive span {
     padding: 12px 22px 14px 55px;
     font-size: 14px; } }
@@ -638,7 +637,7 @@ span.view_scroll_spacer {
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   #center_column.col-sm-9 .col-md-3 .box-info-product .exclusive span {
     font-size: 16px; } }
 @media (max-width: 991px) {
@@ -1019,5 +1018,8 @@ Quick View Styles
   -moz-box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5);
   -webkit-box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5);
   box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5); }
+@media (max-width: 767px) {
+  #feedbackform--btn {
+    width: 100%; } }
 
 /*# sourceMappingURL=product.css.map */

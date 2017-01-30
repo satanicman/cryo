@@ -215,17 +215,20 @@ ul.product_list.grid {
 				padding: 8px 6px 0;
 			}
 			h5 {
-				margin: 0;
-				min-height: 101px;
+				margin: 15px 0;
+				height: 70px;
+				overflow: hidden;
 
 				font-family: "Open Sans", serif;
 				font-size: em(15px);
 				font-weight: 400;
-				padding: 15px;
+				padding: 0 15px;
 				background-color: $bg-ultra-light;
-				display: table;
-				table-layout: fixed;
 				width: 100%;
+                @media (min-width: $screen-lg) {
+                    display: table;
+                    table-layout: fixed;
+				}
 				> * {
 					display: table-cell;
 					vertical-align: middle;

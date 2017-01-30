@@ -104,13 +104,26 @@ header {
 		}
 	}
 	.row {
-		@include display-flex;
-		@include align-items(center);
 		position: relative;
+        @media (max-width: $screen-sm-max) {
+			text-align: center;
+		}
+        @media (min-width: $screen-md) {
+            @include display-flex;
+            @include align-items(center);
+		}
 		> .container {
 			position: relative;
 		}
 		#header_logo {
+			@media (max-width: $screen-sm-max) {
+				display: inline-block;
+			}
+
+			@media (max-width: $screen-xs-max) {
+				margin-bottom: 15px;
+			}
+
 			@media (min-width: 1920px) {
 				display: none;
 			}
@@ -1660,11 +1673,13 @@ div.star a:hover {
 
 .header-container {
 	//background: $light-background;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 4;
+	@media (min-width: $screen-md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 4;
+	}
 }
 
 // BREADCRUMB
@@ -1748,6 +1763,9 @@ div.star a:hover {
 	}
 	#footer {
 		color: $c-dark-grey;
+		@media (max-width: $screen-xs-max) {
+			text-align: center;
+		}
 		.row {
 			position: relative;
 		}
@@ -1778,30 +1796,46 @@ div.star a:hover {
 			}
 		}
         #block_various_links_footer {
-			padding-left: 0;
-			padding-right: 45px;
+			@media (min-width: $screen-lg) {
+                padding-left: 0;
+                padding-right: 45px;
+			}
 			a {
 				@include display-flex;
 				@include align-items(center);
+				@media (max-width: $screen-xs-max) {
+					display: block;
+					font-size: em(20px);
+				}
 				&:before {
 					margin-right: 15px;
 					width: 7px;
 					height: 7px;
 					content: '';
 					display: inline-block;
+					vertical-align: middle;
 					border-width: 0 1px 1px 0;
 					border-style: solid;
 					@include transform(rotate(-45deg));
+					@media (max-width: $screen-xs-max) {
+						display: none;
+					}
 				}
 			}
 			li {
-				@extend .col-lg-6;
+				@extend .col-xs-6;
 				padding-left: 0;
 				padding-bottom: 25px;
+				@media (max-width: $screen-xs-max) {}
+
 			}
 			ul {}
 		}
 		#block_contact_infos {
+            @media (max-width: $screen-sm-max) {
+				text-align: center;
+
+			}
 			> div {
 				ul {
 					li {
@@ -1824,9 +1858,9 @@ div.star a:hover {
 					float: left;
 					width: 40px;
 					text-align: center;
-					// min 768px max 991px
-					@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-						width: 30px;
+					@media (max-width: $screen-xs-max) {
+						float: none;
+						display: inline-block;
 					}
 					a {
 						span {

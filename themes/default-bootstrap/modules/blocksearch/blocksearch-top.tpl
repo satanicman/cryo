@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- Block search module TOP -->
-<div id="search_block_top" class="clearfix col-lg-1">
+<div id="search_block_top" class="clearfix col-lg-1 col-sm-6 col-xs-10">
 	<form id="searchbox" method="get" action="{$link->getPageLink('search', null, null, null, false, null, true)|escape:'html':'UTF-8'}" >
 		<input type="hidden" name="controller" value="search" />
 		<input type="hidden" name="orderby" value="position" />

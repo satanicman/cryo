@@ -123,6 +123,9 @@
 .slider.products .slick-list {
   padding-top: 10px !important;
   padding-bottom: 10px !important; }
+@media (max-width: 1259px) {
+  .slider.products .slick-list {
+    padding: 0; } }
 .slider.products .slick-list .ajax_block_product {
   padding-bottom: 0; }
 .slider.products .slick-next, .slider.products .slick-prev {
@@ -137,7 +140,7 @@
   right: -48px; }
 .slider.products .slick-prev {
   left: -48px; }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .slider.products.product_list .slick-active + .slick-slide:not(.slick-active) {
     -moz-transform: scale(0.9) translateX(-149px);
     -ms-transform: scale(0.9) translateX(-149px);

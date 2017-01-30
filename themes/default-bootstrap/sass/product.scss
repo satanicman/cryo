@@ -62,7 +62,6 @@ a.fancybox-nav {
 .pb-left-column #views_block {
 	margin-top: 10px;
 	@media (max-width: $screen-xs-max) { //max 767px
-		width: 280px;
 		margin: 10px auto 0px auto;
 	}
 }
@@ -1182,4 +1181,7 @@ Quick View Styles
 }
 #feedbackform--btn {
 	@include box-shadow(0 7px 10px rgba(51, 102, 153, 0.5));
+	@media (max-width: $screen-xs-max) {
+		width: 100%;
+	}
 }

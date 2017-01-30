@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if $telnumber}
-	<div class="shop-phone{if isset($is_logged) && $is_logged} is_logged{/if} col-md-2">
+	<div class="shop-phone{if isset($is_logged) && $is_logged} is_logged{/if} col-md-3 col-lg-2 col-sm-4">
 		<i class="mobile-icon icon"></i>
 		<div class="shop-phone-info">
 			<p>{l s='Контактный телефон' mod='blockcontact'}</p>

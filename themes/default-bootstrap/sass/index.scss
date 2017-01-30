@@ -172,6 +172,9 @@
         .slick-list {
             padding-top: 10px !important;
             padding-bottom: 10px !important;
+            @media (max-width: $screen-md-max) {
+                padding: 0;
+            }
             .ajax_block_product {
                 padding-bottom: 0;
             }
@@ -195,7 +198,7 @@
         }
         $translat: 149px;
         &.product_list {
-            @media (min-width: 1200px) {
+            @media (min-width: $screen-lg) {
                 .slick-active {
                     + .slick-slide {
                         &:not(.slick-active) {

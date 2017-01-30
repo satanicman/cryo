@@ -6,14 +6,31 @@
         width: 66.66667%;
         padding-right: 8.33333%;
     }
+    @media (max-width: $screen-sm-max) and (min-width:$screen-sm) {
+        margin: 20px 0;
+    }
     ul {
         @include display-flex;
         @include align-items(center);
         margin: 0;
+        @media (max-width: $screen-md-max) {
+            display: block;
+            text-align: center;
+        }
         li {
             padding: 0 15px;
             @include flex-grow(1);
             text-align: center;
+            @media (max-width: $screen-md-max) {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            @media (max-width: $screen-md-max) and (min-width: $screen-md) {
+                margin-bottom: 5px;
+            }
+            @media (max-width: $screen-xs-max) {
+                margin: 0 0 15px;
+            }
             a {
                 font-family: "helvetica-roman", serif;
                 font-size: 13px;
@@ -25,6 +42,12 @@
                 position: relative;
                 @media (min-width: 1920px) {
                     font-size: 16px;
+                }
+                @media (max-width: $screen-sm-max) and (min-width:$screen-xs-max) {
+                    font-size: em(16px);
+                }
+                @media (max-width: $screen-xs-max) {
+                    font-size: em(20px);
                 }
                 &:hover {
                     color: $c-green;

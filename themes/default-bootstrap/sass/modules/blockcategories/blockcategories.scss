@@ -167,6 +167,9 @@
         font-family: "Open Sans", sans-serif;
         border: 1px solid $bd-light-grey;
         border-radius: 7px;
+        @media(max-width: $screen-sm-max) {
+            margin-bottom: 30px;
+        }
         .title_block {
             color: $c-dark-blue;
             font-size: em(22px);

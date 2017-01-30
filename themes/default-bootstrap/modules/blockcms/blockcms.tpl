@@ -65,7 +65,7 @@
 	{/foreach}
 	<!-- /Block CMS module -->
 {elseif $block == 2}
-	<section class="col-xs-12 col-md-6" id="block_various_links_top">
+	<section class="col-xs-12 col-md-5 col-lg-6" id="block_various_links_top">
 		<ul>
 			<li class="item">
                 <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
@@ -99,7 +99,7 @@
 	</section>
 {else}
 	<!-- Block CMS module footer -->
-	<section class="col-xs-12 col-sm-4" id="block_various_links_footer">
+	<section class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-1" id="block_various_links_footer">
 		<h4 class="footer-title">{l s='Полезные ссылки' mod='blockcms'}</h4>
 		<ul class="clearfix">
 			{if isset($show_price_drop) && $show_price_drop && !$PS_CATALOG_MODE}

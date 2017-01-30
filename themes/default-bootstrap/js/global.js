@@ -25,10 +25,16 @@
 //global variables
 var responsiveflag = false;
 function setPadding() {
-    var h = $('.header-container').outerHeight();
-	$('#page').css('paddingTop', h);
+	$('#page').css('paddingTop', 0);
+	if($(window).outerWidth() >= 975) {
+		var h = $('.header-container').outerHeight();
+		$('#page').css('paddingTop', h);
+	}
 };
 $(window).load(function() {
+	setPadding();
+});
+$(window).resize(function() {
 	setPadding();
 });
 $(document).ready(function(){
@@ -38,7 +44,21 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 5,
 		nextArrow: '<button type="button" class="slick-next"><i class="brand-next-icon icon"></i>Next</button>',
-		prevArrow: '<button type="button" class="slick-prev"><i class="brand-prev-icon icon"></i>Previous</button>'
+		prevArrow: '<button type="button" class="slick-prev"><i class="brand-prev-icon icon"></i>Previous</button>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				}
+			}
+		]
 	});
 	// to top
 	$(window).scroll(function () {

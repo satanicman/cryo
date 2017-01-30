@@ -22,7 +22,32 @@ $(document).ready(function(){
 		centerMode: true,
 		centerPadding: '120px',
 		nextArrow: '<button type="button" class="slick-next"><i class="product-next-icon icon"></i>Next</button>',
-		prevArrow: '<button type="button" class="slick-prev"><i class="product-prev-icon icon"></i>Previous</button>'
+		prevArrow: '<button type="button" class="slick-prev"><i class="product-prev-icon icon"></i>Previous</button>',
+		responsive: [
+			{
+				breakpoint: 1261,
+				settings: {
+					centerMode: false,
+					centerPadding: 0,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					centerMode: false,
+					centerPadding: 0,
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					centerMode: false,
+					centerPadding: 0,
+					slidesToShow: 1,
+				}
+			}
+		]
 	});
 	$('.slider.index').slick({
 		arrows: false,

@@ -134,7 +134,27 @@ $(document).ready(function()
 	$('.slider').slick({
 		infinite: true,
 		slidesToShow: 5,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1261,
+				settings: {
+					slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
 	});
 	$('.product-tabs .nav-tabs li:first-of-type, .product-tabs .tab-content .tab-pane:first-of-type').addClass('active');
 
