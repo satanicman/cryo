@@ -40,9 +40,9 @@ $(document).ready(function(){
 		$('ul.tree.dhtml').show();
 		
 		//open the tree for the selected branch
-			$('ul.tree.dhtml .selected').parents().each( function() {
+			$('ul.tree.dhtml .selected').parents().parents().parents().each( function() {
 				if ($(this).is('ul'))
-					toggleBranch($(this).prev().prev(), true);
+					toggleBranch($(this).prev().children('.grower'), true);
 			});
 			toggleBranch( $('ul.tree.dhtml .selected').prev(), true);
 		

@@ -223,6 +223,13 @@ ul.product_list.grid {
 				font-weight: 400;
 				padding: 15px;
 				background-color: $bg-ultra-light;
+				display: table;
+				table-layout: fixed;
+				width: 100%;
+				> * {
+					display: table-cell;
+					vertical-align: middle;
+				}
 			}
 			.details {
 				background-color: $bg-dark-blue;

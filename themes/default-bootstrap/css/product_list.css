@@ -171,7 +171,13 @@ Product list(Grid) Styles
   font-size: 0.9375em;
   font-weight: 400;
   padding: 15px;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+#subcategories li .subcategory-container h5 > *, #subcategories li .product-container h5 > *, #subcategories li.ajax_block_product .subcategory-container h5 > *, #subcategories li.ajax_block_product .product-container h5 > *, ul.product_list.grid li .subcategory-container h5 > *, ul.product_list.grid li .product-container h5 > *, ul.product_list.grid li.ajax_block_product .subcategory-container h5 > *, ul.product_list.grid li.ajax_block_product .product-container h5 > * {
+  display: table-cell;
+  vertical-align: middle; }
 #subcategories li .subcategory-container .details, #subcategories li .product-container .details, #subcategories li.ajax_block_product .subcategory-container .details, #subcategories li.ajax_block_product .product-container .details, ul.product_list.grid li .subcategory-container .details, ul.product_list.grid li .product-container .details, ul.product_list.grid li.ajax_block_product .subcategory-container .details, ul.product_list.grid li.ajax_block_product .product-container .details {
   background-color: #369;
   -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);

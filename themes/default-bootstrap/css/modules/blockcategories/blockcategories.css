@@ -134,7 +134,7 @@
   overflow: hidden; }
 #categories_block_left.category .category-link-wrap {
   position: relative;
-  padding: 15px 30px; }
+  padding: 15px 36px 15px 30px; }
 #categories_block_left.category ul {
   margin: 0; }
 #categories_block_left.category ul ul {
@@ -156,7 +156,7 @@
 #categories_block_left.category li span.grower {
   display: block;
   position: absolute;
-  right: 15px;
+  right: 5px;
   top: 50%;
   margin-top: -13px;
   cursor: pointer;
