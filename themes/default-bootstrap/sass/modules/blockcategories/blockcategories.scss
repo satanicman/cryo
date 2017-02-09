@@ -257,9 +257,9 @@
                 li {
                     border-radius: 3px;
                     overflow: hidden;
+                    padding-bottom: 10px;
                 }
                 > li {
-                    padding-bottom: 10px;
                     &.OPEN {
                         > .category-link-wrap a {
                             background-color: $bg-light-green;

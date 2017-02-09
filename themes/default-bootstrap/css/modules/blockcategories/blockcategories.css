@@ -188,8 +188,7 @@
   padding-right: 24px; }
 #categories_block_left.categories_block_home .block_content > ul li {
   border-radius: 3px;
-  overflow: hidden; }
-#categories_block_left.categories_block_home .block_content > ul > li {
+  overflow: hidden;
   padding-bottom: 10px; }
 #categories_block_left.categories_block_home .block_content > ul > li.OPEN > .category-link-wrap a {
   background-color: #92cf07;
