@@ -6184,6 +6184,7 @@ table.std td, table.table_block td {
   height: auto; }
 
 #home-page-tabs {
+  display: none;
   border: none;
   background: #fff; }
 @media (min-width: 768px) {

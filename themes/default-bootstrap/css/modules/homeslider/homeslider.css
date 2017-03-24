@@ -58,9 +58,10 @@
   padding: 0; }
 #homepage-slider .homeslider-container {
   position: relative; }
+#homepage-slider .homeslider-container img {
+  width: 100%;
+  height: auto; }
 #homepage-slider .homeslider-container > a {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
   display: block; }
 #homepage-slider .homeslider-image {
   position: absolute;

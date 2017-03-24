@@ -72,8 +72,12 @@
 	}
 	.homeslider-container {
 		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+		}
 		> a {
-			@include filter(blur(5px));
+			//@include filter(blur(5px));
 			display: block;
 		}
 	}

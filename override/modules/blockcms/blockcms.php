@@ -806,6 +806,7 @@ class BlockCmsOverride extends BlockCms
 	public function hookHeader($params)
 	{
 		$this->context->controller->addCSS(($this->_path).'blockcms.css', 'all');
+        $this->context->controller->addJS(($this->_path).'blockcms.js');
 	}
 
 	public function hookLeftColumn()

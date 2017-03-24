@@ -65,7 +65,8 @@
 	{/foreach}
 	<!-- /Block CMS module -->
 {elseif $block == 2}
-	<section class="col-xs-12 col-md-5 col-lg-6" id="block_various_links_top">
+	<section class="col-md-2 col-lg-6" id="block_various_links_top">
+		<div class="b-toggle"></div>
 		<ul>
 			<li class="item">
                 <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
