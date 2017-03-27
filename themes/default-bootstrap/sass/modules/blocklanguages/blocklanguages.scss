@@ -3,16 +3,25 @@
 #languages-block-top {
 	position: relative;
 	padding-right: 0;
+	@media (max-width: $screen-sm-max) {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+		//padding-left: 0;
+	}
 	span.firstWord {
 		display: none;
 	}
 	div.current {
-		float: right;
 		font-weight: 400;
 		padding: 0;
 		cursor: pointer;
 		@include display-flex;
 		@include align-items(center);
+		@media (min-width: $screen-md) {
+			float: right;
+		}
 		&:before {
 			display: inline-block;
 			content: '';

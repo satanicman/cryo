@@ -65,38 +65,51 @@
 	{/foreach}
 	<!-- /Block CMS module -->
 {elseif $block == 2}
-	<section class="col-md-2 col-lg-6" id="block_various_links_top">
-		<div class="b-toggle"></div>
-		<ul>
-			<li class="item">
-                <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
-                    {l s="Главная" mod="blockcms"}
-                </a>
-            </li>
-			{foreach from=$cmslinks item=cmslink}
-				{if $cmslink.meta_title != ''}
-                    {if $cmslink.cms_id == 8}
-                        <li class="item">
-                            <a href="{$link->getCategoryLink($category)}" title="{l s="Продукция" mod="blockcms"}">
-								{l s="Продукция" mod="blockcms"}
-                            </a>
-                        </li>
-                    {elseif $cmslink.cms_id == 10}
-                        <li class="item">
-                            <a href="{smartblog::GetSmartBlogLink()}" title="{l s="Проекты" mod="blockcms"}">
-								{l s="Проекты" mod="blockcms"}
-                            </a>
-                        </li>
-                    {else}
-                        <li class="item">
-                            <a href="{$cmslink.link|escape:'html':'UTF-8'}" title="{$cmslink.meta_title|escape:'html':'UTF-8'}">
-                                {$cmslink.meta_title|escape:'html':'UTF-8'}
-                            </a>
-                        </li>
-					{/if}
-				{/if}
-			{/foreach}
-		</ul>
+	<section class="col-md-10 col-sm-2 col-xs-4" id="block_various_links_top">
+		<div class="b-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+			<div class="other-bar"></div>
+		</div>
+		<div class="b-mobile-menu">
+            <div class="b-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="other-bar"></div>
+            </div>
+			<ul>
+				<li class="item">
+					<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
+                        {l s="Главная" mod="blockcms"}
+					</a>
+				</li>
+                {foreach from=$cmslinks item=cmslink}
+                    {if $cmslink.meta_title != ''}
+                        {if $cmslink.cms_id == 8}
+							<li class="item">
+								<a href="{$link->getCategoryLink($category)}" title="{l s="Продукция" mod="blockcms"}">
+                                    {l s="Продукция" mod="blockcms"}
+								</a>
+							</li>
+                        {elseif $cmslink.cms_id == 10}
+							<li class="item">
+								<a href="{smartblog::GetSmartBlogLink()}" title="{l s="Проекты" mod="blockcms"}">
+                                    {l s="Проекты" mod="blockcms"}
+								</a>
+							</li>
+                        {else}
+							<li class="item">
+								<a href="{$cmslink.link|escape:'html':'UTF-8'}" title="{$cmslink.meta_title|escape:'html':'UTF-8'}">
+                                    {$cmslink.meta_title|escape:'html':'UTF-8'}
+								</a>
+							</li>
+                        {/if}
+                    {/if}
+                {/foreach}
+			</ul>
+		</div>
 	</section>
 {else}
 	<!-- Block CMS module footer -->

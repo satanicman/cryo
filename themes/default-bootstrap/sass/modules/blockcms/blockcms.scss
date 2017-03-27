@@ -7,39 +7,125 @@
         width: 66.66667%;
         padding-right: 8.33333%;
     }
-    @media (max-width: $screen-sm-max) and (min-width:$screen-sm) {
-        margin: 20px 0;
-    }
     @media (max-width: $screen-md-max) {
+        margin-bottom: 20px;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 3;
+        -webkit-order: 3;
+        order: 3;
+    }
+    @media (max-width: $screen-sm-max) {
+        margin: 0;
+    }
+    $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
+    &.menu_open {
+        .b-toggle {
+            transform: rotate(45deg);
+            transition-delay: 0.4s;
+            span {
+                background-color: $dark-background;
+                &:first-child {
+                    transform: scaleX(0);
+                    transition: transform 0.2s $snappy;
+                }
+                &:nth-child(3) {
+                    width: 0;
+                    transition: width 0.2s $snappy;
+                }
+            }
+            .other-bar {
+                background-color: $dark-background;
+                height: 65px;
+                transition: height 0.2s $snappy;
+                transition-delay: 0.3s;
+            }
+        }
+        .b-mobile-menu {
+            right: 0;
+        }
+    }
+    > .b-toggle {
         float: right;
     }
     .b-toggle {
-        &:before {
-            display: block;
-            color: $light-text-color;
-            font-size: 30px;
-            line-height: 1;
-            width: 30px;
-            height: 30px;
-            overflow: hidden;
-            content: "\f0c9";
-            font-family: $font-icon;
-        }
-        @media (min-width: $screen-lg) {
+        width: 65px;
+        height: 35px;
+        position: relative;
+        transition: transform 0.3s $snappy;
+        @media (min-width: $screen-md) {
             display: none;
+        }
+        span {
+            display: block;
+            width: 65px;
+            height: 5px;
+            background-color: $light-background;
+            margin-top: 10px;
+            &:first-child {
+                margin-top: 0;
+                transform: scaleX(1);
+                transition: transform 0.2s $snappy;
+                transition-delay: 0.4s;
+            }
+            &:nth-child(3) {
+                width: 100%;
+                transition: width 0.2s $snappy;
+                transition-delay: 0.4s;
+            }
+        }
+        .other-bar {
+            width: 5px;
+            height: 0;
+            background-color: $light-background;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            margin-left: -2.5px;
+            transition: height 0.4s $snappy;
+            z-index: 10;
+        }
+    }
+    .b-mobile-menu {
+        @media (max-width: $screen-sm-max) {
+            position: fixed;
+            height: 100%;
+            z-index: 10;
+            top: 0;
+            right: -100%;
+            background-color: $light-background;
+            -webkit-transition: right .3s, width .3s;
+            -moz-transition: right .3s, width .3s;
+            -ms-transition: right .3s, width .3s;
+            -o-transition: right .3s, width .3s;
+            transition: right .3s, width .3s;
+            min-width: 50%;
+            padding: 30px 95px 30px 15px;
+            @keyframes slide-left {
+                from {
+                    -webkit-transform: translate3d(100%, 0, 0);
+                    transform: translate3d(100%, 0, 0);
+                    visibility: visible;
+                }
+
+                to {
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+        .b-toggle {
+            position: absolute;
+            right: 15px;
+            top: 30px;
         }
     }
     ul {
         @include display-flex;
         @include align-items(center);
         margin: 0;
-        @media (max-width: $screen-md-max) {
-            display: none;
-            position: absolute;
-            z-index: 2;
-            top: calc(100% + 10px);
-            right: 0;
-            background-color: $light-background;
+        height: 40px;
+        @media (max-width: $screen-sm-max) {
+            display: block;
         }
         li {
             padding: 0 15px;
@@ -48,10 +134,7 @@
             @media (max-width: $screen-md-max) {
                 text-align: left;
             }
-            @media (max-width: $screen-md-max) and (min-width: $screen-md) {
-                margin-bottom: 5px;
-            }
-            @media (max-width: $screen-xs-max) {
+            @media (max-width: $screen-sm-max) {
                 margin: 0 0 15px;
             }
             a {
@@ -66,14 +149,11 @@
                 @media (min-width: 1920px) {
                     font-size: 16px;
                 }
-                @media (max-width: $screen-md-max) {
+                @media (max-width: $screen-sm-max) {
                     color: $base-text-color;
-                }
-                @media (max-width: $screen-sm-max) and (min-width:$screen-xs-max) {
-                    font-size: em(16px);
+                    font-size: em(24px);
                 }
                 @media (max-width: $screen-xs-max) {
-                    font-size: em(20px);
                 }
                 &:hover {
                     color: $c-green;

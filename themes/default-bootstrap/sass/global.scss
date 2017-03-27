@@ -54,6 +54,9 @@ textarea {
 	background: rgba(0, 0, 0, .5);
 	padding: 23px 0;
 	color: $light-text-color;
+	@media (max-width: $screen-sm-max) {
+		padding: 10px 0;
+	}
 	> #header_logo {
 		position: absolute;
 		display: none;
@@ -105,25 +108,32 @@ header {
 	}
 	.row {
 		position: relative;
+        @include display-flex;
+        @include align-items(center);
         @media (max-width: $screen-sm-max) {
 			text-align: center;
 		}
-        @media (min-width: $screen-md) {
-            @include display-flex;
-            @include align-items(center);
+        @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+			display: block;
 		}
 		> .container {
 			position: relative;
 		}
 		#header_logo {
 			@media (max-width: $screen-sm-max) {
-				display: inline-block;
+				//display: inline-block;
+				-webkit-box-ordinal-group: 2;
+				-ms-flex-order: 2;
+				-webkit-order: 2;
+				order: 2;
+				img {
+					margin: 0 auto;
+				}
 			}
 
-			@media (max-width: $screen-xs-max) {
-				margin-bottom: 15px;
+			@media (max-width: $screen-md-max) {
+				padding: 0;
 			}
-
 			@media (min-width: 1920px) {
 				display: none;
 			}

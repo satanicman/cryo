@@ -43,6 +43,9 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+@media (max-width: 991px) {
+  #search_block_top {
+    display: none; } }
 #search_block_top .button-search {
   cursor: pointer;
   position: relative;
@@ -73,20 +76,24 @@ The `sprites` mixin generates identical output to the CSS template
   right: 0;
   top: 0;
   bottom: 0; }
-@media (min-width: 992px) {
+@media (min-width: 1260px) {
   #search_block_top #search_query_top {
     visibility: hidden;
     width: 0;
     opacity: 0; } }
+@media (max-width: 1259px) {
+  #search_block_top #search_query_top {
+    width: 80%; } }
 @media (max-width: 991px) {
   #search_block_top #search_query_top {
     width: 100%;
     padding: 5px 40px 5px 5px; } }
-#search_block_top #search_query_top.show {
-  visibility: visible;
-  width: 200px;
-  opacity: 1;
-  padding: 5px 40px 5px 5px; }
+@media (min-width: 1260px) {
+  #search_block_top #search_query_top.show {
+    visibility: visible;
+    width: 200px;
+    opacity: 1;
+    padding: 5px 40px 5px 5px; } }
 
 .ac_results {
   background: #fff;
