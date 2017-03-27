@@ -6860,9 +6860,6 @@ div.star_hover a, div.star a:hover {
   padding-bottom: 20px; }
 .footer-container #footer {
   color: #333; }
-@media (max-width: 767px) {
-  .footer-container #footer {
-    text-align: center; } }
 .footer-container #footer .row {
   position: relative; }
 .footer-container #footer ul.row {
@@ -6878,6 +6875,9 @@ div.star_hover a, div.star a:hover {
   padding-bottom: 25px;
   border-bottom: 1px solid #333;
   margin: 0 0 25px; }
+@media (max-width: 767px) {
+  .footer-container #footer .footer-title {
+    text-align: center; } }
 @media (min-width: 1260px) {
   .footer-container #footer #block_various_links_footer {
     padding-left: 0;
@@ -6910,9 +6910,6 @@ div.star_hover a, div.star a:hover {
 .footer-container #footer #block_various_links_footer li {
   padding-left: 0;
   padding-bottom: 10px; }
-@media (max-width: 991px) {
-  .footer-container #footer #block_contact_infos {
-    text-align: center; } }
 .footer-container #footer #block_contact_infos > div ul li:not(:last-of-type) {
   padding-bottom: 30px; }
 .footer-container #footer #block_contact_infos > div ul li span {

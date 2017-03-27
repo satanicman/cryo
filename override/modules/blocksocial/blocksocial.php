@@ -103,18 +103,33 @@ class blocksocialOverride extends blocksocial
 
 	public function hookDisplayFooter()
 	{
-		if (!$this->isCached('blocksocial.tpl', $this->getCacheId()))
-			$this->smarty->assign(array(
-				'facebook_url' => Configuration::get('BLOCKSOCIAL_FACEBOOK'),
-				'twitter_url' => Configuration::get('BLOCKSOCIAL_TWITTER'),
-				'rss_url' => Configuration::get('BLOCKSOCIAL_RSS'),
-				'youtube_url' => Configuration::get('BLOCKSOCIAL_YOUTUBE'),
-				'google_plus_url' => Configuration::get('BLOCKSOCIAL_GOOGLE_PLUS'),
-				'pinterest_url' => Configuration::get('BLOCKSOCIAL_PINTEREST'),
-				'vimeo_url' => Configuration::get('BLOCKSOCIAL_VIMEO'),
-				'fs_url' => Configuration::get('BLOCKSOCIAL_FS'),
-				'instagram_url' => Configuration::get('BLOCKSOCIAL_INSTAGRAM'),
-			));
+		if (!$this->isCached('blocksocial.tpl', $this->getCacheId())) {
+            $shown = 0;
+            if (Configuration::get('BLOCKSOCIAL_FACEBOOK') ||
+                Configuration::get('BLOCKSOCIAL_TWITTER') ||
+                Configuration::get('BLOCKSOCIAL_RSS') ||
+                Configuration::get('BLOCKSOCIAL_YOUTUBE') ||
+                Configuration::get('BLOCKSOCIAL_GOOGLE_PLUS') ||
+                Configuration::get('BLOCKSOCIAL_PINTEREST') ||
+                Configuration::get('BLOCKSOCIAL_VIMEO') ||
+                Configuration::get('BLOCKSOCIAL_FS') ||
+                Configuration::get('BLOCKSOCIAL_INSTAGRAM')
+            )
+                $shown = 1;
+
+            $this->smarty->assign(array(
+                'facebook_url' => Configuration::get('BLOCKSOCIAL_FACEBOOK'),
+                'twitter_url' => Configuration::get('BLOCKSOCIAL_TWITTER'),
+                'rss_url' => Configuration::get('BLOCKSOCIAL_RSS'),
+                'youtube_url' => Configuration::get('BLOCKSOCIAL_YOUTUBE'),
+                'google_plus_url' => Configuration::get('BLOCKSOCIAL_GOOGLE_PLUS'),
+                'pinterest_url' => Configuration::get('BLOCKSOCIAL_PINTEREST'),
+                'vimeo_url' => Configuration::get('BLOCKSOCIAL_VIMEO'),
+                'fs_url' => Configuration::get('BLOCKSOCIAL_FS'),
+                'instagram_url' => Configuration::get('BLOCKSOCIAL_INSTAGRAM'),
+                'shown' => $shown
+            ));
+        }
 
 		return $this->display(__FILE__, 'blocksocial.tpl', $this->getCacheId());
 	}
