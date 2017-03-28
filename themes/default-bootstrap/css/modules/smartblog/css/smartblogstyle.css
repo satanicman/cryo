@@ -760,7 +760,8 @@ form#searchbox .button.button-small i {
   border-radius: 7px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
 
-#right_column {
-  padding-left: 50px; }
+@media (min-width: 992px) {
+  #right_column {
+    padding-left: 50px; } }
 
 /*# sourceMappingURL=smartblogstyle.css.map */

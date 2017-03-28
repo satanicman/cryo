@@ -73,8 +73,13 @@
             }
             &-col {
                 padding-left: 24px;
+                @media (max-width: $screen-sm-max) {
+                    padding: 0;
+                }
                 .main-title {
-                    text-align: right;
+                    @media (min-width: $screen-md) {
+                        text-align: right;
+                    }
                 }
                 .slick-slide {
                     img {
@@ -110,8 +115,14 @@
     }
     &-container {
         padding: 130px 50px 115px;
+        @media (max-width: $screen-sm-max) {
+            padding: 30px 10px;
+        }
         .main-title {
             margin-bottom: 15px;
+            @media (max-width: $screen-sm-max) {
+                margin-bottom: 10px;
+            }
         }
         #home-page-tabs {
             position: relative;
@@ -186,6 +197,10 @@
             }
             .ajax_block_product {
                 padding-bottom: 0;
+                @media (max-width: $screen-sm-max) {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
             }
         }
         .slick-next,
@@ -252,7 +267,7 @@
                 height: auto;
                 display: inline-block;
                 vertical-align: middle;
-                margin-bottom: 1px;
+                //margin-bottom: 1px;
             }
         }
         .text {

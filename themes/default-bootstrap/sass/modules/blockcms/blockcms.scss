@@ -35,7 +35,7 @@
             }
             .other-bar {
                 background-color: $dark-background;
-                height: 65px;
+                height: 40px;
                 transition: height 0.2s $snappy;
                 transition-delay: 0.3s;
             }
@@ -48,8 +48,8 @@
         float: right;
     }
     .b-toggle {
-        width: 65px;
-        height: 35px;
+        width: 40px;
+        height: 22px;
         position: relative;
         transition: transform 0.3s $snappy;
         @media (min-width: $screen-md) {
@@ -57,10 +57,10 @@
         }
         span {
             display: block;
-            width: 65px;
-            height: 5px;
+            width: 40px;
+            height: 2px;
             background-color: $light-background;
-            margin-top: 10px;
+            margin-top: 8px;
             &:first-child {
                 margin-top: 0;
                 transform: scaleX(1);
@@ -74,13 +74,13 @@
             }
         }
         .other-bar {
-            width: 5px;
+            width: 2px;
             height: 0;
             background-color: $light-background;
             position: absolute;
-            top: -15px;
+            top: -10px;
             left: 50%;
-            margin-left: -2.5px;
+            margin-left: -1px;
             transition: height 0.4s $snappy;
             z-index: 10;
         }

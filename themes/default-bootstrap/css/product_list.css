@@ -154,6 +154,9 @@ Product list(Grid) Styles
 ********************************************************/
 #subcategories li, #subcategories li.ajax_block_product, ul.product_list.grid li, ul.product_list.grid li.ajax_block_product {
   padding-bottom: 30px; }
+@media (max-width: 370px) {
+  #subcategories li, #subcategories li.ajax_block_product, ul.product_list.grid li, ul.product_list.grid li.ajax_block_product {
+    width: 100%; } }
 #subcategories li .subcategory-container, #subcategories li .product-container, #subcategories li.ajax_block_product .subcategory-container, #subcategories li.ajax_block_product .product-container, ul.product_list.grid li .subcategory-container, ul.product_list.grid li .product-container, ul.product_list.grid li.ajax_block_product .subcategory-container, ul.product_list.grid li.ajax_block_product .product-container {
   background: #fff;
   padding: 0;
@@ -174,6 +177,9 @@ Product list(Grid) Styles
   padding: 0 15px;
   background-color: #f9f9f9;
   width: 100%; }
+@media (max-width: 991px) {
+  #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
+    font-size: 1.25em; } }
 @media (min-width: 1260px) {
   #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
     display: table;
@@ -181,6 +187,8 @@ Product list(Grid) Styles
 #subcategories li .subcategory-container h5 > *, #subcategories li .product-container h5 > *, #subcategories li.ajax_block_product .subcategory-container h5 > *, #subcategories li.ajax_block_product .product-container h5 > *, ul.product_list.grid li .subcategory-container h5 > *, ul.product_list.grid li .product-container h5 > *, ul.product_list.grid li.ajax_block_product .subcategory-container h5 > *, ul.product_list.grid li.ajax_block_product .product-container h5 > * {
   display: table-cell;
   vertical-align: middle; }
+#subcategories li .subcategory-container h5 .product-name, #subcategories li .product-container h5 .product-name, #subcategories li.ajax_block_product .subcategory-container h5 .product-name, #subcategories li.ajax_block_product .product-container h5 .product-name, ul.product_list.grid li .subcategory-container h5 .product-name, ul.product_list.grid li .product-container h5 .product-name, ul.product_list.grid li.ajax_block_product .subcategory-container h5 .product-name, ul.product_list.grid li.ajax_block_product .product-container h5 .product-name {
+  font-size: inherit; }
 #subcategories li .subcategory-container .details, #subcategories li .product-container .details, #subcategories li.ajax_block_product .subcategory-container .details, #subcategories li.ajax_block_product .product-container .details, ul.product_list.grid li .subcategory-container .details, ul.product_list.grid li .product-container .details, ul.product_list.grid li.ajax_block_product .subcategory-container .details, ul.product_list.grid li.ajax_block_product .product-container .details {
   background-color: #369;
   -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);

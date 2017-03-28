@@ -30,7 +30,7 @@
 			<p class="main-title">{l s='Subcategories'}</p>
 			<ul class="clearfix row">
 			{foreach from=$subcategories item=subcategory}
-				<li class="col-xs-12 col-sm-6 col-md-4">
+				<li class="col-xs-6 col-sm-6 col-md-4">
                     <div class="subcategory-container">
                         <div class="subcategory-image">
                             <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}" title="{$subcategory.name|escape:'html':'UTF-8'}" class="img">

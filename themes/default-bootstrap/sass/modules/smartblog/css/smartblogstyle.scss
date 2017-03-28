@@ -979,5 +979,7 @@ p.sdstitle_block a {
 }
 
 #right_column {
-    padding-left: 50px;
+    @media (min-width: $screen-md) {
+        padding-left: 50px;
+    }
 }

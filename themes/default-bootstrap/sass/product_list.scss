@@ -202,6 +202,9 @@ Product list(Grid) Styles
 ul.product_list.grid {
 	li,
 	li.ajax_block_product {
+        @media (max-width: $screen-sxs-max) {
+			width: 100%;
+		}
 		padding-bottom: 30px;
 		.subcategory-container,
 		.product-container {
@@ -225,6 +228,10 @@ ul.product_list.grid {
 				padding: 0 15px;
 				background-color: $bg-ultra-light;
 				width: 100%;
+                @media (max-width: $screen-sm-max) {
+					font-size: em(20px);
+
+                }
                 @media (min-width: $screen-lg) {
                     display: table;
                     table-layout: fixed;
@@ -232,6 +239,9 @@ ul.product_list.grid {
 				> * {
 					display: table-cell;
 					vertical-align: middle;
+				}
+				.product-name {
+					font-size: inherit;
 				}
 			}
 			.details {
@@ -284,6 +294,7 @@ Product list(List) Styles
 
 ul.product_list.list {
 	> li {
+
 		.left-block {
 			@media (max-width: $screen-xs - 1) { // max 479px
 				width: 100%;

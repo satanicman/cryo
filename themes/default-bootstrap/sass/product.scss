@@ -1161,9 +1161,14 @@ Quick View Styles
 }
 .slider {
 	&.product_list {
-		padding: 0 15px;
+		@media (min-width: $screen-md) {
+			padding: 0 15px;
+		}
 		li.ajax_block_product {
 			padding: 15px;
+			@media (max-width: $screen-sm-max) {
+				padding: 5px;
+			}
 		}
 	}
 	.slick-list {
@@ -1181,6 +1186,10 @@ Quick View Styles
 }
 #feedbackform--btn {
 	@include box-shadow(0 7px 10px rgba(51, 102, 153, 0.5));
+	@media (max-width: $screen-sm-max) {
+		padding: 20px 5px;
+		font-size: em(15px);
+	}
 	@media (max-width: $screen-xs-max) {
 		width: 100%;
 	}

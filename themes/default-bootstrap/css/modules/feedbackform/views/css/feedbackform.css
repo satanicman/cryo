@@ -3,7 +3,12 @@
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(148, 148, 148, 0.5);
   padding: 30px 45px 25px 45px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+.feedbackform__close {
+  position: absolute;
+  right: 15px;
+  top: 15px; }
 .feedbackform .message {
   display: none; }
 .feedbackform .form-group {

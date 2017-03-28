@@ -172,6 +172,9 @@ p.info-title {
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
+	@media (max-width: $screen-sm-max) {
+		font-size: em(30px);
+	}
 	&_sub {
 		font-size: em(36px);
 	}
@@ -990,16 +993,16 @@ table.table_block td {
 .block {
 	.title_block,
 	h4 {
-		font: 600 18px / 22px $font-custom;
-		color: $base-heading-color;
-		background: #f6f6f6;
-		border-top: 5px solid $dark-border-color;
-		text-transform: uppercase;
-		padding: 14px 5px 17px 20px;
-		margin-bottom: 20px;
-		@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-			font-size: 14px;
-		}
+		//font: 600 18px / 22px $font-custom;
+		//color: $base-heading-color;
+		//background: #f6f6f6;
+		//border-top: 5px solid $dark-border-color;
+		//text-transform: uppercase;
+		//padding: 14px 5px 17px 20px;
+		//margin-bottom: 20px;
+		//@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+		//	font-size: 14px;
+		//}
 		// max 767px
 		@media (max-width: $screen-xs-max) {
 			position: relative;
@@ -1009,8 +1012,9 @@ table.table_block td {
 				content: "";
 				position: absolute;
 				right: 0;
-				top: 15px;
-				height: 36px;
+				top: 50%;
+				margin-top: -14px;
+				height: 28px;
 				width: 36px;
 				font-size: 26px;
 				font-weight: normal;
@@ -1706,6 +1710,11 @@ div.star a:hover {
     @include border-radius(0);
 	> * {
 		margin-top: -3px;
+	}
+	*:not(.navigation-pipe) {
+		@media (max-width: $screen-sm-max) {
+			display: inline !important;
+		}
 	}
 	.home {
 		position: relative;
@@ -3497,6 +3506,9 @@ div.star.star_hover {
 	border: none;
 	outline: 0;
 	z-index: 100;
+	@media (max-width: $screen-sm-max) {
+		display: none !important;
+	}
 	.icon {
 		display: inline-block;
 		margin-bottom: 5px;
@@ -3586,6 +3598,9 @@ div.star.star_hover {
         &-slide {
             text-align: center;
             padding: 0 15px;
+			@media (max-width: $screen-sm-max) {
+				padding: 0 5px;
+			}
             a {
                 @include display-flex;
                 @include align-items(center);
@@ -3608,6 +3623,9 @@ div.star.star_hover {
         }
         &-slider {
             padding: 0 50px;
+			@media (max-width: $screen-sm-max) {
+				padding: 0 15px;
+            }
         }
         &-list {
             padding: 0;

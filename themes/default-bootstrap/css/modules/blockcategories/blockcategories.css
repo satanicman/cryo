@@ -65,7 +65,8 @@
   border-radius: 0px 3px 3px 0px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 50%;
+  margin-top: -25px;
   cursor: pointer;
   padding: 23px 16px;
   display: -webkit-flex;
@@ -81,7 +82,7 @@
   border-right: 12px solid #369;
   border-left-width: 12px;
   position: absolute;
-  right: 100%;
+  right: 99.9999%;
   top: 0;
   bottom: 0; }
 #categories_block_left.home li span.grower span {
@@ -131,8 +132,10 @@
   font-weight: 400;
   text-transform: uppercase;
   padding: 25px 30px;
-  border-bottom: 1px solid #ccc;
+  border: none;
   margin: 0; }
+#categories_block_left.category .block_content {
+  border-top: 1px solid #ccc; }
 #categories_block_left.category .block_content > ul {
   overflow: hidden; }
 #categories_block_left.category .category-link-wrap {
@@ -186,6 +189,11 @@
 
 #categories_block_left.categories_block_home {
   padding-right: 24px; }
+@media (max-width: 991px) {
+  #categories_block_left.categories_block_home {
+    padding: 0; } }
+#categories_block_left.categories_block_home .category-link-wrap {
+  position: relative; }
 #categories_block_left.categories_block_home .block_content > ul li {
   border-radius: 3px;
   overflow: hidden;
@@ -204,13 +212,24 @@
   padding-right: 30px;
   min-height: 50px;
   background-color: #f7f7f7; }
+@media (max-width: 991px) {
+  #categories_block_left.categories_block_home .block_content > ul > li a {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; } }
 #categories_block_left.categories_block_home .block_content > ul > li > .category-link-wrap a {
   padding-right: 90px;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   margin-bottom: 10px; }
+@media (max-width: 991px) {
+  #categories_block_left.categories_block_home .block_content > ul > li > .category-link-wrap a {
+    padding-right: 70px; } }
 #categories_block_left.categories_block_home .block_content > ul > li > .category-link-wrap a > .categories_block_name {
   padding-right: 20px;
   line-height: 1; }
+@media (max-width: 991px) {
+  #categories_block_left.categories_block_home .block_content > ul > li > .category-link-wrap a > .categories_block_name {
+    padding-right: 10px; } }
 
 /*# sourceMappingURL=blockcategories.css.map */

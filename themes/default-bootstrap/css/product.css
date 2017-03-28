@@ -1002,10 +1002,14 @@ Quick View Styles
 .ie8 .box-security {
   filter: none; }
 
-.slider.product_list {
-  padding: 0 15px; }
+@media (min-width: 992px) {
+  .slider.product_list {
+    padding: 0 15px; } }
 .slider.product_list li.ajax_block_product {
   padding: 15px; }
+@media (max-width: 991px) {
+  .slider.product_list li.ajax_block_product {
+    padding: 5px; } }
 .slider .slick-list {
   padding: 0; }
 .slider .slick-prev, .slider .slick-next {
@@ -1018,6 +1022,10 @@ Quick View Styles
   -moz-box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5);
   -webkit-box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5);
   box-shadow: 0 7px 10px rgba(51, 102, 153, 0.5); }
+@media (max-width: 991px) {
+  #feedbackform--btn {
+    padding: 20px 5px;
+    font-size: 0.9375em; } }
 @media (max-width: 767px) {
   #feedbackform--btn {
     width: 100%; } }

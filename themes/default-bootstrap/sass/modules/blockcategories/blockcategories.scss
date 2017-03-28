@@ -74,6 +74,9 @@
                 position: relative;
                 width: 41px;
                 @include flex-shrink(0);
+                @media (max-width: $screen-sm-max) {
+                    //display: none;
+                }
                 img {
                     position: absolute;
                     left: 50%;
@@ -87,7 +90,8 @@
                 border-radius: 0px 3px 3px 0px;
                 position: absolute;
                 right: 0;
-                top: 0;
+                top: 50%;
+                margin-top: -25px;
                 cursor: pointer;
                 padding: 23px 16px;
                 @include display-flex;
@@ -100,7 +104,7 @@
                     border-right: 12px solid $bd-blue;
                     border-left-width: 12px;
                     position: absolute;
-                    right: 100%;
+                    right: 99.9999%;
                     top: 0;
                     bottom: 0;
                 }
@@ -176,8 +180,12 @@
             font-weight: 400;
             text-transform: uppercase;
             padding: 25px 30px;
-            border-bottom: 1px solid $bd-light-grey;
+            //border-bottom: 1px solid $bd-light-grey;
+            border: none;
             margin: 0;
+        }
+        .block_content {
+            border-top: 1px solid $bd-light-grey;
         }
         .block_content > ul {
             overflow: hidden;
@@ -252,6 +260,12 @@
 #categories_block_left.categories_block {
     &_home {
         padding-right: 24px;
+        @media (max-width: $screen-sm-max) {
+            padding: 0;
+        }
+        .category-link-wrap {
+            position: relative;
+        }
         .block_content {
             > ul {
                 li {
@@ -276,14 +290,25 @@
                         padding-right: 30px;
                         min-height: 50px;
                         background-color: $bg-light-grey;
+                        @media (max-width: $screen-sm-max) {
+                            padding-left: 10px;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                        }
                     }
                     > .category-link-wrap a {
                         padding-right: 90px;
                         @include justify-content(space-between);
                         margin-bottom: 10px;
+                        @media (max-width: $screen-sm-max) {
+                            padding-right: 70px;
+                        }
                         > .categories_block_name {
                             padding-right: 20px;
                             line-height: 1;
+                            @media (max-width: $screen-sm-max) {
+                                padding-right: 10px;
+                            }
                         }
                         > .categories_block_thumb {
                         }

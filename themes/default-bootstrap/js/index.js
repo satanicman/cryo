@@ -42,6 +42,16 @@ $(document).ready(function(){
 			{
 				breakpoint: 768,
 				settings: {
+                    arrows: false,
+					centerMode: false,
+					centerPadding: 0,
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 370,
+				settings: {
+                    arrows: false,
 					centerMode: false,
 					centerPadding: 0,
 					slidesToShow: 1,

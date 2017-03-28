@@ -74,12 +74,17 @@
         position: relative;
         border-bottom: 3px solid #369;
         margin-right: -4px;
-        &:last-of-type {
-            padding-right: 0;
-            margin-right: 0;
+        @media (max-width: $screen-sm-max) {
+            padding: 0 15px;
         }
-        &:first-of-type {
-            padding-left: 0;
+        @media (min-width: $screen-md) {
+            &:last-of-type {
+                padding-right: 0;
+                margin-right: 0;
+            }
+            &:first-of-type {
+                padding-left: 0;
+            }
         }
         > a {
             line-height: $line-height-base;
@@ -95,6 +100,9 @@
             &:hover,
             &:focus {
                 background: none;
+                @media (max-width: $screen-sm-max) {
+                    font-weight: 600;
+                }
                 &:before {
                     content: '';
                     display: inline-block;
@@ -102,6 +110,9 @@
                     top: 100%;
                     left: 50%;
                     margin-left: -17px;
+                    @media (max-width: $screen-sm-max) {
+                        display: none;
+                    }
                 }
             }
         }
