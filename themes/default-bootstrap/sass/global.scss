@@ -3562,7 +3562,7 @@ div.star.star_hover {
 		&-prev span {}
 	}
 	&-overlay {
-		background: none !important;
+		//background: none !important;
 	}
 	&-opened .fancybox-skin {
 		@include box-shadow(none !important);

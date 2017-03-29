@@ -37,10 +37,8 @@ class feedbackform extends Module
             !$this->registerHook('header') ||
             !$this->registerHook('footer') ||
             !Configuration::updateValue('FEEDBACK_FORM_EMAIL', Configuration::get('PS_SHOP_EMAIL')) ||
-            !Configuration::updateValue('FEEDBACK_FORM_TITLE', 'SEND YOUR FEEDBACK') ||
-            !Configuration::updateValue('FEEDBACK_FORM_TEXT', '') ||
-            !Configuration::updateValue('FEEDBACK_FORM_FIELDS', 'text:Название фирмы:1:isName|text:Телефон для связи:1:isPhoneNumber|text:Контактное лицо:1:isName|text:Электронная почта:1:isEmail|text:Должность:1:isName|textarea:Сообщение:1:isMessage')
-            )
+            !$this->setConfiguration()
+        )
             return false;
 
         return true;
@@ -50,9 +48,7 @@ class feedbackform extends Module
     {
         if (!parent::uninstall() ||
             !Configuration::deleteByName('FEEDBACK_FORM_EMAIL') ||
-            !Configuration::deleteByName('FEEDBACK_FORM_TITLE') ||
-            !Configuration::deleteByName('FEEDBACK_FORM_TEXT') ||
-            !Configuration::deleteByName('FEEDBACK_FORM_FIELDS'))
+            !$this->unsetConfiguration())
             return false;
 
         return true;
@@ -64,22 +60,13 @@ class feedbackform extends Module
         $output = '';
         if (Tools::isSubmit('submitFeedbackForm'))
         {
-            $email = Tools::getValue('FEEDBACK_FORM_EMAIL', Configuration::get('PS_SHOP_EMAIL'));
-            $title = Tools::getValue('FEEDBACK_FORM_TITLE');
-            $fields = Tools::getValue('FEEDBACK_FORM_FIELDS');
-            $text = Tools::getValue('FEEDBACK_FORM_TEXT');
-
-            if(!$fields) {
-                $output .= $this->displayError($this->l('Fields cannot be empty!'));
-            } else {
-                Configuration::updateValue('FEEDBACK_FORM_EMAIL', $email);
-                Configuration::updateValue('FEEDBACK_FORM_TITLE', $title);
-                Configuration::updateValue('FEEDBACK_FORM_TEXT', $text);
-                Configuration::updateValue('FEEDBACK_FORM_FIELDS', $fields);
-
-                Tools::redirectAdmin(AdminController::$currentIndex.'&configure='.$this->name.'&token='.Tools::getAdminTokenLite('AdminModules').'&conf=6');
+            Configuration::updateValue('FEEDBACK_FORM_EMAIL', Tools::getValue('FEEDBACK_FORM_EMAIL', Configuration::get('PS_SHOP_EMAIL')));
+            foreach (Language::getLanguages(false) as $language) {
+                Configuration::updateValue('FEEDBACK_FORM_TITLE_'.$language['id_lang'], Tools::getValue('FEEDBACK_FORM_TITLE_'.$language['id_lang']));
+                Configuration::updateValue('FEEDBACK_FORM_TEXT_'.$language['id_lang'], Tools::getValue('FEEDBACK_FORM_TEXT_'.$language['id_lang']));
+                Configuration::updateValue('FEEDBACK_FORM_FIELDS_'.$language['id_lang'], Tools::getValue('FEEDBACK_FORM_FIELDS_'.$language['id_lang']));
             }
-
+            Tools::redirectAdmin(AdminController::$currentIndex.'&configure='.$this->name.'&token='.Tools::getAdminTokenLite('AdminModules').'&conf=6');
         }
         return $output.$this->renderForm();
     }
@@ -97,8 +84,8 @@ class feedbackform extends Module
     {
         $id_product = (int)Tools::getValue('id_product');
         $this->context->smarty->assign(array(
-            'title' => Configuration::get('FEEDBACK_FORM_TITLE'),
-            'text' => Configuration::get('FEEDBACK_FORM_TEXT'),
+            'title' => Configuration::get('FEEDBACK_FORM_TITLE_'.$this->context->language->id),
+            'text' => Configuration::get('FEEDBACK_FORM_TEXT_'.$this->context->language->id),
             'fields' => $this->getFields(),
             'id_product' => $id_product ? $id_product : 0
         ));
@@ -109,17 +96,17 @@ class feedbackform extends Module
     public function ajaxCall()
     {
         $fields = $this->getFields();
-        $text = '<table style="width: 100%;">';
+        $text = '<table>';
         foreach($_GET as $key => $value) {
             if(!preg_match('/field_/', $key))
                 continue;
 
             $text .= '<tr>';
             $id = str_replace('field_', '', $key);
-            $text .= '<td style="width: 50%;">';
+            $text .= '<td>';
             $text .= $fields[$id][1];
             $text .= '</td>';
-            $text .= '<td style="width: 50%;">';
+            $text .= '<td>';
             $text .= $value;
             $text .= '</td>';
             $text .= '</tr>';
@@ -128,29 +115,29 @@ class feedbackform extends Module
             $product = new Product((int)$id, $this->context->language->id, $this->context->shop->id);
             $link = new Link();
             $text .= '<tr>';
-            $text .= '<td style="width: 50%;">';
+            $text .= '<td>';
             $text .= $this->l('Product name');
             $text .= '</td>';
-            $text .= '<td style="width: 50%;">';
+            $text .= '<td>';
             $text .= $product->name;
             $text .= '</td>';
             $text .= '</tr>';
             $text .= '<tr>';
-            $text .= '<td style="width: 50%;">';
+            $text .= '<td>';
             $text .= $this->l('Product link');
             $text .= '</td>';
-            $text .= '<td style="width: 50%;">';
+            $text .= '<td>';
             $text .= $link->getProductLink($product);
             $text .= '</td>';
             $text .= '</tr>';
         }
         $text .= '</table>';
         $subject = 'feedback form ' . Configuration::get('PS_SHOP_NAME');
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n";
+        $headers  = "Content-type: text/html; charset=windows-1251 \r\n";
         if(mail(Configuration::get('FEEDBACK_FORM_EMAIL'), $subject, $text, $headers)) {
-            $return = array('hasError' => 0, 'message' => $this->displayConfirmation($this->l('Вашь запрос отправлен')));
+            $return = array('hasError' => 0, 'message' => $this->displayConfirmation($this->l('You request send')));
         } else {
-            $return = array('hasError' => 1, 'error' => $this->displayError($this->l('Ошибка отправки запроса!!')));
+            $return = array('hasError' => 1, 'error' => $this->displayError($this->l('Error email sending!!')));
         }
         die(Tools::jsonEncode($return));
 
@@ -173,18 +160,21 @@ class feedbackform extends Module
                     ),
                     array(
                         'type' => 'text',
+                        'lang' => true,
                         'label' => $this->l('Title'),
                         'name' => 'FEEDBACK_FORM_TITLE',
                         'desc' => $this->l('Title of your form'),
                     ),
                     array(
                         'type' => 'text',
+                        'lang' => true,
                         'label' => $this->l('Field'),
                         'name' => 'FEEDBACK_FORM_FIELDS',
                         'desc' => $this->l('Your form fields'),
                     ),
                     array(
                         'type' => 'text',
+                        'lang' => true,
                         'label' => $this->l('Text of your form'),
                         'name' => 'FEEDBACK_FORM_TEXT',
                     ),
@@ -205,27 +195,29 @@ class feedbackform extends Module
         $helper->submit_action = 'submitFeedbackForm';
         $helper->currentIndex = $this->context->link->getAdminLink('AdminModules', false).'&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name;
         $helper->token = Tools::getAdminTokenLite('AdminModules');
-         $helper->tpl_vars = array(
-             'fields_value' => $this->getConfigFieldsValues(),
-             'languages' => $this->context->controller->getLanguages(),
-             'id_language' => $this->context->language->id
-         );
+        $helper->tpl_vars = array(
+            'fields_value' => $this->getConfigFieldsValues(),
+            'languages' => $this->context->controller->getLanguages(),
+            'id_language' => $this->context->language->id
+        );
 
         return $helper->generateForm(array($fields_form));
     }
 
     public function getConfigFieldsValues()
     {
-        return array(
-            'FEEDBACK_FORM_EMAIL' => Tools::getValue('FEEDBACK_FORM_EMAIL', Configuration::get('FEEDBACK_FORM_EMAIL')),
-            'FEEDBACK_FORM_TITLE' => Tools::getValue('FEEDBACK_FORM_TITLE', Configuration::get('FEEDBACK_FORM_TITLE')),
-            'FEEDBACK_FORM_FIELDS' => Tools::getValue('FEEDBACK_FORM_FIELDS', Configuration::get('FEEDBACK_FORM_FIELDS')),
-            'FEEDBACK_FORM_TEXT' => Tools::getValue('FEEDBACK_FORM_TEXT', Configuration::get('FEEDBACK_FORM_TEXT')),
-        );
+        $languages = Language::getLanguages(false);
+        $result['FEEDBACK_FORM_EMAIL'] = Tools::getValue('FEEDBACK_FORM_EMAIL', Configuration::get('FEEDBACK_FORM_EMAIL'));
+        foreach ($languages as $language) {
+            $result['FEEDBACK_FORM_TITLE'][$language['id_lang']] = Tools::getValue('FEEDBACK_FORM_TITLE_'.$language['id_lang'], Configuration::get('FEEDBACK_FORM_TITLE_'.$language['id_lang']));
+            $result['FEEDBACK_FORM_FIELDS'][$language['id_lang']] = Tools::getValue('FEEDBACK_FORM_FIELDS_'.$language['id_lang'], Configuration::get('FEEDBACK_FORM_FIELDS_'.$language['id_lang']));
+            $result['FEEDBACK_FORM_TEXT'][$language['id_lang']] = Tools::getValue('FEEDBACK_FORM_TEXT_'.$language['id_lang'], Configuration::get('FEEDBACK_FORM_TEXT_'.$language['id_lang']));
+        }
+        return $result;
     }
 
     protected function getFields() {
-        $fields = Configuration::get('FEEDBACK_FORM_FIELDS');
+        $fields = Configuration::get('FEEDBACK_FORM_FIELDS_'.$this->context->language->id);
         $fields = explode('|', $fields);
         foreach ($fields as $key => &$field) {
             $field = explode(':', $field);
@@ -234,5 +226,27 @@ class feedbackform extends Module
             }
         }
         return $fields;
+    }
+
+    protected function unsetConfiguration() {
+        $languages = Language::getLanguages(false);
+        foreach ($languages as $language) {
+            if(!Configuration::deleteByName('FEEDBACK_FORM_TITLE_'.$language["id_lang"]) ||
+                !Configuration::deleteByName('FEEDBACK_FORM_TEXT_'.$language["id_lang"]) ||
+                !Configuration::deleteByName('FEEDBACK_FORM_FIELDS_'.$language["id_lang"]))
+                return false;
+        }
+
+        return true;
+    }
+    protected function setConfiguration() {
+        $languages = Language::getLanguages(false);
+        foreach ($languages as $language) {
+            if(!Configuration::updateValue('FEEDBACK_FORM_TITLE_'.$language["id_lang"], 'SEND YOUR FEEDBACK') ||
+                !Configuration::updateValue('FEEDBACK_FORM_TEXT_'.$language["id_lang"], '') ||
+                !Configuration::updateValue('FEEDBACK_FORM_FIELDS_'.$language["id_lang"], 'text:Название фирмы:1:isName|text:Телефон для связи:1:isPhoneNumber|text:Контактное лицо:1:isName|text:Электронная почта:1:isEmail|text:Должность:1:isName|textarea:Сообщение:1:isMessage'))
+                return false;
+        }
+        return true;
     }
 }

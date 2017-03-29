@@ -1,5 +1,6 @@
 <div class="hidden">
     <form action="{$module_dir}feedbackform-ajax.php" id="feedbackform" class="feedbackform">
+        <a href="#" class="feedbackform__close" onClick="$.fancybox.close();return false;"> <i class="icon icon-close"></i></a>
         <div class="message"></div>
         {if $title}
             <h1 class="title">{$title}</h1>
