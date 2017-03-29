@@ -37,6 +37,10 @@ $(window).load(function() {
 $(window).resize(function() {
 	setPadding();
 });
+$(document).on('dragstart', 'img', noselect);
+$(document).on('selectstart', 'img', noselect);
+$(document).on('contextmenu', 'img', noselect);
+function noselect() {return false;}
 $(document).ready(function(){
 	$('#suppliers_block_left > ul, #manufacturers_block_left > ul').slick({
 		autoplay: true,

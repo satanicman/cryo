@@ -60,6 +60,6 @@
                 <input type="hidden" name="id" id="id" value="{$id_product}">
             {/if}
         </div>
-        <button name="submitFeedbackForm" id="submitFeedbackForm">{l s="Отправить" mod="feedbackform"}</button>
+        <button name="submitFeedbackForm" id="submitFeedbackForm">{l s='Send' mod='feedbackform'}</button>
     </form>
 </div>
