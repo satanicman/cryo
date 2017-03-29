@@ -26,7 +26,7 @@
 	<div class="shop-phone{if isset($is_logged) && $is_logged} is_logged{/if} col-md-3 col-lg-2 col-sm-4">
 		<i class="mobile-icon icon"></i>
 		<div class="shop-phone-info">
-			<p>{l s='Контактный телефон' mod='blockcontact'}</p>
+			<p>{l s='Contact phone number' mod='blockcontact'}</p>
 			<p class="shop-phone-number">{$telnumber}</p>
 		</div>
 	</div>

@@ -126,18 +126,18 @@
 					{if isset($attachments[0]) && $attachments[0]}
 					<a class="attachments-link"
 					   href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachments[0].id_attachment}")|escape:'html':'UTF-8'}">
-						<i class="icon download-icon"></i><span>{l s="Скачать спецификацию"}</span>
+						<i class="icon download-icon"></i><span>{l s='Download specification'}</span>
 					</a>
 					{/if}
 					{if isset($attachments[1]) && $attachments[1]}
 						<a class="attachments-link"
 						   href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachments[1].id_attachment}")|escape:'html':'UTF-8'}">
-							<i class="icon file-icon"></i><span>{l s="Скачать документацию"}</span>
+							<i class="icon file-icon"></i><span>{l s='Download the documentation'}</span>
 						</a>
 					{/if}
 				</div>
 			{/if}
-			<button id="feedbackform--btn" class="btn btn-default {if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}hidden{/if}">{l s="Заказать коммерческое предложение"}</button>
+			<button id="feedbackform--btn" class="btn btn-default {if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}hidden{/if}">{l s='Ask for a quotation'}</button>
 		</div>
 		<!-- end center infos-->
 	</div> <!-- end primary_block -->
@@ -145,10 +145,10 @@
 		<div class="product-tabs">
 			<ul class="nav nav-tabs">
 				{if isset($product) && $product->description}
-                    <li><a data-toggle="tab" href="#description"><span>{l s="Подробное описание"}</span></a></li>
+                    <li><a data-toggle="tab" href="#description"><span>{l s='Detailed description'}</span></a></li>
                 {/if}
 				{if isset($features) && $features}
-                    <li><a data-toggle="tab" href="#features"><span>{l s="Характеристики"}</span></a></li>
+                    <li><a data-toggle="tab" href="#features"><span>{l s='Specifications'}</span></a></li>
                 {/if}
 			</ul>
 

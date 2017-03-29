@@ -25,7 +25,7 @@
 {if count($categoryProducts) > 0 && $categoryProducts !== false}
 <section class="page-product-box blockproductscategory">
 	<h3 class="productscategory_h3 page-product-heading">
-		{l s="Другие товары из этой категории"}
+		{l s='Other products of this category' mod='productscategory'}
 	</h3>
 	{include file="$tpl_dir./product-list.tpl" products=$categoryProducts class="clearfix slider"}
 </section>

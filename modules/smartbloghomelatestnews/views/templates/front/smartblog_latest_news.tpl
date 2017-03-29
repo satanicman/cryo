@@ -1,5 +1,5 @@
 <div class="block smartblog" style="display:inline-block;">
-    <h2 class='sdstitle_block'>{l s='Новости' mod='smartbloghomelatestnews'}</h2>
+    <h2 class='sdstitle_block'>{l s='News' mod='smartbloghomelatestnews'}</h2>
         {*<h2 class='sdstitle_block'><a href="{smartblog::GetSmartBlogLink('smartblog')}">{l s='НОВОСТИ' mod='smartbloghomelatestnews'}</a></h2>*}
     <div class="sdsblog-box-content">
         {if isset($view_data) AND !empty($view_data)}

@@ -23,13 +23,13 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {capture name='homeTop'}{hook h='homeTop'}{/capture}
-<a href="{smartblog::GetSmartBlogLink()}" id="news_button">{l s="Новости и статьи"}</a>
+<a href="{smartblog::GetSmartBlogLink()}" id="news_button">{l s='News and articles'}</a>
 <div class="clearfix"></div>
 {if $smarty.capture.homeTop}
 	<div class="clearfix home-top">
 		{$smarty.capture.homeTop}
 		<div class="col-lg-6 col-md-6 col-sm-12 slider-col">
-			<h3 class="main-title">{l s="Реализованные"}<br/>{l s="проекты"}</h3>
+			<h3 class="main-title">{l s='Implemented projects'}</h3>
             {hook h="displaySlidersPro" slider="sample"}
 		</div>
 	</div>
@@ -40,7 +40,7 @@
 	</div>
 	<div class="products-tabs-wrap">
 	    <div class="products-tabs-container container">
-	    <h3 class="main-title">{l s="Горячие предложения"}</h3>
+	    <h3 class="main-title">{l s='Special offers'}</h3>
 	{if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
         <ul id="home-page-tabs" class="nav nav-tabs clearfix">
 			{$HOOK_HOME_TAB}

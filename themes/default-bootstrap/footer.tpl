@@ -48,13 +48,13 @@
 			</div>
 			<div class="all-rights-wrap">
 				<div class="all-rights-container container">
-					© 2016 Cryo Inter Trading<br/>Все права защищены
+					© 2016 Cryo Inter Trading<br/>{l s='All rights reserved'}
 				</div>
 			</div>
 		</div><!-- #page -->
 		<button id="scroller">
 			<i class="up-icon icon"></i>
-			<span>{l s="Вверх"}</span>
+			<span>{l s='Up'}</span>
 		</button>
 {/if}
 {include file="$tpl_dir./global.tpl"}

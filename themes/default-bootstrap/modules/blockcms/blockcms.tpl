@@ -65,7 +65,7 @@
 	{/foreach}
 	<!-- /Block CMS module -->
 {elseif $block == 2}
-	<section class="col-md-10 col-sm-2 col-xs-4" id="block_various_links_top">
+	<section class="col-lg-6 col-md-10 col-sm-2 col-xs-4" id="block_various_links_top">
 		<div class="b-toggle">
 			<span></span>
 			<span></span>
@@ -82,7 +82,7 @@
 			<ul>
 				<li class="item">
 					<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
-                        {l s="Главная" mod="blockcms"}
+                        {l s='Home page' mod='blockcms'}
 					</a>
 				</li>
                 {foreach from=$cmslinks item=cmslink}
@@ -90,13 +90,13 @@
                         {if $cmslink.cms_id == 8}
 							<li class="item">
 								<a href="{$link->getCategoryLink($category)}" title="{l s="Продукция" mod="blockcms"}">
-                                    {l s="Продукция" mod="blockcms"}
+                                    {l s='Products' mod='blockcms'}
 								</a>
 							</li>
                         {elseif $cmslink.cms_id == 10}
 							<li class="item">
 								<a href="{smartblog::GetSmartBlogLink()}" title="{l s="Проекты" mod="blockcms"}">
-                                    {l s="Проекты" mod="blockcms"}
+                                    {l s='Projects' mod='blockcms'}
 								</a>
 							</li>
                         {else}
@@ -114,7 +114,7 @@
 {else}
 	<!-- Block CMS module footer -->
 	<section class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-1" id="block_various_links_footer">
-		<h4 class="footer-title">{l s='Полезные ссылки' mod='blockcms'}</h4>
+		<h4 class="footer-title">{l s='Useful links' mod='blockcms'}</h4>
 		<ul class="clearfix">
 			{if isset($show_price_drop) && $show_price_drop && !$PS_CATALOG_MODE}
 				<li class="item">

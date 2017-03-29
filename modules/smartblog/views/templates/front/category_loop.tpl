@@ -8,7 +8,7 @@
                     <img itemprop="image" alt="{$post.meta_title}"
                          src="{$modules_dir}/smartblog/images/{$post.post_img}.jpg" class="imageFeatured">
                 {/if}
-                <span class="more">{l s='Подробнее' mod='smartblog'}</span>
+                <span class="more">{l s='More information' mod='smartblog'}</span>
             </a>
         </div>
         {*<div class="sdsreadMore">*}

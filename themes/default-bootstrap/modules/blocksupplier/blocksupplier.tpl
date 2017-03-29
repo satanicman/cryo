@@ -27,7 +27,7 @@
 <div class="suppliers-wrap">
     <div class="suppliers-container container">
         <div id="suppliers_block_left" class="suppliers">
-            <h6 class="suppliers-title">{l s="Партнеры" mod='suppliers'}</h6>
+            <h6 class="suppliers-title">{l s='Partners' mod='blocksupplier'}</h6>
 			{if $suppliers}
 			{if $text_list}
 			<ul>

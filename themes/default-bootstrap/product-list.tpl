@@ -63,7 +63,7 @@
 					</h5>
 					<div class="details">
 						<a href="{$product.link|escape:'html':'UTF-8'}" title="{$product.name|escape:'html':'UTF-8'}">
-							{l s="Подробнее"}
+							{l s='More information'}
 						</a>
 					</div>
 				</div>
