@@ -120,6 +120,7 @@ header {
 			position: relative;
 		}
 		#header_logo {
+			padding: 0;
 			@media (max-width: $screen-sm-max) {
 				//display: inline-block;
 				-webkit-box-ordinal-group: 2;

@@ -5,7 +5,7 @@
   max-width: 222px;
   display: inline-block;
   margin-right: 6px; }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1259px) {
   #columns #newsletter_block_left .form-group .form-control {
     margin-bottom: 10px;
     margin-right: 0; } }
@@ -77,7 +77,7 @@
   font-size: 13px;
   line-height: 26px;
   clear: both; }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   #footer #newsletter_block_left .warning_inline {
     display: inline-block;
     position: relative;

@@ -107,7 +107,7 @@
             &:hover,
             &:focus {
                 &:before {
-                    @include sprite($tab-chevron);
+                    //@include sprite($tab-chevron);
                 }
             }
         }

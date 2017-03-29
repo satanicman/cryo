@@ -42,7 +42,7 @@
   line-height: 30px;
   padding: 0;
   display: inline-block; }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1259px) {
   .comments_advices a {
     float: none;
     line-height: 20px; } }
@@ -62,7 +62,7 @@
   text-align: center;
   width: 30px;
   /*max 1199px*/ }
-@media (max-width: 1199px) {
+@media (max-width: 1259px) {
   .comments_advices a:before {
     display: none; } }
 .comments_advices a.reviews:before {

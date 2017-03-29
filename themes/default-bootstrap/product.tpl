@@ -145,10 +145,10 @@
 		<div class="product-tabs">
 			<ul class="nav nav-tabs">
 				{if isset($product) && $product->description}
-                    <li><a data-toggle="tab" href="#description">{l s="Подробное описание"}</a></li>
+                    <li><a data-toggle="tab" href="#description"><span>{l s="Подробное описание"}</span></a></li>
                 {/if}
 				{if isset($features) && $features}
-                    <li><a data-toggle="tab" href="#features">{l s="Характеристики"}</a></li>
+                    <li><a data-toggle="tab" href="#features"><span>{l s="Характеристики"}</span></a></li>
                 {/if}
 			</ul>
 

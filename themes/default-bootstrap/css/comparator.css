@@ -83,11 +83,11 @@ table#product_comparison .comparison_feature .product_name {
   margin-bottom: 10px; }
 .share > div {
   margin-bottom: 8px; }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .share {
     position: relative;
     top: -350px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   .share {
     position: relative;
     top: -260px; } }
