@@ -88,14 +88,22 @@
     @include sprite($download-icon);
 }
 
+.pagination-next,
 .slick-next {
     &:before {
+        display: inline-block;
+        content: '';
+        vertical-align: middle;
         @include sprite($product-page-next-icon);
     }
 }
 
+.pagination-prev,
 .slick-prev {
     &:before {
+        display: inline-block;
+        content: '';
+        vertical-align: middle;
         @include sprite($product-page-prev-icon);
     }
 }

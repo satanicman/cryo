@@ -5393,13 +5393,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .brand-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -178px -163px;
+  background-position: -177px -163px;
   width: 8px;
   height: 11px; }
 
 .brand-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -165px -163px;
+  background-position: -164px -163px;
   width: 8px;
   height: 12px; }
 
@@ -5427,15 +5427,21 @@ The `sprites` mixin generates identical output to the CSS template
   width: 28px;
   height: 26px; }
 
-.slick-next:before {
+.pagination-next:before, .slick-next:before {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
+  background-image: url(../img/sprite.png);
+  background-position: -147px -163px;
+  width: 12px;
+  height: 29px; }
+
+.pagination-prev:before, .slick-prev:before {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
   background-image: url(../img/sprite.png);
   background-position: -130px -163px;
-  width: 13px;
-  height: 31px; }
-
-.slick-prev:before {
-  background-image: url(../img/sprite.png);
-  background-position: -148px -163px;
   width: 12px;
   height: 29px; }
 
@@ -6476,8 +6482,6 @@ ul.footer_links li + li {
   position: relative; }
 .top-pagination-content div.pagination, .bottom-pagination-content div.pagination {
   margin: 0;
-  float: right;
-  width: 530px;
   text-align: center; }
 @media (min-width: 992px) and (max-width: 1259px) {
   .top-pagination-content div.pagination, .bottom-pagination-content div.pagination {
@@ -6499,26 +6503,21 @@ ul.footer_links li + li {
   font-size: 13px;
   padding: 3px 5px 4px 5px;
   line-height: normal; }
-.top-pagination-content ul.pagination, .bottom-pagination-content ul.pagination {
-  margin: 8px 0px 8px 0; }
-@media (max-width: 991px) {
-  .top-pagination-content ul.pagination, .bottom-pagination-content ul.pagination {
-    float: left; } }
 .top-pagination-content ul.pagination li, .bottom-pagination-content ul.pagination li {
   display: inline-block;
   float: left; }
 .top-pagination-content ul.pagination li > a, .top-pagination-content ul.pagination li > span, .bottom-pagination-content ul.pagination li > a, .bottom-pagination-content ul.pagination li > span {
-  margin: 0 1px 0 0px;
   padding: 0;
   font-weight: bold;
-  border: 1px solid;
-  border-color: #dfdede #d2d0d0 #b0afaf #d2d0d0;
-  display: block; }
-.top-pagination-content ul.pagination li > a span, .top-pagination-content ul.pagination li > span span, .bottom-pagination-content ul.pagination li > a span, .bottom-pagination-content ul.pagination li > span span {
-  border: 1px solid #fff;
-  padding: 2px 8px;
+  border: 2px solid #DFE5E9;
   display: block;
-  background: url(../img/pagination-li.gif) 0 0 repeat-x #fbfbfb; }
+  margin: 0 5px;
+  font-style: 0.9375em;
+  font-family: "Open Sans", serif;
+  color: #B0BEC5; }
+.top-pagination-content ul.pagination li > a span, .top-pagination-content ul.pagination li > span span, .bottom-pagination-content ul.pagination li > a span, .bottom-pagination-content ul.pagination li > span span {
+  padding: 10px 13px;
+  display: block; }
 .top-pagination-content ul.pagination li > a:hover span, .bottom-pagination-content ul.pagination li > a:hover span {
   background: #f6f6f6; }
 .top-pagination-content ul.pagination li.pagination_previous, .top-pagination-content ul.pagination li.pagination_next, .bottom-pagination-content ul.pagination li.pagination_previous, .bottom-pagination-content ul.pagination li.pagination_next {
@@ -6528,25 +6527,19 @@ ul.footer_links li + li {
   border: none;
   background: none;
   display: block;
-  padding: 4px 0; }
-@media (max-width: 767px) {
-  .top-pagination-content ul.pagination li.pagination_previous > a b, .top-pagination-content ul.pagination li.pagination_previous > span b, .top-pagination-content ul.pagination li.pagination_next > a b, .top-pagination-content ul.pagination li.pagination_next > span b, .bottom-pagination-content ul.pagination li.pagination_previous > a b, .bottom-pagination-content ul.pagination li.pagination_previous > span b, .bottom-pagination-content ul.pagination li.pagination_next > a b, .bottom-pagination-content ul.pagination li.pagination_next > span b {
-    display: none; } }
+  padding: 6px 0; }
 .top-pagination-content ul.pagination li.pagination_previous > a span, .top-pagination-content ul.pagination li.pagination_previous > span span, .top-pagination-content ul.pagination li.pagination_next > a span, .top-pagination-content ul.pagination li.pagination_next > span span, .bottom-pagination-content ul.pagination li.pagination_previous > a span, .bottom-pagination-content ul.pagination li.pagination_previous > span span, .bottom-pagination-content ul.pagination li.pagination_next > a span, .bottom-pagination-content ul.pagination li.pagination_next > span span {
   border: none;
   padding: 0;
   background: none; }
-.top-pagination-content ul.pagination li.pagination_previous > a span b, .top-pagination-content ul.pagination li.pagination_previous > span span b, .top-pagination-content ul.pagination li.pagination_next > a span b, .top-pagination-content ul.pagination li.pagination_next > span span b, .bottom-pagination-content ul.pagination li.pagination_previous > a span b, .bottom-pagination-content ul.pagination li.pagination_previous > span span b, .bottom-pagination-content ul.pagination li.pagination_next > a span b, .bottom-pagination-content ul.pagination li.pagination_next > span span b {
-  font-weight: bold; }
 .top-pagination-content ul.pagination li.pagination_previous, .bottom-pagination-content ul.pagination li.pagination_previous {
   margin-right: 10px; }
 .top-pagination-content ul.pagination li.pagination_next, .bottom-pagination-content ul.pagination li.pagination_next {
   margin-left: 10px; }
 .top-pagination-content ul.pagination li.active > span, .bottom-pagination-content ul.pagination li.active > span {
-  color: #000;
-  border-color: #dfdede #d2d0d0 #b0afaf #d2d0d0; }
-.top-pagination-content ul.pagination li.active > span span, .bottom-pagination-content ul.pagination li.active > span span {
-  background: #f6f6f6; }
+  color: #369;
+  border-color: #369;
+  background: none; }
 .top-pagination-content .compare-form, .bottom-pagination-content .compare-form {
   float: right; }
 @media (max-width: 479px) {
@@ -6562,9 +6555,6 @@ ul.footer_links li + li {
 @media (max-width: 991px) {
   .top-pagination-content .product-count, .bottom-pagination-content .product-count {
     clear: left; } }
-
-.bottom-pagination-content {
-  border-top: 1px solid #d6d4d4; }
 
 ul.step {
   margin-bottom: 30px;
