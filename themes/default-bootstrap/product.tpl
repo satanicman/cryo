@@ -137,7 +137,7 @@
 					{/if}
 				</div>
 			{/if}
-			<button id="feedbackform--btn" class="btn btn-default {if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}hidden{/if}">{l s='Ask for a quotation'}</button>
+			<button id="feedbackform--btn" class="btn btn-default {if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE}hidden{/if}">{l s='Request a quotation'}</button>
 		</div>
 		<!-- end center infos-->
 	</div> <!-- end primary_block -->
