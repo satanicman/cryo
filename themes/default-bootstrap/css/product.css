@@ -78,18 +78,6 @@ a.fancybox-nav {
   display: block;
   cursor: pointer;
   position: relative; }
-.pb-left-column #image-block:before {
-  display: block;
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0); }
 .pb-left-column #image-block img {
   width: 100%;
   position: relative;
@@ -127,18 +115,6 @@ a.fancybox-nav {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative; }
-#thumbs_list li:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0); }
 #thumbs_list li a {
   display: block;
   border: 3px solid #fff;

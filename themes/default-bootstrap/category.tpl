@@ -52,6 +52,12 @@
 	{if $category->id AND $category->active}
 		{if $products}
 			{include file="./product-list.tpl" products=$products}
+            <div class="clearfix"></div>
+			<div class="content_sortPagiBar">
+				<div class="bottom-pagination-content clearfix">
+                    {include file="./pagination.tpl" paginationId='bottom'}
+				</div>
+			</div>
 		{/if}
 	{elseif $category->id}
 		<p class="alert alert-warning">{l s='This category is currently unavailable.'}</p>
