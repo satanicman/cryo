@@ -23,11 +23,21 @@
 		span {
 			display: none;
 		}
+		@media (max-width: $screen-sm-max) {
+			display: block;
+			height: 48px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 10px;
+		}
 	}
+	#search_query_menu,
 	#search_query_top {
 		@include transition(all .3s);
 		height: 36px;
 		background: $base-box-bg;
+		@include border-radius(0);
         display: inline;
         position: absolute;
         right: 0;
@@ -43,7 +53,12 @@
 		}
         @media (max-width: $screen-sm-max) {
 			width: 100%;
-			padding: 5px 40px 5px 5px;
+			padding: 12px 50px 12px 15px;
+			height: auto;
+			position: static;
+			border-width: 1px 0;
+			font-family: "Open Sans", serif;
+			font-size: em(16px);
 		}
         &.show {
 			@media (min-width: $screen-lg) {
@@ -93,5 +108,16 @@ form#searchbox {
 		i {
 			margin-right:0;
 		}
+	}
+}
+.menu-search {
+	@media (min-width: $screen-md) {
+		display: none;
+	}
+	#search_block_top {
+		display: block;
+		width: auto;
+		float: none;
+		padding: 0;
 	}
 }

@@ -99,7 +99,7 @@
             -o-transition: right .3s, width .3s;
             transition: right .3s, width .3s;
             min-width: 50%;
-            padding: 30px 95px 30px 15px;
+            padding: 30px 0 30px 0;
             @keyframes slide-left {
                 from {
                     -webkit-transform: translate3d(100%, 0, 0);
@@ -114,9 +114,8 @@
             }
         }
         .b-toggle {
-            position: absolute;
-            right: 15px;
-            top: 30px;
+            display: inline-block;
+            margin-right: 15px;
         }
     }
     ul {
@@ -126,6 +125,8 @@
         height: 40px;
         @media (max-width: $screen-sm-max) {
             display: block;
+            height: auto;
+            padding: 0;
         }
         li {
             padding: 0 15px;
@@ -135,7 +136,12 @@
                 text-align: left;
             }
             @media (max-width: $screen-sm-max) {
-                margin: 0 0 15px;
+                margin: 0;
+                padding: 15px;
+                border-bottom: 1px solid #ccc;
+                &:last-of-type {
+                    border-bottom: none;
+                }
             }
             a {
                 font-family: "helvetica-roman", serif;
@@ -150,8 +156,9 @@
                     font-size: 16px;
                 }
                 @media (max-width: $screen-sm-max) {
-                    color: $base-text-color;
-                    font-size: em(24px);
+                    color: $description-color;
+                    font-family: "Open Sans", serif;
+                    font-size: em(16px);
                 }
                 @media (max-width: $screen-xs-max) {
                 }

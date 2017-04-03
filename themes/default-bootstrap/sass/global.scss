@@ -28,6 +28,10 @@ body {
 	font-size: $f-base;
 	color: $base-body-color;
 	font-family: $ff-base;
+    @media (max-width: $screen-sm-max) {
+		font-size: 14px;
+		line-height: 16px;
+	}
 	&.content_only {
 		background: none;
 		min-width: 0px;
@@ -1010,7 +1014,7 @@ table.table_block td {
 			&:after {
 				display: block;
 				font-family: $font-icon;
-				content: "";
+				content: "\f0c9";
 				position: absolute;
 				right: 0;
 				top: 50%;
@@ -1021,7 +1025,7 @@ table.table_block td {
 				font-weight: normal;
 			}
 			&.active:after {
-				content: "";
+				content: "\f00d";
 			}
 		}
 		a {
@@ -1779,6 +1783,9 @@ div.star a:hover {
 	padding-top: 65px;
     background: $bg-footer;
     //box-shadow: 0 4px 10px rgba(148, 148, 148, 0.5);
+	@media (max-width: $screen-sm-max) {
+		background: lighten(#bdc3c7, 15);
+	}
 	.container {
 		padding-bottom: 20px;
 	}

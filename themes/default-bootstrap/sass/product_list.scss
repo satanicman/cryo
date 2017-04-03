@@ -234,6 +234,9 @@ ul.product_list.grid {
             .subcategory-image,
 			.product-image-container {
 				padding: 8px 6px 0;
+				img	{
+					margin: 0 auto;
+				}
 			}
 			h5 {
 				margin: 15px 0;
@@ -247,8 +250,13 @@ ul.product_list.grid {
 				background-color: $bg-ultra-light;
 				width: 100%;
                 @media (max-width: $screen-sm-max) {
-					font-size: em(20px);
+					font-size: em(15px, 14px);
 
+                }
+                @media (max-width: $screen-sxs-max) {
+					font-size: em(16px, 14px);
+					height: auto;
+					padding: 10px;
                 }
                 @media (min-width: $screen-lg) {
                     display: table;

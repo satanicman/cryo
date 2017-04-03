@@ -28,10 +28,17 @@
 		<input type="hidden" name="controller" value="search" />
 		<input type="hidden" name="orderby" value="position" />
 		<input type="hidden" name="orderway" value="desc" />
-		<input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="{l s='Search' mod='blocksearch'}" value="{$search_query|escape:'htmlall':'UTF-8'|stripslashes}" />
-		<label class="button-search" for="search_query_top">
-			<i class="search-icon icon"></i>
-		</label>
+		{if isset($mobile) && $mobile}
+			<input class="search_query form-control" type="text" id="search_query_menu" name="search_query" placeholder="{l s='Search' mod='blocksearch'}" value="{$search_query|escape:'htmlall':'UTF-8'|stripslashes}" />
+			<button class="button-search">
+				<i class="search-icon icon"></i>
+			</button>
+		{else}
+			<input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="{l s='Search' mod='blocksearch'}" value="{$search_query|escape:'htmlall':'UTF-8'|stripslashes}" />
+            <label class="button-search" for="search_query_top">
+                <i class="search-icon icon"></i>
+            </label>
+		{/if}
 	</form>
 </div>
 <!-- /Block search module TOP -->

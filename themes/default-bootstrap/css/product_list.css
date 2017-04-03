@@ -169,7 +169,7 @@ Product list(Grid) Styles
 ********************************************************/
 #subcategories li, #subcategories li.ajax_block_product, ul.product_list.grid li, ul.product_list.grid li.ajax_block_product {
   padding-bottom: 30px; }
-@media (max-width: 370px) {
+@media (max-width: 400px) {
   #subcategories li, #subcategories li.ajax_block_product, ul.product_list.grid li, ul.product_list.grid li.ajax_block_product {
     width: 100%; } }
 #subcategories li .subcategory-container, #subcategories li .product-container, #subcategories li.ajax_block_product .subcategory-container, #subcategories li.ajax_block_product .product-container, ul.product_list.grid li .subcategory-container, ul.product_list.grid li .product-container, ul.product_list.grid li.ajax_block_product .subcategory-container, ul.product_list.grid li.ajax_block_product .product-container {
@@ -182,6 +182,8 @@ Product list(Grid) Styles
   box-shadow: 0 0 15px rgba(16, 24, 30, 0.3); }
 #subcategories li .subcategory-container .subcategory-image, #subcategories li .subcategory-container .product-image-container, #subcategories li .product-container .subcategory-image, #subcategories li .product-container .product-image-container, #subcategories li.ajax_block_product .subcategory-container .subcategory-image, #subcategories li.ajax_block_product .subcategory-container .product-image-container, #subcategories li.ajax_block_product .product-container .subcategory-image, #subcategories li.ajax_block_product .product-container .product-image-container, ul.product_list.grid li .subcategory-container .subcategory-image, ul.product_list.grid li .subcategory-container .product-image-container, ul.product_list.grid li .product-container .subcategory-image, ul.product_list.grid li .product-container .product-image-container, ul.product_list.grid li.ajax_block_product .subcategory-container .subcategory-image, ul.product_list.grid li.ajax_block_product .subcategory-container .product-image-container, ul.product_list.grid li.ajax_block_product .product-container .subcategory-image, ul.product_list.grid li.ajax_block_product .product-container .product-image-container {
   padding: 8px 6px 0; }
+#subcategories li .subcategory-container .subcategory-image img, #subcategories li .subcategory-container .product-image-container img, #subcategories li .product-container .subcategory-image img, #subcategories li .product-container .product-image-container img, #subcategories li.ajax_block_product .subcategory-container .subcategory-image img, #subcategories li.ajax_block_product .subcategory-container .product-image-container img, #subcategories li.ajax_block_product .product-container .subcategory-image img, #subcategories li.ajax_block_product .product-container .product-image-container img, ul.product_list.grid li .subcategory-container .subcategory-image img, ul.product_list.grid li .subcategory-container .product-image-container img, ul.product_list.grid li .product-container .subcategory-image img, ul.product_list.grid li .product-container .product-image-container img, ul.product_list.grid li.ajax_block_product .subcategory-container .subcategory-image img, ul.product_list.grid li.ajax_block_product .subcategory-container .product-image-container img, ul.product_list.grid li.ajax_block_product .product-container .subcategory-image img, ul.product_list.grid li.ajax_block_product .product-container .product-image-container img {
+  margin: 0 auto; }
 #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
   margin: 15px 0;
   height: 70px;
@@ -194,7 +196,12 @@ Product list(Grid) Styles
   width: 100%; }
 @media (max-width: 991px) {
   #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
-    font-size: 1.25em; } }
+    font-size: 1.07143em; } }
+@media (max-width: 400px) {
+  #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
+    font-size: 1.14286em;
+    height: auto;
+    padding: 10px; } }
 @media (min-width: 1260px) {
   #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
     display: table;

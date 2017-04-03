@@ -49,7 +49,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 370,
+				breakpoint: 401,
 				settings: {
                     arrows: false,
 					centerMode: false,

@@ -5511,6 +5511,10 @@ body {
   font-size: 16px;
   color: #777;
   font-family: "helvetica-roman"; }
+@media (max-width: 991px) {
+  body {
+    font-size: 14px;
+    line-height: 16px; } }
 body.content_only {
   background: none;
   min-width: 0px; }
@@ -6274,7 +6278,7 @@ table.std td, table.table_block td {
   .block .title_block:after, .block h4:after {
     display: block;
     font-family: "FontAwesome";
-    content: "";
+    content: "\f0c9";
     position: absolute;
     right: 0;
     top: 50%;
@@ -6284,7 +6288,7 @@ table.std td, table.table_block td {
     font-size: 26px;
     font-weight: normal; }
   .block .title_block.active:after, .block h4.active:after {
-    content: ""; } }
+    content: "\f00d"; } }
 .block .title_block a, .block h4 a {
   color: #555454; }
 .block .title_block a:hover, .block h4 a:hover {
@@ -6875,6 +6879,9 @@ div.star_hover a, div.star a:hover {
 .footer-container {
   padding-top: 65px;
   background: #111 linear-gradient(to top, #bdc3c7 0%, #ecf0f1 100%); }
+@media (max-width: 991px) {
+  .footer-container {
+    background: #e6e9ea; } }
 .footer-container .container {
   padding-bottom: 20px; }
 .footer-container #footer {
