@@ -34,12 +34,12 @@
                         {foreach from=$manufacturers item=manufacturer name=manufacturer_list}
                             {if $smarty.foreach.manufacturer_list.iteration <= $text_list_nb}
                                 <li>
-                                    <a
-                                            href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}"
-                                            title="{l s='More about %s' mod='blockmanufacturer' sprintf=[$manufacturer.name]}">
+                                    {*<a*}
+                                            {*href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}"*}
+                                            {*title="{l s='More about %s' mod='blockmanufacturer' sprintf=[$manufacturer.name]}">*}
                                         <img src="{$img_manu_dir}{$manufacturer.image}.jpg"
                                              alt="{$manufacturer.name|escape:'html':'UTF-8'}">
-                                    </a>
+                                    {*</a>*}
                                 </li>
                             {/if}
                         {/foreach}
