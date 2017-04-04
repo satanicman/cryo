@@ -81,6 +81,12 @@
                     <div class="other-bar"></div>
                 </div>
 			</div>
+			<div class="menu-search">
+                {capture name='menuBottom'}{hook h='menuBottom'}{/capture}
+                {if $smarty.capture.menuBottom}
+                    {$smarty.capture.menuBottom}
+                {/if}
+			</div>
 			<ul>
 				<li class="item">
 					<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s="Главная" mod="blockcms"}">
@@ -111,12 +117,6 @@
                     {/if}
                 {/foreach}
 			</ul>
-			<div class="menu-search">
-                {capture name='menuBottom'}{hook h='menuBottom'}{/capture}
-                {if $smarty.capture.menuBottom}
-                    {$smarty.capture.menuBottom}
-                {/if}
-			</div>
 		</div>
 	</section>
 {else}

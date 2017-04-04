@@ -142,6 +142,8 @@ form#searchbox .button.button-small {
 form#searchbox .button.button-small i {
   margin-right: 0; }
 
+.menu-search {
+  margin-top: 10px; }
 @media (min-width: 992px) {
   .menu-search {
     display: none; } }

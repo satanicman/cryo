@@ -111,6 +111,7 @@ form#searchbox {
 	}
 }
 .menu-search {
+	margin-top: 10px;
 	@media (min-width: $screen-md) {
 		display: none;
 	}

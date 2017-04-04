@@ -337,7 +337,8 @@ span.view_scroll_spacer {
   font-weight: 700; }
 
 #description {
-  text-align: center; }
+  text-align: center;
+  font-family: "Open Sans"; }
 #description .page-product-box {
   padding-bottom: 0; }
 #description .page-product-box .rte {
