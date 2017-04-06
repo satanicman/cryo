@@ -17,7 +17,7 @@
 #cms #center_column p {
   line-height: 24px;
   text-indent: 10px;
-  margin-bottom: 30px; }
+  margin-bottom: 0; }
 #cms #center_column strong {
   font-family: "helvetica-black", serif; }
 #cms #center_column .list-1 li {

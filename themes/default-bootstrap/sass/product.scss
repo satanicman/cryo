@@ -325,9 +325,7 @@ span.view_scroll_spacer {
 		}
 		#short_description_content{
 			word-wrap: break-word;
-			color: $c-dark-grey;
-			font-family: "Open Sans", serif;
-			font-size: em(18px);
+			color: #777;
 			font-weight: 400;
 			padding: 0 0 20px;
 			p{
@@ -359,12 +357,14 @@ span.view_scroll_spacer {
 }
 #description {
 	text-align: center;
-	font-family: "Open Sans";
+	color: #777;
 	.page-product-box {
 		padding-bottom: 0;
         .rte {
             padding-bottom: 0;
+			color: #777;
             p {
+				margin: 0;
 				&:last-of-type {
 					//margin-bottom: 0;
 				}
