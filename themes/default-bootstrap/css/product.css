@@ -314,7 +314,7 @@ span.view_scroll_spacer {
   display: none; }
 .pb-center-column #short_description_block #short_description_content {
   word-wrap: break-word;
-  color: #777;
+  color: #333;
   font-weight: 400;
   padding: 0 0 20px; }
 .pb-center-column #short_description_block #short_description_content p {
@@ -335,13 +335,11 @@ span.view_scroll_spacer {
   font-weight: 700; }
 
 #description {
-  text-align: center;
-  color: #777; }
+  text-align: center; }
 #description .page-product-box {
   padding-bottom: 0; }
 #description .page-product-box .rte {
-  padding-bottom: 0;
-  color: #777; }
+  padding-bottom: 0; }
 #description .page-product-box .rte p {
   margin: 0; }
 

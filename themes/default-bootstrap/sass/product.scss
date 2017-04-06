@@ -325,7 +325,7 @@ span.view_scroll_spacer {
 		}
 		#short_description_content{
 			word-wrap: break-word;
-			color: #777;
+			color: $c-dark-grey;
 			font-weight: 400;
 			padding: 0 0 20px;
 			p{
@@ -357,12 +357,10 @@ span.view_scroll_spacer {
 }
 #description {
 	text-align: center;
-	color: #777;
 	.page-product-box {
 		padding-bottom: 0;
         .rte {
             padding-bottom: 0;
-			color: #777;
             p {
 				margin: 0;
 				&:last-of-type {
