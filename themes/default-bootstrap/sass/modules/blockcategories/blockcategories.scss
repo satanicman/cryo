@@ -104,7 +104,7 @@
                     border-right: 12px solid $bd-blue;
                     border-left-width: 12px;
                     position: absolute;
-                    right: 99.9999%;
+                    right: 99.5%;
                     top: 0;
                     bottom: 0;
                 }
@@ -273,6 +273,12 @@
                     border-radius: 3px;
                     overflow: hidden;
                     //padding-bottom: 10px;
+                    > .category-link-wrap a {
+                        padding-right: 90px;
+                        @media (max-width: $screen-sm-max) {
+                            padding-right: 70px;
+                        }
+                    }
                 }
                 > li {
                     &.OPEN {
@@ -293,17 +299,13 @@
                         background-color: $bg-light-grey;
                         @media (max-width: $screen-sm-max) {
                             padding-left: 10px;
-                            padding-top: 5px;
-                            padding-bottom: 5px;
+                            //padding-top: 5px;
+                            //padding-bottom: 5px;
                         }
                     }
                     > .category-link-wrap a {
-                        padding-right: 90px;
                         @include justify-content(space-between);
                         //margin-bottom: 10px;
-                        @media (max-width: $screen-sm-max) {
-                            padding-right: 70px;
-                        }
                         > .categories_block_name {
                             padding-right: 20px;
                             line-height: 1;

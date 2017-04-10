@@ -6867,7 +6867,7 @@ div.star_hover a, div.star a:hover {
   width: 20px; }
 
 .footer-container {
-  padding-top: 65px;
+  padding-top: 30px;
   background: #111 linear-gradient(to top, #bdc3c7 0%, #ecf0f1 100%); }
 @media (max-width: 991px) {
   .footer-container {

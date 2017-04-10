@@ -26,6 +26,9 @@
 .home-top {
   padding-top: 20px;
   padding-bottom: 75px; }
+@media (max-width: 991px) {
+  .home-top {
+    padding-bottom: 0; } }
 .home-top .categories_block_home, .home-top .main-title {
   margin-bottom: 20px; }
 .home-top .slider.index {
@@ -190,6 +193,9 @@
   height: auto;
   padding: 75px 0 0;
   border: none; }
+@media (max-width: 991px) {
+  #cmsinfo_block {
+    padding-top: 50px; } }
 #cmsinfo_block > div {
   padding-left: 0;
   padding-right: 0; }

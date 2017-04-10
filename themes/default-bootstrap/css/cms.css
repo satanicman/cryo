@@ -14,7 +14,7 @@
   border-bottom: none;
   margin: 0;
   padding: 0 0 17px 0; }
-#cms #center_column p {
+#cms #center_column p, #cms #center_column ul {
   line-height: 24px;
   text-indent: 10px;
   margin-bottom: 0; }
@@ -33,7 +33,6 @@
   padding-right: 15px;
   vertical-align: -2px; }
 #cms #center_column img {
-  margin: 4px 0 17px;
   max-width: 100%;
   height: auto; }
 #cms #center_column .testimonials {
