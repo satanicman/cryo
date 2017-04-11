@@ -52,8 +52,8 @@ The `sprites` mixin generates identical output to the CSS template
   z-index: 2;
   background: none;
   border: none;
-  padding: 5px;
   height: 36px;
+  padding: 5px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -82,15 +82,15 @@ The `sprites` mixin generates identical output to the CSS template
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  display: inline;
+  display: block;
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 1; }
 @media (min-width: 1260px) {
   #search_block_top #search_query_menu, #search_block_top #search_query_top {
-    visibility: hidden;
-    width: 0;
+    width: 100%;
     opacity: 0; } }
 @media (max-width: 1259px) {
   #search_block_top #search_query_menu, #search_block_top #search_query_top {
@@ -104,12 +104,6 @@ The `sprites` mixin generates identical output to the CSS template
     border-width: 1px 0;
     font-family: "Open Sans", serif;
     font-size: 1em; } }
-@media (min-width: 1260px) {
-  #search_block_top #search_query_menu.show, #search_block_top #search_query_top.show {
-    visibility: visible;
-    width: 200px;
-    opacity: 1;
-    padding: 5px 40px 5px 5px; } }
 
 .ac_results {
   background: #fff;
@@ -129,6 +123,17 @@ The `sprites` mixin generates identical output to the CSS template
 
 form#searchbox {
   position: relative; }
+@media (min-width: 1260px) {
+  form#searchbox {
+    min-width: 36px;
+    height: 36px;
+    width: 0%;
+    float: right; } }
+@media (min-width: 1260px) {
+  form#searchbox.open #search_query_top {
+    width: 200px;
+    opacity: 1;
+    padding: 5px 40px 5px 5px; } }
 form#searchbox label {
   color: #000; }
 form#searchbox input#search_query_block {
