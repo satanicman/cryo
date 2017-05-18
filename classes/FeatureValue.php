@@ -47,7 +47,7 @@ class FeatureValueCore extends ObjectModel
             'custom' =>    array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
 
             /* Lang fields */
-            'value' =>        array('type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'required' => true, 'size' => 255),
+            'value' =>        array('type' => self::TYPE_HTML, 'lang' => true, 'validate' => 'isCleanHtml', 'required' => true, 'size' => 255),
         ),
     );
 

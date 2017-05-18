@@ -3631,7 +3631,7 @@ class ProductCore extends ObjectModel
      */
     public function addFeaturesCustomToDB($id_value, $lang, $cust)
     {
-        $row = array('id_feature_value' => (int)$id_value, 'id_lang' => (int)$lang, 'value' => pSQL($cust));
+        $row = array('id_feature_value' => (int)$id_value, 'id_lang' => (int)$lang, 'value' => $cust);
         return Db::getInstance()->insert('feature_value_lang', $row);
     }
 
