@@ -181,19 +181,14 @@ Product list(Grid) Styles
   font-weight: 400;
   padding: 0 15px;
   background-color: #f9f9f9;
-  width: 100%; }
-@media (max-width: 991px) {
-  #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
-    font-size: 1.07143em; } }
+  width: 100%;
+  display: table;
+  table-layout: fixed; }
 @media (max-width: 400px) {
   #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
     font-size: 1.14286em;
     height: auto;
     padding: 10px; } }
-@media (min-width: 1260px) {
-  #subcategories li .subcategory-container h5, #subcategories li .product-container h5, #subcategories li.ajax_block_product .subcategory-container h5, #subcategories li.ajax_block_product .product-container h5, ul.product_list.grid li .subcategory-container h5, ul.product_list.grid li .product-container h5, ul.product_list.grid li.ajax_block_product .subcategory-container h5, ul.product_list.grid li.ajax_block_product .product-container h5 {
-    display: table;
-    table-layout: fixed; } }
 #subcategories li .subcategory-container h5 > *, #subcategories li .product-container h5 > *, #subcategories li.ajax_block_product .subcategory-container h5 > *, #subcategories li.ajax_block_product .product-container h5 > *, ul.product_list.grid li .subcategory-container h5 > *, ul.product_list.grid li .product-container h5 > *, ul.product_list.grid li.ajax_block_product .subcategory-container h5 > *, ul.product_list.grid li.ajax_block_product .product-container h5 > * {
   display: table-cell;
   vertical-align: middle; }

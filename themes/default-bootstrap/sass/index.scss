@@ -28,6 +28,9 @@
     &-top {
         padding-top: 20px;
         padding-bottom: 75px;
+        @media (max-width: $screen-sm-max) {
+            padding-bottom: 0;
+        }
         .categories_block_home,
         .main-title {
             margin-bottom: 20px;
@@ -252,6 +255,9 @@
     height: auto;
     padding: 75px 0 0;
     border: none;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 50px;
+    }
     > div {
         padding-left: 0;
         padding-right: 0;
