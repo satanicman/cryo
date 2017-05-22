@@ -664,7 +664,7 @@ class SmartBlogPost extends ObjectModel
                 '._DB_PREFIX_.'smart_blog_post_lang pl ON p.id_smart_blog_post=pl.id_smart_blog_post INNER JOIN 
                 '._DB_PREFIX_.'smart_blog_post_shop ps ON pl.id_smart_blog_post = ps.id_smart_blog_post AND ps.id_shop = '.(int) Context::getContext()->shop->id.'
                 WHERE pl.id_lang='.$id_lang.' 		
-                AND p.id_category = 4
+                AND p.id_category = 2
                 AND p.active= 1 ORDER BY p.id_smart_blog_post DESC 
                 LIMIT '.$limit;
             $posts = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
@@ -673,7 +673,7 @@ class SmartBlogPost extends ObjectModel
                 '._DB_PREFIX_.'smart_blog_post_lang pl ON p.id_smart_blog_post=pl.id_smart_blog_post INNER JOIN 
                 '._DB_PREFIX_.'smart_blog_post_shop ps ON pl.id_smart_blog_post = ps.id_smart_blog_post  AND ps.id_shop = '.(int) Context::getContext()->shop->id.'
                 WHERE pl.id_lang='.$id_lang_defaut.' 		
-                AND p.id_category = 4
+                AND p.id_category = 2
                 AND p.active= 1 ORDER BY p.id_smart_blog_post DESC 
                 LIMIT '.$limit;
                 $posts = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql2);      
